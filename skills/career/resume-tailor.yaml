@@ -1,0 +1,136 @@
+name: RESUME_TAILOR
+category: career
+
+purpose: >
+  Produce a role-specific resume by selecting, reordering, and rewording content from
+  the achievement inventory. Operates in extractive mode first, controlled rephrase
+  second. Tracks every change with full rationale and claim risk assessment.
+
+extends: null
+requires:
+  RESUME_PARSE: ">=1.0"
+  JD_ANALYZE: ">=1.0"
+  EVALUATE_ALIGNMENT: ">=1.0"
+  APPLICATION_STRATEGY: ">=1.0"
+
+inputs:
+  structured_resume:
+    type: object
+    required: true
+    description: Structured resume + achievement inventory from RESUME_PARSE
+  jd_analysis:
+    type: object
+    required: true
+    description: Output from JD_ANALYZE
+  alignment_analysis:
+    type: object
+    required: true
+    description: Output from EVALUATE_ALIGNMENT
+  narrative_strategy:
+    type: object
+    required: true
+    description: Positioning thesis from APPLICATION_STRATEGY
+  base_resume:
+    type: string
+    required: true
+    description: Current base resume as formatting reference
+
+outputs:
+  tailored_resume:
+    type: object
+    description: Section-by-section tailored resume content
+  change_log:
+    type: list
+    description: >
+      Full change log with rationale for every edit:
+      Section, Original, Recommended, Rationale, JD Evidence, Change Type.
+      Change types: bullet-swap, keyword-insertion, emphasis-shift, safe-reword,
+      needs-user-confirmation, not-supported.
+      Claim risk flag on every edit that touches factual content.
+  tailored_summary:
+    type: string
+    description: Professional summary rewrite tailored to this specific role
+  skills_reorder:
+    type: list
+    description: Skills section reordered with most relevant skills first
+  resume_delta:
+    type: number
+    description: Percentage of content changed from base resume (fed to APPLICATION_LOG for learning)
+
+interface:
+  consumes:
+    - structured_resume
+    - jd_analysis
+    - alignment_analysis
+    - narrative_strategy
+    - base_resume
+  produces:
+    - tailored_resume
+    - change_log
+    - tailored_summary
+    - skills_reorder
+    - resume_delta
+
+guardrails:
+  - Extractive mode first — select from pre-verified achievement inventory
+  - Controlled rephrase only where exact JD terminology can be truthfully inserted (v3.1)
+  - Never synthesize new achievement claims
+  - Immutable fields (read-only — cannot be modified under any circumstances):
+      - Employment dates (start/end)
+      - Company names
+      - Official job titles
+      - Education institutions and degrees
+      - Certifications and issuing bodies
+  - Every change must trace to a JD requirement
+  - Claim risk flag on every edit touching factual content
+  - Separate "recommended wording" from "unsupported claim" explicitly
+  - Calculate and report resume_delta for downstream learning
+
+execution:
+  agent: any
+  instructions: >
+    Operate as a router and selector, not an author. First pass: extract the most
+    relevant pre-verified achievements from the inventory and arrange them for
+    maximum relevance. Second pass: controlled rephrase — insert exact JD terminology
+    only where the factual claim is fully supported. Never synthesize. Track every
+    change in the change log. Flag claim risk on every factual edit.
+    Calculate resume_delta as percentage of bullets changed from base.
+  temperature: 0.3
+  frequency: once-per-application
+  critical_path: true
+
+quality_checks:
+  - Every change has a JD evidence trace
+  - Immutable fields are unchanged
+  - Claim risk flag present on every factual edit
+  - Resume delta calculated and present
+  - No synthesized achievement claims — all content from verified inventory
+  - Change types correctly classified
+
+failure_modes:
+  - Synthesizing new achievement claims not in the inventory
+  - Modifying immutable fields (dates, titles, employers, education)
+  - Missing claim risk flags on factual edits
+  - Keyword stuffing rather than strategic insertion
+  - Missing resume_delta metric
+
+metrics:
+  claim_accuracy:
+    description: Percentage of edits that are factually accurate (no invented content)
+  keyword_integration_rate:
+    description: Percentage of target keywords successfully integrated
+  resume_delta:
+    description: Average percentage changed across all applications
+  user_confirmation_rate:
+    description: Percentage of edits flagged as needing user confirmation
+
+idempotent: true
+compatible_with:
+  RESUME_PARSE: ">=1.0"
+  JD_ANALYZE: ">=1.0"
+  EVALUATE_ALIGNMENT: ">=1.0"
+  APPLICATION_STRATEGY: ">=1.0"
+
+version: 1.0
+status: active
+owner: career-agent

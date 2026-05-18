@@ -1,0 +1,114 @@
+name: APPLICATION_LOG
+category: career
+
+purpose: >
+  Track all applications for pipeline management, follow-up scheduling, and
+  performance learning. Includes resume delta tracking for optimization research.
+  Always runs — even on No-Go decisions (logs the decision and rationale).
+
+extends: null
+requires:
+  APPLICATION_STRATEGY: ">=1.0"
+
+inputs:
+  application_data:
+    type: object
+    required: true
+    description: Company, role, date, application channel, strategy decision
+  resume_delta:
+    type: number
+    required: false
+    description: Percentage changed from base resume (from RESUME_TAILOR; absent on No-Go)
+  match_score:
+    type: object
+    required: false
+    description: Match score output from EVALUATE_ALIGNMENT (absent on No-Go)
+  ats_validation:
+    type: object
+    required: false
+    description: ATS validation result from APPLICATION_PACKAGE (absent on No-Go)
+  go_no_go:
+    type: string
+    required: true
+    description: Decision from APPLICATION_STRATEGY
+
+outputs:
+  application_record:
+    type: object
+    description: >
+      Appended to persistent log. Contains: unique application ID, company, role, date,
+      application channel, match score, ATS validation result, go/no-go decision and
+      rationale, resume version ID, cover letter version ID, resume delta, follow-up
+      schedule (1 week check, 2 week follow-up, 4 week close).
+  pipeline_summary:
+    type: object
+    description: >
+      Total applications by status, conversion rates by stage, average match score
+      of applications that converted to interviews.
+  learning_insights:
+    type: object
+    description: >
+      Correlation between resume delta and interview conversion rate.
+      Match score ranges that produce interviews. Cover letter strategies that
+      correlate with callbacks. Average cycle time per application (target: <20 min).
+
+interface:
+  consumes:
+    - application_data
+    - resume_delta
+    - match_score
+    - ats_validation
+    - go_no_go
+  produces:
+    - application_record
+    - pipeline_summary
+    - learning_insights
+
+guardrails:
+  - Always runs — even on No-Go (logs the decision and rationale)
+  - Never duplicate application records for same company + role combination
+  - Privacy: log stored locally (Mode 1) or browser session only (Mode 2 / SaaS)
+  - In SaaS mode, no application data persists beyond the browser session
+  - No-Go records are as valuable as Go records — log them fully
+
+execution:
+  agent: any
+  instructions: >
+    Append the application record to the persistent log. Calculate follow-up schedule
+    from today's date. Update pipeline summary with current totals. Generate learning
+    insights if 3+ applications exist in the log (below 3, patterns are noise).
+    Always run — even if the pipeline terminated at APPLICATION_STRATEGY with No-Go.
+  temperature: 0.1
+  frequency: once-per-application
+  critical_path: false
+  always_run: true
+
+quality_checks:
+  - Application record has unique ID
+  - Follow-up schedule dates calculated correctly
+  - Duplicate check performed before appending
+  - Learning insights only generated with 3+ log entries
+  - No-Go records include full decision rationale
+
+failure_modes:
+  - Skipping on No-Go decisions
+  - Duplicate records for same company + role
+  - Follow-up dates missing or miscalculated
+  - Learning insights generated from insufficient data
+  - SaaS mode persisting data beyond browser session
+
+metrics:
+  log_completeness:
+    description: Percentage of applications with all required fields populated
+  follow_up_schedule_accuracy:
+    description: Percentage of follow-up dates calculated correctly from application date
+  learning_signal_quality:
+    description: Correlation strength between logged metrics and interview outcomes
+
+idempotent: true
+compatible_with:
+  APPLICATION_STRATEGY: ">=1.0"
+
+version: 1.0
+status: active
+owner: career-agent

@@ -1,0 +1,188 @@
+name: EVALUATE_ALIGNMENT
+category: career
+version: 1.2
+status: active
+owner: career-agent
+
+# CHANGELOG
+# v1.0 — Initial release (2026-04-13)
+# v1.1 — Post-first-run refinement (2026-04-13)
+#   Added HIGH-YIELD DISCOVERY CATEGORIES, DOMAIN BRIDGE CHECK, prior_employer_sweep
+#   WRONG: candidate-specific knowledge was embedded in a generic skill
+# v1.2 — Architecture fix (2026-04-13)
+#   Moved candidate-specific knowledge to references/career/candidate-profile.yaml
+#   Added candidate_profile as required input (context_directive pattern)
+#   Added PAUSE instruction — skill outputs Section D and STOPS
+#   Resume tailoring must not run until user responds to discovery prompts
+
+purpose: >
+  Unified alignment analysis combining match scoring, ATS validation, and keyword
+  mapping in a single context window. Includes achievement discovery loop — surfaces
+  gaps in the achievement inventory and PAUSES for user input before tailoring runs.
+  Generic skill — candidate-specific patterns live in candidate-profile.yaml.
+
+extends: null
+requires:
+  RESUME_PARSE: ">=1.0"
+  JD_ANALYZE: ">=1.0"
+  APPLICATION_STRATEGY: ">=1.0"
+
+inputs:
+  structured_resume:
+    type: object
+    required: true
+    description: Structured resume + achievement inventory from RESUME_PARSE
+  jd_analysis:
+    type: object
+    required: true
+    description: Output from JD_ANALYZE
+  resume_document:
+    type: string
+    required: true
+    description: Raw resume document for ATS text extraction simulation
+  candidate_profile:
+    type: object
+    required: true
+    description: >
+      Candidate-specific context from references/career/candidate-profile.yaml.
+      Contains: known high-yield discovery categories for this candidate,
+      domain adjacency map, employer history patterns, prior run learnings.
+      Read this before generating Section D — it tells you where to look.
+
+outputs:
+  match_score:
+    type: object
+    description: >
+      Overall match percentage (weighted composite), category scores with rationale:
+      required skills/tools 35%, domain alignment 20%, responsibility alignment 20%,
+      seniority/leadership 15%, education/certs/nice-to-haves 10%.
+      Per-requirement evidence mapping: Strong / Partial / No evidence.
+      Fit classification: 85-100 strong, 70-84 viable, 55-69 stretch, <55 weak.
+
+  ats_validation:
+    type: object
+    description: >
+      Text extraction test result (pass/fail). Verifies: chronological order preserved,
+      all keywords survive extraction, section headings parse correctly, no garbled text,
+      contact info extractable. Keyword coverage %, placement quality, top 5 risks.
+
+  keyword_map:
+    type: list
+    description: >
+      Table of JD keywords vs. resume evidence: keyword, JD importance, resume evidence,
+      location, status (exact/partial/missing). Missing keyword remediation plan
+      (truthfully addable only). Keyword density check (stuffing risk).
+
+  achievement_gaps:
+    type: list
+    description: >
+      Structured discovery prompts for JD requirements with no inventory match.
+      Generated using prior_employer_sweep against candidate_profile patterns.
+      Each prompt is specific and employer-anchored — not generic.
+      Output format per prompt:
+        gap: "[JD requirement]"
+        question: "At [Employer], did you have experience with [specific thing]?"
+        why_it_matters: "[how resolving this changes the match score or resume]"
+      STOP after this output. Do not proceed to RESUME_TAILOR.
+
+interface:
+  consumes:
+    - structured_resume
+    - jd_analysis
+    - resume_document
+    - candidate_profile
+  produces:
+    - match_score
+    - ats_validation
+    - keyword_map
+    - achievement_gaps
+
+guardrails:
+  - Score match based on evidence, not language similarity
+  - Do not inflate scores — partial matches are partial, not strong
+  - ATS validation must simulate actual text extraction (Workday/Greenhouse/Lever behavior)
+  - Only recommend adding keywords supported by real experience
+  - Flag keywords that cannot be truthfully added
+  - Achievement gaps are discovery prompts — not instructions to invent content
+  - >
+    DOMAIN BRIDGE CHECK: Before scoring domain alignment as a hard miss, consult
+    candidate_profile.domain_adjacency_map. A domain miss is only confirmed after
+    checking the candidate's full employer history against known adjacent experience.
+  - >
+    INVENTORY IS NOT COMPLETE: The achievement inventory is a partial record.
+    Do not treat missing inventory entries as missing experience. Surface as a
+    discovery prompt; confirm miss only after candidate responds.
+  - >
+    HARD STOP AFTER SECTION D: This skill ends with achievement_gaps output.
+    Do not run RESUME_TAILOR. Do not generate resume changes. Wait for user
+    to respond to discovery prompts before pipeline continues.
+
+execution:
+  agent: any
+  instructions: >
+    Step 1 — Read candidate_profile before doing anything else. Note the
+    high_yield_categories and domain_adjacency_map. These tell you where to
+    look for hidden experience before you score gaps.
+
+    Section A: Score match with evidence — no inflation. Each JD requirement
+    maps to specific resume evidence or is marked as a gap.
+
+    Section B: Simulate ATS text extraction — convert resume to plain text
+    mentally and verify all keywords survive, order is preserved, headings
+    parse correctly. Output PASS or FAIL with specific failure points.
+
+    Section C: Build keyword map from the top 20 ATS keywords from JD_ANALYZE.
+    Only recommend adding keywords with real supporting evidence. Flag
+    non-addable keywords explicitly.
+
+    Section D — prior_employer_sweep: Before generating discovery prompts,
+    sweep ALL employers in structured_resume against each JD gap. For each
+    gap, check candidate_profile.high_yield_categories by employer. Generate
+    specific, employer-anchored prompts — not generic ones.
+    Example good prompt: "At John Deere, did you write release notes or user guides?"
+    Example bad prompt: "Do you have documentation experience?"
+
+    STOP. Output Sections A–D and wait for user response.
+    Do not proceed to RESUME_TAILOR until user has answered all discovery prompts.
+
+  temperature: 0.2
+  frequency: once-per-application
+  critical_path: false
+
+quality_checks:
+  - Match score uses defined weighting model
+  - Per-requirement evidence mapping present for every JD requirement
+  - ATS validation simulates text extraction — not an abstract rubric
+  - Keyword map covers all top 20 ATS keywords from JD_ANALYZE
+  - candidate_profile consulted before Section D
+  - Discovery prompts are employer-anchored and specific
+  - Skill output ends after Section D — no tailoring content present
+
+failure_modes:
+  - Inflated match score
+  - ATS validation using abstract rubric instead of text extraction simulation
+  - Recommending keywords without real evidence
+  - Generating resume changes before user responds to discovery prompts
+  - Generic discovery prompts not anchored to specific employers
+  - Scoring domain gap without checking candidate_profile.domain_adjacency_map
+  - Treating inventory as complete record of candidate experience
+
+metrics:
+  score_accuracy:
+    description: Correlation between match score and eventual interview conversion
+  ats_pass_rate:
+    description: Percentage of applications passing ATS validation on first pass
+  keyword_coverage:
+    description: Average % of top 20 JD keywords covered in tailored resume
+  achievement_gap_discovery_rate:
+    description: New achievements added to inventory per application run
+  domain_bridge_success_rate:
+    description: >
+      % of initial domain misses resolved after prior_employer_sweep.
+      Target >50% — low rate signals inventory needs enrichment.
+
+idempotent: true
+compatible_with:
+  RESUME_PARSE: ">=1.0"
+  JD_ANALYZE: ">=1.0"
+  APPLICATION_STRATEGY: ">=1.0"

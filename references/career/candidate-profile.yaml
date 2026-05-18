@@ -1,0 +1,101 @@
+# references/career/candidate-profile.yaml
+# Candidate Profile — context directive for career agent skills
+# READ BEFORE EVALUATE_ALIGNMENT Section D
+#
+# PURPOSE:
+# This file holds candidate-specific knowledge that the generic career skills
+# cannot contain. It grows with every application run. The evaluate-alignment
+# skill reads this before generating discovery prompts — it tells the agent
+# WHERE to look, not just WHAT to look for.
+#
+# MAINTENANCE:
+# - After every run: append new high_yield_categories findings
+# - After every run: update domain_adjacency_map if new domain evidence surfaces
+# - After every run: log resolved gaps under run_history
+# - Never delete entries — this is the institutional memory of your job search
+#
+# SCHEMA:
+# high_yield_categories: patterns confirmed to surface hidden achievements
+# domain_adjacency_map: non-obvious domain connections discovered across career
+# employer_context: per-employer notes on what to probe
+# run_history: what each application run discovered
+
+meta:
+  owner: "[YOUR NAME]"
+  version: 1.0
+  last_updated: "[YYYY-MM-DD]"
+  seeded_from: "[e.g. 'First application run — to be populated']"
+  note: >
+    Start empty. Each application run will surface hidden achievements and
+    domain connections. Append findings here so the next run is smarter.
+    The richer this file, the better Section D discovery prompts become.
+
+# ── HIGH-YIELD DISCOVERY CATEGORIES ──────────────────────────────────────────
+# These are categories confirmed to surface hidden achievements in your career
+# history. Ordered by discovery frequency (most reliable first).
+# When EVALUATE_ALIGNMENT runs Section D, check these against EVERY employer.
+#
+# Start empty. Add entries as runs surface them.
+
+high_yield_categories: []
+
+# Example shape (uncomment and adapt after your first run):
+#  - id: HY-001
+#    category: "[short category name — e.g. 'Product collateral ownership']"
+#    confirmed_employers:
+#      - "[employer name]"
+#    probe_question: "[exact question to ask yourself before declaring a gap]"
+#    why_undersold: >
+#      [why this category tends to be missing from your resume — pattern, not
+#      one-off explanation]
+#    inventory_entries_surfaced:
+#      - ACH-XXX
+
+# ── DOMAIN ADJACENCY MAP ─────────────────────────────────────────────────────
+# Non-obvious connections between your background and other domains.
+# When EVALUATE_ALIGNMENT scores a domain match below 70%, check here before
+# declaring a miss.
+
+domain_adjacency_map: []
+
+# Example shape:
+#  - source_domain: "[domain you've worked in]"
+#    adjacent_domain: "[domain a JD might call for]"
+#    evidence: >
+#      [why the source domain is real exposure to the adjacent domain]
+#    confirmed_in_runs:
+#      - "[run id, e.g. RUN-002]"
+
+# ── PER-EMPLOYER CONTEXT ─────────────────────────────────────────────────────
+# Notes on what to probe at each employer when discovering hidden achievements.
+# Particularly valuable for long-tenure employers where the base resume
+# compresses many years into a few bullets.
+
+employer_context: []
+
+# Example shape:
+#  - employer: "[company name]"
+#    tenure_years: 0
+#    surface_area_warning: >
+#      [if applicable: why this employer's bullets are likely missing depth]
+#    probe_first:
+#      - "[specific area to ask about]"
+
+# ── RUN HISTORY ──────────────────────────────────────────────────────────────
+# Append after every application run. The agent reads recent entries to learn
+# from prior discoveries.
+
+run_history: []
+
+# Example shape:
+#  - run_id: RUN-001
+#    date: "[YYYY-MM-DD]"
+#    company: "[company applied to]"
+#    role: "[role title]"
+#    outcome: "[applied | declined | callback | offer]"
+#    new_achievements_surfaced:
+#      - ACH-XXX
+#    new_categories_added:
+#      - HY-XXX
+#    lessons:
+#      - "[short lesson learned]"

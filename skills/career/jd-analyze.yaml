@@ -1,0 +1,107 @@
+name: JD_ANALYZE
+category: career
+
+purpose: >
+  Decompose a job description into structured requirements, explicit and implicit signals,
+  ATS keyword targets, and a confidence score on JD quality. Produces the structured
+  foundation all downstream skills build on.
+
+extends: null
+requires: {}
+
+inputs:
+  job_description:
+    type: string
+    required: true
+    description: Full text of the job description (or URL if web search available)
+  company_name:
+    type: string
+    required: true
+    description: Hiring company name for context
+
+outputs:
+  structured_jd:
+    type: object
+    description: >
+      Exact job title, seniority level, reporting structure, required and preferred
+      hard skills, soft skills, tools/platforms, leadership expectations, implied
+      business outcomes, compensation signals
+  prioritized_requirements:
+    type: object
+    description: >
+      Requirements bucketed as must-have (deal-breaker), important (strongly weighted),
+      and nice-to-have (tiebreaker)
+  ats_keywords:
+    type: list
+    description: Top 20 ATS keywords extracted verbatim from JD — exact phrasing preserved
+  role_signal_decoding:
+    type: object
+    description: >
+      Implicit expectations behind common phrases, culture/work-style indicators,
+      red flags or concerns for candidate fit
+  jd_confidence_score:
+    type: number
+    description: >
+      Score 0.0–1.0 reflecting JD quality and completeness. Low score indicates
+      vague JD — flag for user before proceeding. (v3.1 addition)
+
+interface:
+  consumes:
+    - job_description
+    - company_name
+  produces:
+    - structured_jd
+    - prioritized_requirements
+    - ats_keywords
+    - role_signal_decoding
+    - jd_confidence_score
+
+guardrails:
+  - Extract exact phrasing for ATS keywords — do not paraphrase JD language
+  - Separate stated requirements from inferred requirements and label each
+  - Do not filter or de-prioritize requirements based on assumptions about the candidate
+  - If JD confidence score is below 0.5, flag for user review before proceeding
+  - Include red flags — do not sanitize concerns about the role
+
+execution:
+  agent: any
+  instructions: >
+    Decompose the full job description into structured requirements. Preserve exact
+    keyword phrasing for ATS purposes — paraphrasing kills ATS matching. Decode
+    implicit signals in standard phrases. Score JD completeness honestly.
+    Flag weak or vague JDs before the pipeline proceeds.
+  temperature: 0.3
+  frequency: once-per-application
+  critical_path: true
+
+quality_checks:
+  - ATS keywords use exact JD phrasing — no paraphrase
+  - Requirements labeled as stated vs. inferred
+  - Red flags and concerns surfaced — not filtered
+  - JD confidence score present and reasoned
+  - Role signal decoding covers implicit expectations
+
+failure_modes:
+  - Paraphrasing JD keywords instead of extracting exact phrasing
+  - Filtering requirements based on assumptions about the candidate
+  - Missing red flags or soft signal decoding
+  - Skipping JD confidence score
+
+metrics:
+  keyword_precision:
+    description: Percentage of keywords matching exact JD phrasing
+  signal_coverage:
+    description: Implicit signals decoded vs. total detected
+  jd_confidence_score:
+    description: Composite quality score for the job description
+
+pipeline:
+  next_skill: APPLICATION_STRATEGY
+  context_label: JD_Analysis
+
+idempotent: true
+compatible_with: {}
+
+version: 1.0
+status: active
+owner: career-agent

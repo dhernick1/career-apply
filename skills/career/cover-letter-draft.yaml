@@ -1,0 +1,140 @@
+name: COVER_LETTER_DRAFT
+category: career
+
+purpose: >
+  Produce a cover letter that sounds like the candidate wrote it — not like AI generated it.
+  Tight, confident, specific, story-driven. Uses few-shot voice matching from actual writing
+  samples, not descriptive rules. LLMs need concrete examples to match voice reliably.
+
+extends: null
+requires:
+  APPLICATION_STRATEGY: ">=1.0"
+  COMPETITIVE_POSITION: ">=1.0"
+  JD_ANALYZE: ">=1.0"
+  RESUME_TAILOR: ">=1.0"
+
+inputs:
+  narrative_strategy:
+    type: object
+    required: true
+    description: Positioning thesis from APPLICATION_STRATEGY
+  differentiation:
+    type: object
+    required: true
+    description: Cover letter hooks from COMPETITIVE_POSITION
+  company_research:
+    type: object
+    required: false
+    description: Company context from COMPANY_RESEARCH (may be degraded)
+  jd_analysis:
+    type: object
+    required: true
+    description: Role requirements from JD_ANALYZE
+  tailored_achievements:
+    type: object
+    required: true
+    description: Which achievements are being emphasized from RESUME_TAILOR
+  voice_profile:
+    type: object
+    required: true
+    description: >
+      Few-shot writing samples from references/career/voice-profile.yaml.
+      Must contain 3-5 actual writing samples. Descriptive attributes alone insufficient.
+
+outputs:
+  cover_letter:
+    type: string
+    description: Cover letter draft under 250 words (unless specified otherwise)
+  structural_breakdown:
+    type: object
+    description: >
+      Hook (connects candidate to company/role specifically), proof points (2-3
+      achievements demonstrating fit — not resume repetition), differentiation
+      (what makes this candidate specifically valuable), close (clear, confident,
+      forward-looking)
+  voice_match_assessment:
+    type: string
+    description: How well the draft matches the voice profile examples
+  avoided_phrases:
+    type: list
+    description: Words/phrases explicitly avoided and why
+  channel_variants:
+    type: object
+    description: Alternative versions for email vs. form vs. portal submission
+  degradation_notice:
+    type: string
+    required: false
+    description: Present only if company research was degraded — labels JD-only context
+
+interface:
+  consumes:
+    - narrative_strategy
+    - differentiation
+    - company_research
+    - jd_analysis
+    - tailored_achievements
+    - voice_profile
+  produces:
+    - cover_letter
+    - structural_breakdown
+    - voice_match_assessment
+    - avoided_phrases
+    - channel_variants
+    - degradation_notice
+
+guardrails:
+  - Mirror syntactic structure and rhythm of voice profile writing samples — not just vocabulary
+  - Do not repeat the resume — cover letter adds to it, doesn't summarize it
+  - Connect achievements to this specific role and company
+  - Keep scannable — 30 seconds maximum reading time
+  - Sound confident and direct — not needy, not over-eager
+  - If voice samples are insufficient, flag and request more before finalizing
+  - If company research degraded, label the output with degradation_notice
+  - Do not use generic phrases ("results-driven professional", "passionate about X")
+
+execution:
+  agent: any
+  instructions: >
+    Read the voice profile writing samples carefully. Mirror their syntactic structure —
+    sentence length patterns, rhythm, vocabulary range, opener style. Do not describe
+    the voice; demonstrate it. Write a cover letter that uses the narrative angle from
+    APPLICATION_STRATEGY, the specific differentiation hooks from COMPETITIVE_POSITION,
+    and company-specific references from COMPANY_RESEARCH. If research degraded, proceed
+    with JD-only context and label the output. Keep it under 250 words.
+  temperature: 0.6
+  frequency: once-per-application
+  critical_path: false
+
+quality_checks:
+  - Syntactic structure matches voice profile examples
+  - Letter under 250 words (or specified limit)
+  - No resume repetition — cover letter adds new proof
+  - Company-specific hook present (or degradation notice if research failed)
+  - No generic phrases detected
+  - Voice match assessment present and specific
+
+failure_modes:
+  - Writing in generic AI voice instead of matching writing samples
+  - Repeating resume content rather than adding to it
+  - Missing company-specific references without degradation notice
+  - Exceeding word count or losing scannability
+  - Missing voice match assessment
+
+metrics:
+  voice_match_score:
+    description: Qualitative score for how closely the draft matches the writing samples
+  personalization_depth:
+    description: Number of company-specific references in the letter
+  word_count:
+    description: Length relative to 250-word target
+
+idempotent: true
+compatible_with:
+  APPLICATION_STRATEGY: ">=1.0"
+  COMPETITIVE_POSITION: ">=1.0"
+  JD_ANALYZE: ">=1.0"
+  RESUME_TAILOR: ">=1.0"
+
+version: 1.0
+status: active
+owner: career-agent

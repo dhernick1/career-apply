@@ -1,0 +1,146 @@
+name: APPLICATION_PACKAGE
+category: career
+
+purpose: >
+  Assemble all outputs into submission-ready formats. Final quality gate including
+  ATS re-validation and LinkedIn consistency check. No package ships without
+  passing ATS text extraction validation.
+
+extends: null
+requires:
+  RESUME_TAILOR: ">=1.0"
+  COVER_LETTER_DRAFT: ">=1.0"
+  RESUME_PARSE: ">=1.0"
+
+inputs:
+  tailored_resume:
+    type: object
+    required: true
+    description: Final tailored resume content from RESUME_TAILOR
+  cover_letter:
+    type: string
+    required: true
+    description: Final cover letter from COVER_LETTER_DRAFT
+  base_resume_template:
+    type: string
+    required: true
+    description: Formatting reference for final document assembly
+  linkedin_snapshot:
+    type: object
+    required: true
+    description: Current LinkedIn profile from references/career/linkedin-profile.yaml
+  pii_token_map:
+    type: object
+    required: true
+    description: PII token map from RESUME_PARSE — for re-injection at final stage
+  application_channel:
+    type: string
+    required: true
+    description: portal | email | referral — determines output format requirements
+
+outputs:
+  resume_docx:
+    type: string
+    description: ATS-optimized .docx (simple formatting, standard headings, no tables/columns)
+  resume_pdf:
+    type: string
+    description: Human-readable .pdf (clean typography, professional layout)
+  cover_letter_plain:
+    type: string
+    description: Plain text cover letter for paste-into-form fields
+  cover_letter_formatted:
+    type: string
+    description: Formatted cover letter for email or attachment
+  ats_revalidation:
+    type: object
+    description: >
+      Final ATS text extraction test on assembled .docx. Verifies: all keywords
+      survive extraction, chronological order preserved, contact info extractable,
+      section headings parse correctly. Result: PASS or FAIL with specific failure points.
+  linkedin_consistency_report:
+    type: object
+    description: >
+      Comparison of tailored resume narrative vs. LinkedIn profile snapshot. Flags
+      major deviations (different titles, different emphasis, skills on resume absent
+      from LinkedIn). Outputs list of potential interview questions about discrepancies.
+      Recommendations for LinkedIn updates (user's decision, not automatic).
+  submission_checklist:
+    type: object
+    description: >
+      File naming, file size, contact info verified (PII re-injected correctly),
+      link verification (portfolio, LinkedIn, GitHub)
+  interview_prep:
+    type: object
+    description: >
+      Key talking points for phone screen, role-specific questions to ask interviewer,
+      company-specific questions from research, follow-up timing recommendation
+
+interface:
+  consumes:
+    - tailored_resume
+    - cover_letter
+    - base_resume_template
+    - linkedin_snapshot
+    - pii_token_map
+    - application_channel
+  produces:
+    - resume_docx
+    - resume_pdf
+    - cover_letter_plain
+    - cover_letter_formatted
+    - ats_revalidation
+    - linkedin_consistency_report
+    - submission_checklist
+    - interview_prep
+
+guardrails:
+  - ATS re-validation must pass before marking package as submission-ready
+  - All PII re-injected from token map — verify completeness before output
+  - No tracked changes or comments in final documents
+  - Content consistency between .docx and .pdf versions must be verified
+  - LinkedIn consistency report is informational — do not auto-update LinkedIn
+
+execution:
+  agent: any
+  instructions: >
+    Assemble all outputs into final submission formats. Re-inject PII from the token
+    map at this stage only. Run ATS re-validation by simulating text extraction from
+    the final .docx — if keywords are lost in the final document, flag specific fixes
+    before marking submission-ready. Compare tailored resume against LinkedIn snapshot
+    and flag deviations so the candidate can prepare for interviewer questions. Produce
+    interview prep notes from the research and alignment analysis.
+  temperature: 0.2
+  frequency: once-per-application
+  critical_path: false
+
+quality_checks:
+  - ATS re-validation complete and result present (PASS/FAIL)
+  - PII re-injected from token map — no [USER_X] tokens in final output
+  - LinkedIn consistency report present
+  - Submission checklist complete
+  - Interview prep notes specific to this role and company
+
+failure_modes:
+  - Shipping package before ATS re-validation passes
+  - Leaving PII tokens in final documents
+  - Missing LinkedIn consistency check
+  - Generic interview prep not tailored to this application
+  - Content inconsistency between .docx and .pdf versions
+
+metrics:
+  ats_revalidation_pass_rate:
+    description: Percentage of packages passing ATS revalidation on first assembly
+  linkedin_deviation_count:
+    description: Average number of flagged deviations per application
+  pii_injection_accuracy:
+    description: Percentage of PII tokens successfully replaced
+
+idempotent: true
+compatible_with:
+  RESUME_TAILOR: ">=1.0"
+  COVER_LETTER_DRAFT: ">=1.0"
+  RESUME_PARSE: ">=1.0"
+
+version: 1.0
+status: active
+owner: career-agent

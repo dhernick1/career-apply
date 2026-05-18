@@ -1,0 +1,117 @@
+name: COMPETITIVE_POSITION
+category: career
+
+purpose: >
+  Differentiate the application from the typical applicant pool. "Here's why I'm not
+  just qualified, but specifically better positioned" is the message that gets callbacks.
+  Evidence-based differentiation only — no spin.
+
+extends: null
+requires:
+  JD_ANALYZE: ">=1.0"
+  EVALUATE_ALIGNMENT: ">=1.0"
+  APPLICATION_STRATEGY: ">=1.0"
+  RESUME_PARSE: ">=1.0"
+
+inputs:
+  jd_analysis:
+    type: object
+    required: true
+    description: Output from JD_ANALYZE
+  company_research:
+    type: object
+    required: false
+    description: Output from COMPANY_RESEARCH (may be degraded or absent)
+  alignment_analysis:
+    type: object
+    required: true
+    description: Output from EVALUATE_ALIGNMENT
+  narrative_strategy:
+    type: object
+    required: true
+    description: Positioning thesis from APPLICATION_STRATEGY
+  structured_resume:
+    type: object
+    required: true
+    description: Structured resume + achievement inventory from RESUME_PARSE
+
+outputs:
+  typical_applicant_profile:
+    type: object
+    description: >
+      What background most applicants likely have for this role. Common strengths
+      and gaps in the applicant pool. Based on JD signals and market knowledge.
+  differentiation_angles:
+    type: list
+    description: >
+      Where the candidate's background is atypical in a valuable way. Unique skill
+      combinations rare in the market. Experience that addresses problems typical
+      applicants can't solve.
+  cover_letter_hooks:
+    type: list
+    description: >
+      2-3 specific differentiation angles with evidence. Concrete, story-driven.
+      Ready to use as cover letter proof points.
+  risk_mitigation:
+    type: list
+    description: Genuine weakness areas with mitigation strategies for each
+
+interface:
+  consumes:
+    - jd_analysis
+    - company_research
+    - alignment_analysis
+    - narrative_strategy
+    - structured_resume
+  produces:
+    - typical_applicant_profile
+    - differentiation_angles
+    - cover_letter_hooks
+    - risk_mitigation
+
+guardrails:
+  - Differentiation must be evidence-based — no unsupported claims
+  - Acknowledge genuine weaknesses rather than spinning them
+  - Typical applicant profile based on JD signals — not stereotypes
+  - Cover letter hooks must be specific and usable — no generic praise
+
+execution:
+  agent: any
+  instructions: >
+    Think about who else is applying for this role. Based on the JD requirements and
+    industry context, what does the typical candidate look like? Where does this
+    candidate differ in a valuable way? Identify 2-3 concrete differentiation angles
+    with specific evidence. Acknowledge real gaps honestly — interviewers see through
+    spin, and honest self-awareness is itself a differentiator.
+  temperature: 0.5
+  frequency: once-per-application
+  critical_path: false
+
+quality_checks:
+  - Typical applicant profile is realistic and JD-grounded
+  - Differentiation angles have specific evidence (not generic statements)
+  - Risk areas acknowledged honestly — not spun
+  - Cover letter hooks are specific and usable as-is
+
+failure_modes:
+  - Generic differentiation that any candidate could claim
+  - Ignoring or spinning genuine weakness areas
+  - Cover letter hooks that are vague or untethered to evidence
+  - Typical applicant profile based on stereotypes rather than JD signals
+
+metrics:
+  hook_specificity:
+    description: Qualitative score for concreteness and usability of differentiation hooks
+  evidence_grounding:
+    description: Percentage of differentiation claims backed by specific evidence
+
+idempotent: true
+compatible_with:
+  JD_ANALYZE: ">=1.0"
+  EVALUATE_ALIGNMENT: ">=1.0"
+  APPLICATION_STRATEGY: ">=1.0"
+  RESUME_PARSE: ">=1.0"
+
+version: 1.0
+status: active
+owner: career-agent

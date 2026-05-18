@@ -1,0 +1,122 @@
+name: COMPANY_RESEARCH
+category: career
+
+purpose: >
+  Build company context that informs application strategy and cover letter personalization.
+  A cover letter that only references the JD is detectable. Hiring managers see hundreds.
+  Degrades gracefully if web search fails — pipeline continues with JD-only context.
+
+extends: null
+requires:
+  JD_ANALYZE: ">=1.0"
+
+inputs:
+  company_name:
+    type: string
+    required: true
+  job_title:
+    type: string
+    required: true
+    description: For targeting department/team context
+  jd_analysis:
+    type: object
+    required: true
+    description: Output from JD_ANALYZE
+
+outputs:
+  company_profile:
+    type: object
+    description: >
+      Industry and market position, company size/stage/funding, recent news (last 6
+      months), tech stack signals, culture signals (Glassdoor/LinkedIn), competitive
+      landscape, growth trajectory
+  employee_sentiment:
+    type: object
+    description: >
+      Glassdoor and Indeed ratings data: overall rating (X/5), category breakdowns
+      (Work-Life Balance, Pay & Benefits, Culture & Values, Management), key culture
+      themes (pros and cons), and sourced employee sentiment summary. Omit if
+      unavailable — do not fabricate ratings.
+  department_context:
+    type: object
+    description: >
+      Team size, recent hires, hiring manager (if discoverable), team tech stack
+  cover_letter_hooks:
+    type: list
+    description: >
+      Strategic themes to reference — what the company cares about right now, what
+      problems they're solving with this hire, their self-describing language
+  degradation_status:
+    type: string
+    description: >
+      "full" if research succeeded; "degraded" if web search failed after retries.
+      Downstream skills must check this field.
+
+interface:
+  consumes:
+    - company_name
+    - job_title
+    - jd_analysis
+  produces:
+    - company_profile
+    - employee_sentiment
+    - department_context
+    - cover_letter_hooks
+    - degradation_status
+
+guardrails:
+  - Cite sources for all claims (URL or platform)
+  - Distinguish confirmed facts from reasonable inferences — label each
+  - Flag if company information is sparse, outdated, or unverifiable
+  - Do not include confidential or non-public information
+  - 'If research fails after 3 retries, output degradation_status: "degraded" and proceed'
+
+execution:
+  agent: any
+  instructions: >
+    Research the company using available web search tools. Prioritize: recent news,
+    tech stack signals from engineering blog/GitHub/job postings, culture signals
+    from Glassdoor and LinkedIn, competitive landscape context.
+    Always attempt to retrieve Glassdoor and Indeed ratings: overall score (X/5),
+    category breakdowns (Work-Life Balance, Pay & Benefits, Culture & Values,
+    Management), top culture themes, and a pros/cons summary from employee reviews.
+    Cite the source and approximate date for all ratings. If ratings are unavailable,
+    note it — do not fabricate scores.
+    If web search fails after 3 retries, return degradation_status: "degraded"
+    with JD-only context. Never halt the pipeline on research failure.
+  temperature: 0.4
+  frequency: once-per-application
+  critical_path: false
+  fallback:
+    retries: 3
+    on_failure: degrade
+    degraded_output: '{ "status": "degraded", "context": "JD-only" }'
+
+quality_checks:
+  - All claims cite a source
+  - Inferences labeled as inferences
+  - Degradation status present on every output
+  - Cover letter hooks are specific — not generic praise
+  - Recent news is actually recent (< 6 months)
+
+failure_modes:
+  - Presenting inferred information as confirmed fact
+  - Omitting degradation_status when research fails
+  - Halting pipeline instead of degrading gracefully
+  - Generic company profile with no specific hooks
+
+metrics:
+  source_citation_rate:
+    description: Percentage of claims with a cited source
+  hook_specificity_score:
+    description: Qualitative score for how specific and usable the cover letter hooks are
+  degradation_rate:
+    description: Percentage of applications where research degraded
+
+idempotent: true
+compatible_with:
+  JD_ANALYZE: ">=1.0"
+
+version: 1.1
+status: active
+owner: career-agent

@@ -1,0 +1,71 @@
+# references/career/achievement-inventory.yaml
+# Achievement Inventory — append-only database of verified career accomplishments
+#
+# HOW THIS WORKS:
+# RESUME_TAILOR selects from this inventory — it does not invent.
+# Every achievement here is pre-verified. Every edit to a resume traces back to
+# an entry here. EVALUATE_ALIGNMENT identifies gaps and prompts you to consider
+# whether undocumented experience exists. Those prompts are your cue to add new
+# entries here.
+#
+# SCHEMA:
+# Each entry has:
+#   id, achievement (what you did), impact (measurable outcome),
+#   evidence_strength (strong/partial/implied), tags (categories),
+#   date_range, organization, verified (true/false), notes (context for the agent)
+#
+# MAINTENANCE:
+# - Add entries after every application run (achievement discovery loop)
+# - Never delete entries — they are your source of truth
+# - Set verified: false if you're unsure about a metric — the agent will flag it
+# - Aim for 15+ entries before your first real application run
+
+meta:
+  owner: "[YOUR NAME]"
+  version: 1.0
+  schema_version: "3.1"
+  last_updated: "[YYYY-MM-DD]"
+  total_entries: 0
+  note: >
+    [PLACEHOLDER — short note on how this inventory was seeded
+    (e.g. 'Seeded from base resume on 2026-01-15') and any patterns you've
+    noticed. The career agent reads this for context.]
+
+# Achievement categories used as tags. Add your own:
+# hard_skill, business_outcome, leadership, platform, domain, operations,
+# ai_automation, analytics, product, revenue, cost_reduction, scale.
+
+inventory:
+
+  # Example entry — replace with your own, then delete this comment.
+  - id: ACH-001
+    achievement: >
+      [PLACEHOLDER — what you did. One specific accomplishment, not a
+      responsibility. Action verb first.]
+    impact: >
+      [PLACEHOLDER — measurable outcome. Revenue, %, time, headcount,
+      retention, NPS, etc. If you don't have a number, say so honestly.]
+    evidence_strength: strong   # strong | partial | implied
+    tags:
+      - "[tag]"
+      - "[tag]"
+    date_range: "[YYYY-MM to YYYY-MM, or 'YYYY-MM to present']"
+    organization: "[COMPANY NAME]"
+    verified: true
+    notes: >
+      [PLACEHOLDER — context the agent should know. Where this achievement
+      lives in your career story, who can verify it, edge cases to watch.]
+
+  - id: ACH-002
+    achievement: >
+      [PLACEHOLDER]
+    impact: >
+      [PLACEHOLDER]
+    evidence_strength: strong
+    tags:
+      - "[tag]"
+    date_range: "[YYYY-MM to YYYY-MM]"
+    organization: "[COMPANY]"
+    verified: true
+    notes: >
+      [PLACEHOLDER]

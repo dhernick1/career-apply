@@ -1,0 +1,153 @@
+name: APPLICATION_STRATEGY
+category: career
+
+purpose: >
+  Strategic gate — determines whether to apply, and if yes, defines the narrative angle
+  and positioning thesis. The "think before you write" step that prevents wasted effort
+  on poor-fit roles and ensures strong-fit applications have a coherent story.
+  If No-Go, the pipeline terminates (APPLICATION_LOG still runs).
+
+extends: null
+requires:
+  JD_ANALYZE: ">=1.0"
+  COMPANY_RESEARCH: ">=1.0"
+  RESUME_PARSE: ">=1.0"
+
+inputs:
+  jd_analysis:
+    type: object
+    required: true
+    description: Output from JD_ANALYZE
+  company_research:
+    type: object
+    required: true
+    description: Output from COMPANY_RESEARCH (may be degraded)
+  structured_resume:
+    type: object
+    required: true
+    description: Structured resume + achievement inventory from RESUME_PARSE
+  voice_profile:
+    type: object
+    required: false
+    description: Reference artifact from references/career/voice-profile.yaml
+
+outputs:
+  go_no_go:
+    type: string
+    description: '"go" or "no-go" decision with full rationale'
+  confidence_level:
+    type: string
+    description: strong | viable | stretch (only present on "go" decisions)
+  narrative_strategy:
+    type: object
+    description: >
+      Primary positioning angle, which achievements to emphasize, which skills to
+      foreground vs. background, what to address proactively (transitions, gaps,
+      over/underqualification), tone guidance for this specific company/role
+  application_priority:
+    type: string
+    description: Tier 1 (apply immediately) | Tier 2 (standard effort) | Tier 3 (thin pipeline only)
+  estimated_time:
+    type: string
+    description: >
+      Estimated time investment for this application. Important for usage analytics —
+      engagement duration on strategy review feeds telemetry on where users spend time
+      and how long it takes to return quality results.
+  dealbreakers:
+    type: array
+    description: >
+      Immutable-constraint violations (clearance, mandated credentials, hard years-of-
+      experience floor, zero production exposure to a core technology). Populated only
+      when edge_case_triggered == "genuine_low_fit". Empty otherwise.
+  career_pivot_assessment:
+    type: array
+    description: >
+      2-3 item development plan describing what the candidate would need to build over
+      12-18 months to become a credible applicant for this role next cycle. Populated
+      only when edge_case_triggered == "genuine_low_fit". Turns a rejection into an
+      actionable plan. Each item: { target: string, horizon_months: number }.
+  override_allowed:
+    type: boolean
+    description: >
+      True when the default recommendation is No-Go but the UI should offer a visible-but-
+      diminished override path (ghost posting, genuine low fit). False on clean Go outputs.
+  override_priority:
+    type: string
+    description: >
+      Priority tier forced if the user overrides a No-Go. Always Tier 3. Only meaningful
+      when override_allowed == true.
+  edge_case_triggered:
+    type: string
+    description: >
+      One of: none | vague_jd | ghost_posting | genuine_low_fit. Drives the UI path the
+      Step 3 display component renders and is a primary telemetry signal for gate calibration.
+
+interface:
+  consumes:
+    - jd_analysis
+    - company_research
+    - structured_resume
+    - voice_profile
+  produces:
+    - go_no_go
+    - confidence_level
+    - narrative_strategy
+    - application_priority
+    - estimated_time
+    - dealbreakers
+    - career_pivot_assessment
+    - override_allowed
+    - override_priority
+    - edge_case_triggered
+
+guardrails:
+  - Never recommend applying where candidate must misrepresent experience
+  - Be honest about stretch areas — flag them, do not hide them
+  - Consider both "can I get this job" and "do I want this job" dimensions
+  - No-Go must state specific reasons — vague rejections are not acceptable
+  - If company research degraded, note this in the strategy rationale
+  - Vague JD (jd_confidence_score < 0.5) defaults GO at Tier 3 with uncertainty caveat — never force No-Go on a badly-written post
+  - Ghost posting risk defaults No-Go; user override always remains visible (respects candidate agency)
+  - Genuine low fit (stretch + immutable dealbreakers on a well-written JD) defaults No-Go with dealbreakers list + career_pivot_assessment populated — rejection becomes an actionable development plan
+  - Dealbreakers must be immutable constraints only (clearance, credentials, hard experience floor, zero production exposure) — not soft gaps
+
+execution:
+  agent: any
+  instructions: >
+    Evaluate this application from first principles. Is the fit real or aspirational?
+    Be honest — the worst outcome is applying to a role that generates a rejection,
+    not skipping a poor fit. If the decision is Go, define a clear narrative angle
+    that differentiates the candidate. If No-Go, give specific, actionable reasons.
+  temperature: 0.4
+  frequency: once-per-application
+  critical_path: true
+  gate: true
+
+quality_checks:
+  - Go/No-Go decision is explicit with reasoning
+  - No-Go decisions include specific, actionable reasons
+  - Narrative strategy is specific — not generic
+  - Stretch areas flagged, not hidden
+  - Priority tier is assigned
+
+failure_modes:
+  - Recommending "go" on every role to avoid friction
+  - Vague No-Go without specific reasons
+  - Generic narrative angle not tailored to this company/role
+  - Omitting honest assessment of gap areas
+
+metrics:
+  go_rate:
+    description: Percentage of applications that pass the gate
+  interview_conversion_by_tier:
+    description: Interview rate by Tier 1/2/3 classification — validates gate accuracy
+
+idempotent: true
+compatible_with:
+  JD_ANALYZE: ">=1.0"
+  COMPANY_RESEARCH: ">=1.0"
+  RESUME_PARSE: ">=1.0"
+
+version: 1.2
+status: active
+owner: career-agent

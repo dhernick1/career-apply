@@ -1,0 +1,50 @@
+# references/career/linkedin-profile.yaml
+# LinkedIn Profile — supplemental context for the career agent
+#
+# Update this file whenever you materially update your LinkedIn profile.
+# This file is consumed by career-agent but never modified by it.
+#
+# Replace every [PLACEHOLDER] value before running /career-apply.
+
+profile:
+  headline: "[PLACEHOLDER — your LinkedIn headline, verbatim]"
+  location: "[City, State, Country]"
+  connection_count: "[optional — e.g. '500+']"
+
+about: >
+  [PLACEHOLDER — paste your LinkedIn 'About' section verbatim.
+  The career agent uses this to cross-check tailored resumes for consistency
+  and to flag deviations a recruiter might ask about in screening.]
+
+# Experience entries — keep parallel to base-resume.yaml. Where the LinkedIn
+# wording differs from the resume, that's fine; the agent will flag deviations.
+experience:
+  - title: "[JOB TITLE on LinkedIn]"
+    company: "[COMPANY]"
+    start_date: "[Month Year]"
+    end_date: "[Month Year, or 'Present']"
+    summary: >
+      [LinkedIn description verbatim, or short paraphrase if the LinkedIn entry
+      is long.]
+
+  - title: "[NEXT TITLE]"
+    company: "[COMPANY]"
+    start_date: "[Month Year]"
+    end_date: "[Month Year]"
+    summary: >
+      [LinkedIn description.]
+
+# Featured posts, articles, or projects you'd want a recruiter to see.
+# Remove this section if not applicable.
+featured:
+  - type: post
+    title: "[POST TITLE]"
+    url: "[URL]"
+    summary: "[1-sentence description]"
+
+# Recommendations received (optional — paste a few that show range).
+recommendations:
+  - from: "[NAME, TITLE, COMPANY]"
+    relationship: "[reported to you / worked with you / etc.]"
+    text: >
+      [Recommendation text verbatim.]

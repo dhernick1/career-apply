@@ -1,0 +1,82 @@
+# references/career/base-resume.yaml
+# Base Resume — structured form
+#
+# This file is a reference artifact — consumed by career-agent skills but never
+# modified by them. Update only when the resume materially changes.
+#
+# Replace every [PLACEHOLDER] value with your real content before running /career-apply.
+
+contact:
+  name: "[YOUR FULL NAME]"
+  email: "[YOUR EMAIL]"
+  phone: "[YOUR PHONE]"
+  location: "[CITY, STATE]"
+  linkedin: "[linkedin.com/in/your-handle]"
+  github: "[github.com/your-handle — optional, remove if not applicable]"
+
+summary: >
+  [PLACEHOLDER — 2-3 sentence professional summary. State role focus, years of
+  experience, and 1-2 signature outcomes. Plain English, no buzzwords.]
+
+headline: "[PLACEHOLDER — one-line headline, e.g. 'Senior Product Leader - SaaS, APIs, AI']"
+
+# Standalone achievements (awards, hackathons, side projects) that don't fit
+# under a specific employer.
+achievements_standalone:
+  - organization: "[ORG NAME]"
+    location: "[CITY, STATE]"
+    title: "[ACHIEVEMENT TITLE — e.g. '1st Place — AI Hackathon']"
+    date: "[Month Year]"
+    description: >
+      [What you did and why it matters. 1-3 sentences.]
+
+# Work history — most recent first. Repeat the block for each role.
+experience:
+  - title: "[JOB TITLE]"
+    company: "[COMPANY NAME]"
+    location: "[CITY, STATE]"
+    start_date: "[Month Year]"
+    end_date: "[Month Year, or 'Present']"
+    context: >
+      [Optional 1-2 sentence framing of the role — scope, mandate, business context.
+      Remove this field if not needed.]
+    achievements:
+      - >
+        [PLACEHOLDER — bullet 1. Lead with the outcome, then the action. Quantify
+        where possible (revenue, %, time, headcount).]
+      - >
+        [PLACEHOLDER — bullet 2.]
+      - >
+        [PLACEHOLDER — bullet 3.]
+
+  - title: "[NEXT JOB TITLE]"
+    company: "[COMPANY NAME]"
+    location: "[CITY, STATE]"
+    start_date: "[Month Year]"
+    end_date: "[Month Year]"
+    achievements:
+      - >
+        [PLACEHOLDER bullet.]
+
+# Education
+education:
+  - degree: "[DEGREE — e.g. B.S. Computer Science]"
+    institution: "[SCHOOL NAME]"
+    location: "[CITY, STATE]"
+    graduation_year: "[YYYY]"
+
+# Certifications (optional — remove section if none)
+certifications:
+  - name: "[CERT NAME]"
+    issuer: "[ISSUING BODY]"
+    date: "[Month Year]"
+
+# Skills — keep grouped by category. The career agent uses these for keyword
+# matching but does not invent skills you don't list here.
+skills:
+  technical:
+    - "[skill]"
+  leadership:
+    - "[skill]"
+  domain:
+    - "[skill]"

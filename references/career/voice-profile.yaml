@@ -1,0 +1,73 @@
+# references/career/voice-profile.yaml
+# Writing Voice Profile — used by COVER_LETTER_DRAFT for few-shot voice matching
+#
+# HOW THIS WORKS:
+# COVER_LETTER_DRAFT reads these samples and mirrors their syntactic structure.
+# Not vocabulary lists. Not rules. Actual examples.
+# The agent matches your sentence length patterns, opener style, rhythm, and
+# vocabulary range.
+#
+# MAINTENANCE:
+# - Add samples whenever you write something you're proud of
+# - Mark samples by channel (linkedin, email, slack, cover-letter, blog, docs)
+# - Minimum 3 samples required for COVER_LETTER_DRAFT to run
+# - 5-7 samples is optimal; more than 10 adds noise
+
+meta:
+  owner: "[YOUR NAME]"
+  minimum_samples_required: 3
+  current_sample_count: 0
+  version: 1.0
+  last_updated: "[YYYY-MM-DD]"
+  notes: >
+    [PLACEHOLDER — short note on where samples were sourced and any voice
+    decisions you want enforced (e.g. 'avoid em-dashes — reads as AI-generated').]
+
+# Voice attributes — descriptive only. The samples below are what actually
+# drive the matching.
+voice_attributes:
+  tone: "[e.g. direct, confident, unsentimental]"
+  sentence_style: "[e.g. short to medium — punchy openers, no filler]"
+  vocabulary: "[e.g. plain business English — avoids jargon except where precise]"
+  perspective: first-person, active voice
+  avoids:
+    - "results-driven professional"
+    - "passionate about"
+    - "leverage" (as a verb)
+    - "synergies"
+    - "fast-paced environment" (as self-description)
+    - throat-clearing openers ("I am writing to express...")
+    - "[add your own]"
+
+samples:
+
+  - id: sample-001
+    channel: "[linkedin | email | slack | cover-letter | blog | docs]"
+    source: "[where this came from — e.g. 'LinkedIn post 2025-12-04']"
+    date: "[YYYY-MM-DD]"
+    text: >
+      [PLACEHOLDER — paste a real sample of your writing verbatim.
+      2-5 sentences is ideal. The agent will mirror this structure.]
+    voice_notes: >
+      [PLACEHOLDER — what makes this distinctively your voice? Sentence length?
+      Opener style? Use of repetition? Naming the agent's job is to copy these
+      patterns, not paraphrase them.]
+
+  - id: sample-002
+    channel: "[channel]"
+    source: "[source]"
+    date: "[YYYY-MM-DD]"
+    text: >
+      [PLACEHOLDER — second sample.]
+    voice_notes: >
+      [PLACEHOLDER]
+
+  - id: sample-003
+    channel: "[channel]"
+    source: "[source]"
+    date: "[YYYY-MM-DD]"
+    text: >
+      [PLACEHOLDER — third sample. Minimum 3 required before the agent will
+      generate a cover letter.]
+    voice_notes: >
+      [PLACEHOLDER]

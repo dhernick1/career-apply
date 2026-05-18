@@ -1,0 +1,31 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code local state
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.claude/worktrees/
+
+# Node (if anyone adds tooling later)
+node_modules/
+npm-debug.log*
+
+# Python (if anyone adds tooling later)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local test runs that contain real application data — keep template dir but
+# ignore the actual generated files. Remove the next line if you want to commit
+# your run history.
+docs/test-runs/*.md
+!docs/test-runs/.gitkeep

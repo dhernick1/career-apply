@@ -1,0 +1,95 @@
+name: RESUME_PARSE
+category: career
+
+purpose: >
+  Extract and structure the full achievement inventory from the base resume and any
+  supplementary career materials. Tokenize PII for downstream anonymization. Run
+  once at setup; re-run only when resume materially changes.
+
+extends: null
+requires: {}
+
+inputs:
+  resume_document:
+    type: string
+    required: true
+    description: Resume content (PDF, DOCX, or plain text)
+  supplementary_materials:
+    type: list
+    required: false
+    description: LinkedIn export, performance reviews, project summaries
+
+outputs:
+  structured_resume:
+    type: object
+    description: >
+      Contact info (tokenized), professional summary, roles with dates/achievements,
+      skills inventory, education, credentials, quantified achievements, industry tags,
+      leadership scope indicators
+  achievement_inventory:
+    type: list
+    description: >
+      Full universe of accomplishments — richer than any single resume version.
+      Each entry tagged: hard_skill, business_outcome, leadership, platform,
+      domain, operations, ai_automation, analytics
+  pii_token_map:
+    type: object
+    description: >
+      Maps [USER_PHONE], [USER_EMAIL], [USER_ADDRESS] to real values.
+      Stored separately — never passed to downstream LLM skills.
+
+interface:
+  consumes:
+    - resume_document
+    - supplementary_materials
+  produces:
+    - structured_resume
+    - achievement_inventory
+    - pii_token_map
+
+guardrails:
+  - Extract only — never infer, embellish, or add unsupported claims
+  - Flag ambiguous items for user clarification before proceeding
+  - Distinguish between explicitly stated and reasonably implied skills; label each
+  - PII must be tokenized before any data leaves this skill
+  - Do not pass the PII token map to any downstream LLM skill
+
+execution:
+  agent: any
+  instructions: >
+    Parse the resume and supplementary materials into a structured data format.
+    Tokenize all PII fields (phone, email, address) using placeholder tokens.
+    Build a comprehensive achievement inventory — include everything, not just
+    what fits on the current resume. Tag each achievement by category.
+    Flag any items requiring user clarification rather than making assumptions.
+  temperature: 0.2
+  frequency: one-time-setup
+  critical_path: false
+
+quality_checks:
+  - All achievements tagged with at least one category
+  - PII tokenized before output is returned
+  - Ambiguous items flagged — not silently assumed
+  - Achievement inventory is more comprehensive than the resume itself
+  - Every achievement has verifiable evidence (not inferred)
+
+failure_modes:
+  - Inventing or inferring achievements not present in source material
+  - Missing PII tokenization before passing to downstream skills
+  - Treating the resume as complete — missing achievements from supplementary materials
+  - Failing to flag ambiguous or unclear items
+
+metrics:
+  achievement_coverage:
+    description: Number of achievements captured vs. estimated career timeline
+  pii_tokenization_rate:
+    description: Percentage of PII fields correctly tokenized on output
+  ambiguity_flag_rate:
+    description: Number of items flagged for user review
+
+idempotent: true
+compatible_with: {}
+
+version: 1.0
+status: active
+owner: career-agent

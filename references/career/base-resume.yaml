@@ -3,80 +3,322 @@
 #
 # This file is a reference artifact — consumed by career-agent skills but never
 # modified by them. Update only when the resume materially changes.
-#
-# Replace every [PLACEHOLDER] value with your real content before running /career-apply.
 
 contact:
-  name: "[YOUR FULL NAME]"
-  email: "[YOUR EMAIL]"
-  phone: "[YOUR PHONE]"
-  location: "[CITY, STATE]"
-  linkedin: "[linkedin.com/in/your-handle]"
-  github: "[github.com/your-handle — optional, remove if not applicable]"
+  name: "Donald T. Hernick"
+  email: "dhernick1@comcast.net"
+  phone: "(678) 425-5218"
+  location: "Snellville, GA"
+  linkedin: ""
+  github: ""
 
 summary: >
-  [PLACEHOLDER — 2-3 sentence professional summary. State role focus, years of
-  experience, and 1-2 signature outcomes. Plain English, no buzzwords.]
+  Senior Sales & Marketing Leadership Professional with 35+ years in Consumer-Packaged Goods,
+  Consumer Healthcare, and Fresh Foods industries across B2C and B2B segments in domestic and
+  international markets. Proven record building high-performance teams, delivering fact-based
+  commercial strategies, and translating syndicated and primary research into competitive
+  market advantage.
 
-headline: "[PLACEHOLDER — one-line headline, e.g. 'Senior Product Leader - SaaS, APIs, AI']"
+headline: "Senior Sales & Marketing Leadership — CPG, Consumer Healthcare & Fresh Foods"
 
-# Standalone achievements (awards, hackathons, side projects) that don't fit
-# under a specific employer.
-achievements_standalone:
-  - organization: "[ORG NAME]"
-    location: "[CITY, STATE]"
-    title: "[ACHIEVEMENT TITLE — e.g. '1st Place — AI Hackathon']"
-    date: "[Month Year]"
-    description: >
-      [What you did and why it matters. 1-3 sentences.]
+achievements_standalone: []
 
-# Work history — most recent first. Repeat the block for each role.
 experience:
-  - title: "[JOB TITLE]"
-    company: "[COMPANY NAME]"
-    location: "[CITY, STATE]"
-    start_date: "[Month Year]"
-    end_date: "[Month Year, or 'Present']"
+
+  - title: "Senior Consultant"
+    company: "TELUS Agriculture & Consumer Goods"
+    location: "Atlanta, GA"
+    start_date: "2017"
+    end_date: "2026"
     context: >
-      [Optional 1-2 sentence framing of the role — scope, mandate, business context.
-      Remove this field if not needed.]
+      Global communications and information technology company; RGM Analytics division,
+      formerly TABS Analytics. Managed retained consumer goods clients across Health and Beauty
+      Care, Household Products, Food, Nutritional, and Consumer Electronics in North American,
+      EU, and UK markets.
     achievements:
       - >
-        [PLACEHOLDER — bullet 1. Lead with the outcome, then the action. Quantify
-        where possible (revenue, %, time, headcount).]
+        Provided simplified analytics and competitive-advantage insights to multiple retained
+        clients spanning Health and Beauty Care, Household Products, Food, Nutritional, and
+        Consumer Electronics categories across North America, EU, and UK.
       - >
-        [PLACEHOLDER — bullet 2.]
-      - >
-        [PLACEHOLDER — bullet 3.]
+        Identified incremental market opportunities and competitive targeting strategies;
+        delivered actionable information consistently, building deep client relationships that
+        drove repeat renewals and new business as clients advanced in their careers.
 
-  - title: "[NEXT JOB TITLE]"
-    company: "[COMPANY NAME]"
-    location: "[CITY, STATE]"
-    start_date: "[Month Year]"
-    end_date: "[Month Year]"
+  - title: "North American Consumer Insight Leader"
+    company: "CSM Bakery Solutions"
+    location: "Tucker, GA"
+    start_date: "October 2015"
+    end_date: "July 2016"
+    context: >
+      CSM: global food company with over $3B in sales, owned by Rhone Capital (private equity).
     achievements:
       - >
-        [PLACEHOLDER bullet.]
+        Designed and developed a professionalized insight management portal for availability,
+        delivery, and effectiveness of marketing insights across the North American business.
+      - >
+        Managed North American primary and syndicated research projects and supplier relationships
+        to support North American sales and product portfolios.
 
-# Education
+  - title: "Global Director of Insight Development"
+    company: "CSM Bakery Solutions"
+    location: "Tucker, GA"
+    start_date: "June 2014"
+    end_date: "September 2015"
+    achievements:
+      - >
+        Directed a global multinational market research team developing fresh bakery insights
+        with primary focus on North America and EU; covered consumer, B2B, and sensory research.
+      - >
+        Managed a vast portfolio of global and regional primary and syndicated data resources
+        supporting Modern Trade, Foodservice, Artisan, and Industrial channels; accountable for
+        a multimillion-dollar global research budget.
+      - >
+        Globally centralized market research activity, significantly decreasing costs while
+        increasing utilization and efficiency by prioritizing and delivering insights to an
+        international sales and product marketing team.
+      - >
+        Collaborated with global, North American, and European cross-functional teams to support
+        business and training objectives and address their research needs.
+
+  - title: "Director of Marketing, Consumer Insight & Strategic Development"
+    company: "CSM Bakery Solutions"
+    location: "Tucker, GA"
+    start_date: "November 2009"
+    end_date: "May 2014"
+    achievements:
+      - >
+        Worked closely with executive management, Bain, Boston Consulting Group, and McKinsey
+        on initiatives including market modeling, organizational design/optimization, strategic
+        development, and positioning for the divestiture of CSM.
+      - >
+        Named to the CSM Divestiture Team; earned executive recognition for this contribution.
+      - >
+        Led market research team in retail and foodservice channels, building and directing a
+        full research function and insight portfolio using primary and secondary resources.
+      - >
+        Helped author the Foodservice Full Plate Category Management Best Practice for the
+        Foodservice Advisory Board.
+      - >
+        Created and directed a revolutionary approach to Central Location Testing, saving over
+        $600,000 per year.
+      - >
+        Spearheaded CSM Strategy Development 2015 Channel Blurring Project; worked with a
+        US/EU team and McKinsey Consulting to map cross-channel expansion opportunities.
+
+  - title: "Director of Marketing, In-Store Bakery"
+    company: "CSM Bakery Solutions"
+    location: "Tucker, GA"
+    start_date: "June 2005"
+    end_date: "October 2009"
+    achievements:
+      - >
+        Appointed by the CEO to lead the Global Marketing Team for Bakery Supplies covering
+        North America, EU, Purac, and Sugar divisions.
+      - >
+        Managed a brand portfolio of three major B2B brands with combined annual sales over
+        $500 million.
+      - >
+        Led a three-year strategy development plan working closely with Bain Consulting as the
+        key commercial contact for the first formal long-term product category and channel strategy.
+
+  - title: "Director of Marketing"
+    company: "CSM Bakery Solutions"
+    location: "Tucker, GA"
+    start_date: "November 2003"
+    end_date: "May 2005"
+    achievements:
+      - >
+        Built and led an industry-leading marketing and customer marketing organization;
+        established and chaired the Bakery Supplies North America Marketing Leadership Team.
+      - >
+        Established Category Management in the Fresh Bakery space in the US Grocery channel.
+      - >
+        Marketing team developed promotional and new item support material; managed advertising
+        budget of $300K and annual trade show planning and execution with a $700K budget.
+
+  - title: "National Category Development Manager, Global & US HQ"
+    company: "Bayer Consumer Care"
+    location: "Morristown, NJ"
+    start_date: "August 2001"
+    end_date: "November 2003"
+    context: >
+      Consumer healthcare manufacturer of Bayer, Aleve, One-A-Day, and Alka-Seltzer brands.
+    achievements:
+      - >
+        Developed the National Category Leadership strategy for Nutritional and Upper Respiratory
+        categories; directed the Circana Bayer client service team.
+      - >
+        Accountable for sales training in market research tools and studies.
+      - >
+        Awarded Divisional HQ Sales "Bayer Care Award" for leadership excellence in the
+        syndicated contract process, generating savings of over $2 million per year for three
+        consecutive years.
+      - >
+        Developed and directed the strategy, design, and implementation of the Bayer Category
+        Leadership website.
+
+  - title: "Group Head Customer Marketing, Canada"
+    company: "Bayer Consumer Care"
+    location: "Toronto, ON, Canada"
+    start_date: "July 1999"
+    end_date: "August 2001"
+    achievements:
+      - >
+        Relocated to Canadian HQ as part of an expatriate developmental assignment; directed the
+        Customer Marketing department and led allocation of resources for top-line targets and
+        trade funding.
+      - >
+        Led development and approval of national trade strategies across all Consumer Care
+        channels; guided the sales planning process to ensure alignment with brand marketing goals.
+      - >
+        Redesigned and re-staffed the Customer Marketing department; developed incremental
+        contingency plans enabling the division to surpass sales budget in 2000 by +10% vs.
+        1999, while increasing OPE +344%.
+      - >
+        Assisted the General Manager and Accenture in implementing a complete sales organization
+        restructuring; redefined the sales planning process by incorporating key customer strategies.
+
+  - title: "National Customer Marketing Manager"
+    company: "Bayer Consumer Care"
+    location: "Morristown, NJ"
+    start_date: "July 1997"
+    end_date: "June 1999"
+    achievements:
+      - >
+        Created national brand strategies and led trade and consumer initiatives for One-A-Day
+        Blends and One-A-Day Kids.
+      - >
+        Managed a $17M trade budget supporting $131M in 1998 sales (+128% vs. 1997).
+      - >
+        Key member of the One-A-Day Herbal core team, securing 98% trade acceptance, setting a
+        new speed-to-shelf standard, and exceeding sales targets by 36%.
+      - >
+        Contributed sales, trade, and category expertise to Joint Ventures & Acquisitions;
+        participated in business case development, candidate identification, and leadership
+        presentations.
+      - >
+        Collaborated with global Bayer teams (Germany, Canada, Japan, Argentina, Italy,
+        Australia) on U.S. retail, brand development, and trade strategy.
+
+  - title: "National Account Manager"
+    company: "Playtex Products"
+    location: "Westport, CT"
+    start_date: "July 1995"
+    end_date: "June 1997"
+    context: >
+      Manufacturer of Playtex Tampons, Nurser, Gloves, Banana Boat Suncare, Jhirmack Haircare,
+      Tek, and Woolite (now Edgewell Personal Care).
+    achievements:
+      - >
+        Led headquarters sales calls and new item launches for major drug/grocery accounts
+        (CVS, Rite Aid, Revco, Eckerd, Publix, Wakefern, Pathmark, Winn-Dixie), driving $23M
+        in volume (+8.4%).
+      - >
+        Exceeded quota at 105% in 1996 vs. division's 95%; achieved 107% of quota in 1995 vs.
+        division's 90.6%.
+      - >
+        Served as Infant Feeding Category Captain for Rite Aid, CVS, and Revco (1996).
+
+  - title: "National Sales Merchandising Manager"
+    company: "Playtex Products"
+    location: "Westport, CT"
+    start_date: "January 1993"
+    end_date: "July 1995"
+    achievements:
+      - >
+        Developed strategic sales plans for Jhirmack and Tek brands ($40M volume / $7.2M budget)
+        and created account-specific marketing programs generating $2.7M in incremental volume.
+      - >
+        Co-developed a new consumer support strategy for Jhirmack and Tek.
+
+  - title: "District Sales Manager"
+    company: "Playtex Products"
+    location: "Houston, TX"
+    start_date: "March 1990"
+    end_date: "January 1993"
+    achievements:
+      - >
+        Promoted to manage the Houston, TX district; advanced district ranking from 31st to 1st
+        in the nation within 2 years.
+
+  - title: "Area Sales Manager"
+    company: "Playtex Products"
+    location: "Florida"
+    start_date: "September 1988"
+    end_date: "March 1990"
+    achievements:
+      - >
+        Promoted to lead the North/Central Florida sales team; first entry into sales management.
+
+  - title: "Regional Sales Trainer"
+    company: "Playtex Products"
+    location: "Southeast US"
+    start_date: "May 1987"
+    end_date: "July 1988"
+    achievements:
+      - >
+        Trained over 20 new hires in the Southern Region; managed college recruiting program
+        at the University of Florida.
+
+  - title: "Sales Representative"
+    company: "Playtex Products"
+    location: "Southeast US"
+    start_date: "June 1986"
+    end_date: "May 1987"
+    achievements:
+      - >
+        Earned District Sales Representative of the Year in 1986 for sales excellence.
+
 education:
-  - degree: "[DEGREE — e.g. B.S. Computer Science]"
-    institution: "[SCHOOL NAME]"
-    location: "[CITY, STATE]"
-    graduation_year: "[YYYY]"
+  - degree: "B.S. Business Administration, Marketing"
+    institution: "University of Florida"
+    location: "Gainesville, FL"
+    graduation_year: "1986"
 
-# Certifications (optional — remove section if none)
 certifications:
-  - name: "[CERT NAME]"
-    issuer: "[ISSUING BODY]"
-    date: "[Month Year]"
+  - name: "Stage-Gate Innovation Process"
+    issuer: "Stage-Gate International"
+    date: ""
+  - name: "TPG Training"
+    issuer: "TPG"
+    date: ""
 
-# Skills — keep grouped by category. The career agent uses these for keyword
-# matching but does not invent skills you don't list here.
 skills:
   technical:
-    - "[skill]"
+    - "Nielsen POS data and panel"
+    - "Circana (IRI) POS data and panel"
+    - "Spectra"
+    - "Spire"
+    - "Datassential"
+    - "Technomic"
+    - "Kantar Retail Shopper Insight Panel"
+    - "Qualtrics"
+    - "AI Fluency"
+    - "Category management (FDM, Foodservice)"
+    - "Primary research design and execution"
+    - "Syndicated data analysis"
+    - "Qualitative and quantitative research methods (A&U, Segmentation, Customer Satisfaction, Concept, Price Elasticity, Evolutionary Algorithmic, Omnibus)"
   leadership:
-    - "[skill]"
+    - "Team building and development"
+    - "Cross-functional leadership"
+    - "International / expatriate management"
+    - "Budget management (multimillion-dollar)"
+    - "Strategic planning"
+    - "Organizational design"
+    - "Executive stakeholder engagement"
+    - "Consulting engagement management"
   domain:
-    - "[skill]"
+    - "Consumer Packaged Goods (CPG)"
+    - "Consumer Healthcare"
+    - "Fresh Foods / In-Store Bakery"
+    - "Foodservice"
+    - "B2C and B2B commercial strategy"
+    - "Category management"
+    - "Trade marketing"
+    - "Customer marketing"
+    - "Revenue growth management (RGM)"
+    - "Market research and consumer insights"
+    - "New product launch"
+    - "Shopper marketing"
+    - "International markets (EU, UK, Canada)"

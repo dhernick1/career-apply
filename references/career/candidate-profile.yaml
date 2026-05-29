@@ -21,14 +21,18 @@
 # run_history: what each application run discovered
 
 meta:
-  owner: "[YOUR NAME]"
+  owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "[YYYY-MM-DD]"
-  seeded_from: "[e.g. 'First application run — to be populated']"
+  last_updated: "2026-05-22"
+  seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   note: >
-    Start empty. Each application run will surface hidden achievements and
-    domain connections. Append findings here so the next run is smarter.
-    The richer this file, the better Section D discovery prompts become.
+    35+ year CPG career spanning Playtex, Bayer, CSM Bakery Solutions, and TELUS.
+    Strongest quantified evidence at Bayer (revenue, OPE, award) and Playtex (rankings,
+    quota, volume). CSM tenure is long (13 years) and likely undersells depth -- multiple
+    consulting partnerships (Bain, BCG, McKinsey) and a divestiture are high-value signals
+    that need sharper quantification. TELUS consulting role has strong relationship outcomes
+    but few hard metrics. Discovery should probe CSM and TELUS for cost, revenue, and
+    efficiency figures that did not make the resume.
 
 # ── HIGH-YIELD DISCOVERY CATEGORIES ──────────────────────────────────────────
 # These are categories confirmed to surface hidden achievements in your career
@@ -37,7 +41,71 @@ meta:
 #
 # Start empty. Add entries as runs surface them.
 
-high_yield_categories: []
+high_yield_categories:
+  - id: HY-001
+    category: "Quarterly tracking and brand panel programs"
+    confirmed_employers:
+      - "TELUS Agriculture & Consumer Goods"
+    probe_question: >
+      Did you design, manage, or commission any ongoing tracking study — brand health,
+      awareness, favorability, conversion, NPS, or satisfaction — at this employer?
+    why_undersold: >
+      Tracking studies are recurring operational work that practitioners treat as
+      table stakes. Don ran a full quarterly consumer panel at TELUS with social
+      listening integration that never appeared on his resume until prompted.
+    inventory_entries_surfaced:
+      - ACH-021
+
+  - id: HY-002
+    category: "Cross-functional innovation team membership (VoC/insights representative)"
+    confirmed_employers:
+      - "CSM Bakery Solutions"
+      - "Bayer Consumer Care"
+    probe_question: >
+      At this employer, were you the insights or research representative on any
+      cross-functional product development, innovation, or new product launch team?
+      Did you represent the voice of the consumer or marketplace at any stage of
+      the innovation pipeline?
+    why_undersold: >
+      Don participated as the insights voice on innovation teams at both CSM and
+      Bayer but described this as supporting work rather than a primary achievement.
+      JDs for senior insights roles explicitly require innovation pipeline research
+      support — this experience is directly valuable and was absent from the resume.
+    inventory_entries_surfaced: []
+
+  - id: HY-003
+    category: "Demand planning and new product launch forecasting"
+    confirmed_employers:
+      - "Bayer Consumer Care"
+    probe_question: >
+      At this employer, did you build or contribute to a demand plan or sales forecast
+      for a new product launch — projecting pipeline fill, account-level volume, or
+      in-market consumption? Did you track actual vs. forecast performance post-launch?
+    why_undersold: >
+      Don built a full national demand plan by retail customer for the One-A-Day Herbal
+      launch at Bayer achieving 2% forecast accuracy, with weekly consumption-vs.-supply
+      tracking. This never appeared on the resume because it was treated as routine
+      launch support work, not a standalone analytical achievement. Roles requiring
+      forecasting, commercial planning, or TPM inputs will value this heavily.
+    inventory_entries_surfaced:
+      - ACH-024
+
+  - id: HY-004
+    category: "Trade promotion optimization platform (vendor/supplier side)"
+    confirmed_employers:
+      - "TELUS Agriculture & Consumer Goods"
+    probe_question: >
+      At this employer, did you supply, configure, demonstrate, or support a trade
+      promotion optimization or RGM analytics platform for client use? Did you advise
+      clients on trade spend allocation or promotional effectiveness measurement using
+      a platform or analytical framework?
+    why_undersold: >
+      Don supplied CPG clients with a TPO platform at TELUS and advised on trade spend
+      reallocation — vendor-side TPO experience that never appeared on the resume because
+      it was framed as analytics consulting, not platform work. For roles requiring TPO
+      or RGM experience, this is highly relevant and should always be probed.
+    inventory_entries_surfaced:
+      - ACH-023
 
 # Example shape (uncomment and adapt after your first run):
 #  - id: HY-001
@@ -56,7 +124,38 @@ high_yield_categories: []
 # When EVALUATE_ALIGNMENT scores a domain match below 70%, check here before
 # declaring a miss.
 
-domain_adjacency_map: []
+domain_adjacency_map:
+  - source_domain: "RGM Analytics (consulting/vendor side)"
+    adjacent_domain: "Trade Promotion Optimization (TPO)"
+    evidence: >
+      At TELUS/TABS Analytics, Don supplied a TPO platform to CPG clients and advised on
+      trade spend allocation to highest-return activities. This is vendor-side TPO experience
+      — he understands how TPO systems are designed to drive decisions, not just how to
+      operate them as an end user. Directly relevant to roles requiring TPO methodology,
+      post-event analytics, and lift/ROI measurement.
+    confirmed_in_runs:
+      - RUN-002
+
+  - source_domain: "New Product Launch / Go-to-Market"
+    adjacent_domain: "Demand Planning and Forecasting"
+    evidence: >
+      At Bayer Consumer Care, Don built a national demand plan by retail customer for the
+      One-A-Day Herbal launch, achieving 2% forecast accuracy, and conducted weekly
+      consumption-vs.-supply reviews in market. This is commercial forecasting embedded in
+      a go-to-market process, directly applicable to TPM forecasting and planning inputs.
+    confirmed_in_runs:
+      - RUN-002
+
+  - source_domain: "Trade Budget Management (brand owner side)"
+    adjacent_domain: "Trade Spend Optimization / Commercial Planning"
+    evidence: >
+      At Bayer, Don allocated a $17M trade budget at the regional and retailer level to
+      maximize predicted returns. At TELUS, he advised clients on trade spend reallocation.
+      Both experiences constitute trade spend optimization logic even without formal TPM
+      system ownership. Relevant to commercial planning, checkbook management framing,
+      and GTM optimization roles.
+    confirmed_in_runs:
+      - RUN-002
 
 # Example shape:
 #  - source_domain: "[domain you've worked in]"
@@ -71,7 +170,45 @@ domain_adjacency_map: []
 # Particularly valuable for long-tenure employers where the base resume
 # compresses many years into a few bullets.
 
-employer_context: []
+employer_context:
+  - employer: "TELUS Agriculture & Consumer Goods"
+    tenure_years: 9
+    surface_area_warning: >
+      Resume describes TELUS as client consulting only. Actual work included structured
+      research programs (quarterly consumer panels, brand tracking, social listening)
+      that read as in-house insights work. Future discovery should always probe TELUS
+      for specific research programs, not just "consulting engagements."
+    probe_first:
+      - "Quarterly or recurring tracking studies (brand awareness, NPS, satisfaction)"
+      - "Social listening or digital sentiment programs"
+      - "Specific client research outcomes — did insights change a client decision?"
+      - "Any proprietary methodology or framework built for a client"
+
+  - employer: "CSM Bakery Solutions"
+    tenure_years: 13
+    surface_area_warning: >
+      13-year tenure compressed into 5 role titles. Each role likely contains 2-3
+      additional achievements not on the resume. Divestiture work, McKinsey/Bain/BCG
+      engagements, and the Channel Blurring Project are named but under-quantified.
+      Innovation pipeline work confirmed but not fully scoped.
+    probe_first:
+      - "Specific research that influenced the divestiture valuation or positioning"
+      - "Innovation pipeline gate research — which gates, which products"
+      - "CLT methodology: what was the before/after research cost structure"
+      - "Global centralization: total headcount managed across all regions"
+      - "Any consumer research tied to the Channel Blurring / McKinsey project"
+
+  - employer: "Bayer Consumer Care"
+    tenure_years: 6
+    surface_area_warning: >
+      Copy testing and packaging research confirmed in RUN-001 but not quantified.
+      Bayer had four major OTC brands (Bayer, Aleve, One-A-Day, Alka-Seltzer) —
+      research likely touched multiple brands. Innovation team membership confirmed.
+    probe_first:
+      - "Specific copy or packaging research that changed a launch decision"
+      - "Brand equity or health tracking for any of the four OTC brands"
+      - "Innovation pipeline role — which products, which stages"
+      - "Canadian market research conducted during expatriate assignment"
 
 # Example shape:
 #  - employer: "[company name]"
@@ -85,7 +222,79 @@ employer_context: []
 # Append after every application run. The agent reads recent entries to learn
 # from prior discoveries.
 
-run_history: []
+run_history:
+  - run_id: RUN-002
+    date: "2026-05-22"
+    company: "Newell Brands"
+    role: "Senior Manager, Trade Promotion Management & Trade Promotion Optimization (TPM & TPO)"
+    outcome: "applied"
+    match_score_initial: 67
+    match_score_final: 75
+    ats_result: "PASS (post-tailoring, partial — core TPM/TPO platform keywords absent; not addable without false claims)"
+    go_no_go: "GO — Viable, Tier 2"
+    resume_delta: "19%"
+    new_achievements_surfaced:
+      - ACH-023
+      - ACH-024
+    new_categories_added:
+      - HY-003
+      - HY-004
+    lessons:
+      - >
+        TELUS/TABS supplied a TPO platform to clients — this is vendor-side TPO experience
+        that is distinct from and highly complementary to CPG end-user experience. Should be
+        permanently added to the base resume and LinkedIn. Framing: "Supplied CPG clients
+        with a TPO platform and advised on trade spend allocation."
+      - >
+        Demand planning with quantified forecast accuracy (2% at Bayer) is a high-value
+        achievement absent from the base resume. Should be added permanently — it speaks
+        directly to commercial planning, forecasting, and TPM inputs requirements in
+        RGM/commercial analytics roles.
+      - >
+        "Managed a $17M trade budget" is weaker framing than "allocated a $17M trade budget
+        at the regional and retailer level to direct funding toward highest predicted returns."
+        Always use the allocation/optimization framing for trade budget achievements.
+      - >
+        For roles reporting into Enabling Technology (IT), be explicit in interviews that the
+        commercial/analytical half is the strength and the platform administration half is a
+        learning curve. Do not overclaim system ownership experience.
+      - >
+        Newell Brands is in active restructuring (900 jobs cut Dec 2025, 31% positive employee
+        outlook). Evaluate carefully before accepting any offer — job security at the Senior
+        Manager layer is not stable in the near term.
+
+  - run_id: RUN-001
+    date: "2026-05-18"
+    company: "Georgia-Pacific LLC"
+    role: "Insights & Knowledge Director — Retail Towel/Tissue/Napkin"
+    outcome: "applied"
+    match_score_initial: 82
+    match_score_final: 89
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong, Tier 1"
+    resume_delta: "26%"
+    new_achievements_surfaced:
+      - ACH-021
+      - ACH-022
+    new_categories_added:
+      - HY-001
+      - HY-002
+    lessons:
+      - >
+        TELUS role is consistently undersold. The quarterly consumer panel and social
+        listening work is in-house-quality research that belongs on the resume and
+        in LinkedIn. Update both before the next application.
+      - >
+        "Innovation pipeline" and "voice of the consumer" are high-value JD phrases
+        that Don's background supports strongly — but neither appeared in the base
+        resume. Both should be added to the base resume permanently, not just for GP.
+      - >
+        LinkedIn headline and About section are misaligned with an insights-focused
+        job search. Update LinkedIn before submitting any application to an insights role.
+      - >
+        The private company / PE-backed angle (CSM Rhone Capital parallel to GP Koch
+        Industries) is a differentiation hook that few applicants will have. Lead with
+        it in cover letters for Koch Industries / private equity-backed companies.
 
 # Example shape:
 #  - run_id: RUN-001

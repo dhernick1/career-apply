@@ -1,73 +1,130 @@
 # references/career/voice-profile.yaml
 # Writing Voice Profile — used by COVER_LETTER_DRAFT for few-shot voice matching
 #
-# HOW THIS WORKS:
-# COVER_LETTER_DRAFT reads these samples and mirrors their syntactic structure.
-# Not vocabulary lists. Not rules. Actual examples.
-# The agent matches your sentence length patterns, opener style, rhythm, and
-# vocabulary range.
+# Seeded 2026-05-18 from three cover letters:
+#   - Conagra Cover Letter.docx
+#   - Driscolls Cover Letter.docx
+#   - T Cover Sample.docx (template — "Bjorn Sample" signature; patterns extracted, not attributed)
 #
-# MAINTENANCE:
-# - Add samples whenever you write something you're proud of
-# - Mark samples by channel (linkedin, email, slack, cover-letter, blog, docs)
-# - Minimum 3 samples required for COVER_LETTER_DRAFT to run
-# - 5-7 samples is optimal; more than 10 adds noise
+# NOTE: Source letters use em dashes in a few places. Per pipeline rules, em dashes are
+# FORBIDDEN in generated cover letters. Samples below are kept verbatim; the agent
+# must not replicate the em dash pattern.
 
 meta:
-  owner: "[YOUR NAME]"
+  owner: "Donald T. Hernick"
   minimum_samples_required: 3
-  current_sample_count: 0
+  current_sample_count: 6
   version: 1.0
-  last_updated: "[YYYY-MM-DD]"
+  last_updated: "2026-05-18"
   notes: >
-    [PLACEHOLDER — short note on where samples were sourced and any voice
-    decisions you want enforced (e.g. 'avoid em-dashes — reads as AI-generated').]
+    Voice is direct and confident. Opens with context (how role was found) then moves
+    immediately to value. Uses a requirements-to-qualifications alignment table as a
+    structural device. Strongest distinctive pattern: "I didn't just X — I Y" construction
+    (see sample-003). Closes with a specific follow-up date rather than vague availability.
+    Avoid: em dashes (appear in source letters but should not be replicated — reads as
+    AI-generated), throat-clearing openers, generic "I am passionate about" phrasing.
 
-# Voice attributes — descriptive only. The samples below are what actually
-# drive the matching.
 voice_attributes:
-  tone: "[e.g. direct, confident, unsentimental]"
-  sentence_style: "[e.g. short to medium — punchy openers, no filler]"
-  vocabulary: "[e.g. plain business English — avoids jargon except where precise]"
-  perspective: first-person, active voice
+  tone: "direct, confident, unsentimental"
+  sentence_style: "medium — declarative openers, structured elaboration, no filler"
+  vocabulary: "plain business English — precise CPG/insights terminology where earned"
+  perspective: "first-person, active voice"
   avoids:
     - "results-driven professional"
     - "passionate about"
     - "leverage" (as a verb)
     - "synergies"
-    - "fast-paced environment" (as self-description)
-    - throat-clearing openers ("I am writing to express...")
-    - "[add your own]"
+    - "I am writing to apply"
+    - "I am keen to apply" (opener — too soft)
+    - em dashes (—)
+    - vague availability closes ("I look forward to hearing from you")
 
 samples:
 
   - id: sample-001
-    channel: "[linkedin | email | slack | cover-letter | blog | docs]"
-    source: "[where this came from — e.g. 'LinkedIn post 2025-12-04']"
-    date: "[YYYY-MM-DD]"
+    channel: cover-letter
+    source: "Conagra Cover Letter.docx — opening paragraph"
+    date: "2025-01-01"
     text: >
-      [PLACEHOLDER — paste a real sample of your writing verbatim.
-      2-5 sentences is ideal. The agent will mirror this structure.]
+      I bring over 20 years of leadership experience across consumer-packaged goods, analytics
+      consulting, and global insights organizations, with a proven ability to translate complex
+      data into actionable strategies that drive growth and optimize investment decisions.
     voice_notes: >
-      [PLACEHOLDER — what makes this distinctively your voice? Sentence length?
-      Opener style? Use of repetition? Naming the agent's job is to copy these
-      patterns, not paraphrase them.]
+      Single declarative sentence that leads with scope and lands on a value claim. No
+      throat-clearing. Medium length. The structure is: [credential span] + [capability] +
+      [outcome]. Mirror this when opening a paragraph after the hook line.
 
   - id: sample-002
-    channel: "[channel]"
-    source: "[source]"
-    date: "[YYYY-MM-DD]"
+    channel: cover-letter
+    source: "Conagra Cover Letter.docx — close paragraph"
+    date: "2025-01-01"
     text: >
-      [PLACEHOLDER — second sample.]
+      I am particularly drawn to the opportunity to build and scale modern measurement
+      capabilities while serving as a strategic partner across the enterprise. I would welcome
+      the opportunity to contribute my experience to your team.
     voice_notes: >
-      [PLACEHOLDER]
+      Two-sentence close. First sentence names the specific draw (role-specific, not generic).
+      Second sentence is brief and confident without overselling. Use this rhythm for the
+      closing paragraph: one specific + one forward-looking.
 
   - id: sample-003
-    channel: "[channel]"
-    source: "[source]"
-    date: "[YYYY-MM-DD]"
+    channel: cover-letter
+    source: "Driscolls Cover Letter.docx — 'Why this aligns' statements"
+    date: "2025-03-01"
     text: >
-      [PLACEHOLDER — third sample. Minimum 3 required before the agent will
-      generate a cover letter.]
+      I didn't just manage insights -- I institutionalized them at enterprise scale. My work
+      clearly connects insight to innovation to tangible brand and financial outcomes. I combined
+      fiscal stewardship with growth-oriented measurement discipline. I modernized both tools and
+      decision usage, not just analytics outputs.
     voice_notes: >
-      [PLACEHOLDER]
+      Most distinctive voice pattern in the corpus. Short, punchy, declarative. "I didn't just
+      X -- I Y" is the signature construction. Each sentence is a standalone claim. No
+      qualifiers. No filler. When writing proof-point paragraphs, aim for this rhythm: bold
+      claim first, then the elaboration. Note: source used em dashes; replace with periods or
+      rewrite when generating new content.
+
+  - id: sample-004
+    channel: cover-letter
+    source: "Driscolls Cover Letter.docx — insight leadership proof point"
+    date: "2025-03-01"
+    text: >
+      My insight leadership consistently translates into customer-relevant, category-expanding
+      growth strategies. I scaled insight capability globally, not just regionally.
+    voice_notes: >
+      Two-sentence proof point. First sentence is the claim. Second sentence sharpens it with
+      a contrast ("not just X -- Y"). This contrast construction ("not just X, Y") is a
+      recurring pattern and should be mirrored. Concise and confident.
+
+  - id: sample-006
+    channel: cover-letter
+    source: "Georgia-Pacific cover letter — RUN-001, 2026-05-18"
+    date: "2026-05-18"
+    text: >
+      Georgia-Pacific is not maintaining a measurement function. You're building one.
+      Marketing mix modeling is now in-house. Retail media investment is accelerating.
+      The Anchor Packaging acquisition opens new consumer territory. The Insights Director
+      stepping into this role has a real mandate. Atlanta is home. No relocation, no delay.
+    voice_notes: >
+      Two new patterns not in prior samples. First: company-state assertion followed by
+      pivot confirmation ("X is not Y. You're doing Z.") -- leads with the company's own
+      reality before making a personal claim. Second: ultra-short geographic/logistical
+      close ("Atlanta is home. No relocation, no delay.") -- two-word declarative, corollary
+      statement. Both are highly distinctive and should be replicated for roles where a
+      location or operational advantage exists. Also demonstrates the staccato sentence
+      rhythm at its most compressed -- four sentences of 5 words or fewer in a row.
+
+  - id: sample-005
+    channel: cover-letter
+    source: "T Cover Sample.docx — research function build narrative"
+    date: "2025-10-22"
+    text: >
+      I built research plans with specific objectives, program costs, and benefits. Designed
+      and developed first a domestic and then an international research team and research access
+      system. Worked closely with cross-functional stakeholders -- Senior Executive, Sales,
+      Marketing, R&D, Human Resources, Operations and Finance -- to deliver high-impact research.
+    voice_notes: >
+      Action-verb sentence openers without subject ("Designed", "Worked"). Used in the
+      qualifications column of the T-format table. Useful for concise proof-point bullets.
+      Note: this was a template document (signed "Bjorn Sample") -- pattern is usable but
+      not directly attributed. Em dash usage in the stakeholder list; replace with commas
+      or parentheses when generating new content.

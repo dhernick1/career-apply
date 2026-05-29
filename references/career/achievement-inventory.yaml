@@ -1,71 +1,512 @@
 # references/career/achievement-inventory.yaml
 # Achievement Inventory — append-only database of verified career accomplishments
 #
-# HOW THIS WORKS:
-# RESUME_TAILOR selects from this inventory — it does not invent.
-# Every achievement here is pre-verified. Every edit to a resume traces back to
-# an entry here. EVALUATE_ALIGNMENT identifies gaps and prompts you to consider
-# whether undocumented experience exists. Those prompts are your cue to add new
-# entries here.
-#
-# SCHEMA:
-# Each entry has:
-#   id, achievement (what you did), impact (measurable outcome),
-#   evidence_strength (strong/partial/implied), tags (categories),
-#   date_range, organization, verified (true/false), notes (context for the agent)
-#
-# MAINTENANCE:
-# - Add entries after every application run (achievement discovery loop)
-# - Never delete entries — they are your source of truth
-# - Set verified: false if you're unsure about a metric — the agent will flag it
-# - Aim for 15+ entries before your first real application run
+# Seeded from base resume on 2026-05-18. Every entry traces to a specific bullet
+# in the resume. Add new entries after each application run's discovery loop.
+# Never delete entries.
 
 meta:
-  owner: "[YOUR NAME]"
+  owner: "Donald T. Hernick"
   version: 1.0
   schema_version: "3.1"
-  last_updated: "[YYYY-MM-DD]"
-  total_entries: 0
+  last_updated: "2026-05-22"
+  total_entries: 24
   note: >
-    [PLACEHOLDER — short note on how this inventory was seeded
-    (e.g. 'Seeded from base resume on 2026-01-15') and any patterns you've
-    noticed. The career agent reads this for context.]
-
-# Achievement categories used as tags. Add your own:
-# hard_skill, business_outcome, leadership, platform, domain, operations,
-# ai_automation, analytics, product, revenue, cost_reduction, scale.
+    Seeded from 26 04 07 CV Hernick.Don.2pages.docx on 2026-05-18. Covers career from
+    Playtex (1986) through TELUS (2026). Strongest entries are at Bayer and Playtex
+    (quantified). CSM and TELUS entries are strong on scope and complexity but lighter
+    on hard revenue metrics — discovery prompts should probe for those.
 
 inventory:
 
-  # Example entry — replace with your own, then delete this comment.
   - id: ACH-001
     achievement: >
-      [PLACEHOLDER — what you did. One specific accomplishment, not a
-      responsibility. Action verb first.]
+      Created and directed a revolutionary approach to Central Location Testing (CLT) at
+      CSM Bakery Solutions, replacing the existing methodology with a new execution model.
     impact: >
-      [PLACEHOLDER — measurable outcome. Revenue, %, time, headcount,
-      retention, NPS, etc. If you don't have a number, say so honestly.]
-    evidence_strength: strong   # strong | partial | implied
+      Saved over $600,000 per year in research spend.
+    evidence_strength: strong
     tags:
-      - "[tag]"
-      - "[tag]"
-    date_range: "[YYYY-MM to YYYY-MM, or 'YYYY-MM to present']"
-    organization: "[COMPANY NAME]"
+      - cost_reduction
+      - operations
+      - market_research
+      - innovation
+    date_range: "2009-11 to 2014-05"
+    organization: "CSM Bakery Solutions"
     verified: true
     notes: >
-      [PLACEHOLDER — context the agent should know. Where this achievement
-      lives in your career story, who can verify it, edge cases to watch.]
+      Attributed to the Director of Marketing, Consumer Insight & Strategic Development
+      tenure. Dollar figure stated explicitly in resume. Useful for roles requiring
+      research operations efficiency, cost management, or research methodology innovation.
 
   - id: ACH-002
     achievement: >
-      [PLACEHOLDER]
+      Globally centralized market research operations at CSM Bakery Solutions, consolidating
+      fragmented regional research activity into a unified global function.
     impact: >
-      [PLACEHOLDER]
-    evidence_strength: strong
+      Significantly decreased research costs while increasing utilization and efficiency;
+      exact savings figure not documented — probe for estimate.
+    evidence_strength: partial
     tags:
-      - "[tag]"
-    date_range: "[YYYY-MM to YYYY-MM]"
-    organization: "[COMPANY]"
+      - cost_reduction
+      - operations
+      - leadership
+      - scale
+      - market_research
+    date_range: "2014-06 to 2015-09"
+    organization: "CSM Bakery Solutions"
     verified: true
     notes: >
-      [PLACEHOLDER]
+      Attributed to Global Director of Insight Development tenure. No hard number on file
+      beyond the CLT $600K/year figure. Run discovery prompt: "Can you estimate total
+      annualized research cost reduction from the centralization effort?"
+
+  - id: ACH-003
+    achievement: >
+      Won the Divisional HQ Sales "Bayer Care Award" for leadership excellence in negotiating
+      and managing the syndicated data contract process at Bayer Consumer Care.
+    impact: >
+      Generated savings of over $2 million per year for three consecutive years ($6M+ total).
+    evidence_strength: strong
+    tags:
+      - cost_reduction
+      - analytics
+      - vendor_management
+      - leadership
+    date_range: "2001-08 to 2003-11"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Explicit dollar figure in resume. Award named. Strong evidence. Useful for roles
+      involving syndicated data vendor management, procurement, or analytical operations.
+
+  - id: ACH-004
+    achievement: >
+      Managed a $17M trade budget supporting the One-A-Day and related brand portfolio at
+      Bayer Consumer Care as National Customer Marketing Manager.
+    impact: >
+      Delivered $131M in 1998 sales, representing +128% growth vs. 1997.
+    evidence_strength: strong
+    tags:
+      - revenue
+      - trade_marketing
+      - budget_management
+    date_range: "1997-07 to 1999-06"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Hard revenue and growth figures from resume. +128% growth is exceptional — clarify
+      whether this was a new brand launch year or organic growth before use in cover letter
+      claims. One-A-Day Herbal was a new product launch in this period.
+
+  - id: ACH-005
+    achievement: >
+      Key member of the One-A-Day Herbal core launch team at Bayer Consumer Care, leading
+      sales, trade, and category management workstreams for the new product introduction.
+    impact: >
+      Secured 98% trade acceptance, set a new speed-to-shelf standard, and exceeded sales
+      targets by 36%.
+    evidence_strength: strong
+    tags:
+      - product_launch
+      - trade_marketing
+      - revenue
+      - category_management
+    date_range: "1997-07 to 1999-06"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Three distinct metrics: trade acceptance rate, speed-to-shelf, and sales overperformance.
+      All stated in resume. Excellent for roles involving new product launches, go-to-market
+      strategy, or trade execution.
+
+  - id: ACH-006
+    achievement: >
+      Surpassed Canadian sales budget in 2000 as Group Head Customer Marketing at Bayer
+      Consumer Care Canada through incremental contingency planning.
+    impact: >
+      Delivered +10% growth vs. 1999 while increasing Operating Profit & Expense (OPE) +344%.
+    evidence_strength: strong
+    tags:
+      - revenue
+      - leadership
+      - trade_marketing
+      - international
+    date_range: "1999-07 to 2001-08"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Expatriate assignment. +344% OPE improvement is a striking metric — verify what OPE
+      covers in context (likely trade/marketing efficiency) before using in high-scrutiny
+      applications. The +10% revenue overperformance is straightforward.
+
+  - id: ACH-007
+    achievement: >
+      Advanced Houston, TX district ranking from 31st to 1st in the nation as District Sales
+      Manager at Playtex Products.
+    impact: >
+      Full national ranking turnaround in 2 years.
+    evidence_strength: strong
+    tags:
+      - leadership
+      - sales
+      - team_building
+    date_range: "1990-03 to 1993-01"
+    organization: "Playtex Products"
+    verified: true
+    notes: >
+      Exact ranking stated. Powerful leadership story — useful for any role emphasizing
+      team turnaround, field sales leadership, or performance management.
+
+  - id: ACH-008
+    achievement: >
+      Led HQ sales calls and new item launches for major drug/grocery accounts at Playtex
+      Products as National Account Manager (CVS, Rite Aid, Revco, Eckerd, Publix, Wakefern,
+      Pathmark, Winn-Dixie).
+    impact: >
+      Drove $23M in volume (+8.4%); exceeded quota at 105% in 1996 vs. division's 95% and
+      107% in 1995 vs. division's 90.6%.
+    evidence_strength: strong
+    tags:
+      - revenue
+      - sales
+      - national_accounts
+    date_range: "1995-07 to 1997-06"
+    organization: "Playtex Products"
+    verified: true
+    notes: >
+      Both years beat division average. Named accounts. Good for CPG national account or
+      sales leadership roles.
+
+  - id: ACH-009
+    achievement: >
+      Developed strategic sales plans for Jhirmack and Tek brands and created account-specific
+      marketing programs as National Sales Merchandising Manager at Playtex Products.
+    impact: >
+      Generated $2.7M in incremental volume on a $40M volume / $7.2M budget base.
+    evidence_strength: strong
+    tags:
+      - revenue
+      - trade_marketing
+      - shopper_marketing
+    date_range: "1993-01 to 1995-07"
+    organization: "Playtex Products"
+    verified: true
+    notes: >
+      Quantified incremental lift. Budget and volume base stated. Good for customer marketing
+      or trade strategy roles.
+
+  - id: ACH-010
+    achievement: >
+      Named to the CSM Divestiture Team and received executive recognition for contributions
+      to the strategic positioning and sale of CSM Bakery Solutions.
+    impact: >
+      Successfully supported the divestiture process; CSM was sold to Rhone Capital.
+    evidence_strength: partial
+    tags:
+      - strategic_development
+      - leadership
+      - executive_engagement
+    date_range: "2009-11 to 2014-05"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      Named to team and recognized — stated in resume. Specific commercial/financial
+      contribution to the deal not quantified. Useful for roles requiring M&A exposure,
+      PE-backed company experience, or executive-level strategic work.
+
+  - id: ACH-011
+    achievement: >
+      Worked directly with Bain, Boston Consulting Group, and McKinsey on market modeling,
+      organizational design, and strategic development initiatives at CSM Bakery Solutions.
+    impact: >
+      Informed strategic repositioning and divestiture preparation for a $3B global food company.
+    evidence_strength: partial
+    tags:
+      - strategic_development
+      - executive_engagement
+      - market_research
+    date_range: "2009-11 to 2015-09"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      All three consulting firms named in resume. Useful as a credibility marker for
+      senior strategy or insights roles. Impact is implied (divestiture), not independently
+      quantified.
+
+  - id: ACH-012
+    achievement: >
+      CEO-appointed lead of the Global Marketing Team for Bakery Supplies at CSM, covering
+      North America, EU, Purac, and Sugar divisions.
+    impact: >
+      Managed three major B2B brands with combined annual sales over $500 million.
+    evidence_strength: strong
+    tags:
+      - leadership
+      - revenue
+      - international
+      - product
+    date_range: "2005-06 to 2009-10"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      CEO appointment stated. $500M+ portfolio size stated. Strong scope signal for
+      Director/VP-level roles requiring P&L or large brand portfolio ownership.
+
+  - id: ACH-013
+    achievement: >
+      Led a three-year strategy development plan at CSM working with Bain Consulting as
+      the key commercial contact for the first formal long-term product category and channel
+      strategy in the bakery supplies business.
+    impact: >
+      Established first formal category and channel strategy for a $500M+ B2B brand portfolio.
+    evidence_strength: partial
+    tags:
+      - strategic_development
+      - category_management
+      - executive_engagement
+    date_range: "2005-06 to 2009-10"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      "First formal" strategy signals greenfield build. Bain named. Outcome (adoption,
+      revenue effect) not quantified — run discovery prompt.
+
+  - id: ACH-014
+    achievement: >
+      Established Category Management in the Fresh Bakery space in the US Grocery channel
+      at CSM Bakery Solutions as Director of Marketing.
+    impact: >
+      Built the category management function from scratch for a previously unstructured space.
+    evidence_strength: partial
+    tags:
+      - category_management
+      - product
+      - operations
+    date_range: "2003-11 to 2005-05"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      "Established" signals founder-level ownership. Revenue or share impact not quantified.
+      Discovery prompt: "What measurable change in shelf space, distribution, or share
+      resulted from establishing category management?"
+
+  - id: ACH-015
+    achievement: >
+      Designed and developed a professionalized marketing insights digital portal at CSM
+      Bakery Solutions to centralize insight management, availability, and delivery.
+    impact: >
+      Improved insight accessibility and effectiveness across the North American business;
+      specific adoption or efficiency metrics not documented.
+    evidence_strength: partial
+    tags:
+      - platform
+      - analytics
+      - operations
+      - market_research
+    date_range: "2015-10 to 2016-07"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      Platform build stated in resume. No user count, adoption rate, or efficiency metric.
+      Discovery prompt: "How many users accessed the portal? Did it reduce ad hoc research
+      requests or turnaround time?"
+
+  - id: ACH-016
+    achievement: >
+      Helped author the Foodservice Full Plate Category Management Best Practice for the
+      Foodservice Advisory Board at CSM Bakery Solutions.
+    impact: >
+      Contributed to an industry-level best practice document for foodservice category management.
+    evidence_strength: partial
+    tags:
+      - category_management
+      - domain
+      - thought_leadership
+    date_range: "2009-11 to 2014-05"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      "Helped write" — partial authorship. Good for thought leadership or industry knowledge
+      signals in foodservice roles.
+
+  - id: ACH-017
+    achievement: >
+      Directed the Circana (then IRI) Bayer client service team as National Category
+      Development Manager at Bayer Consumer Care.
+    impact: >
+      Managed the primary syndicated data relationship for a major consumer healthcare manufacturer.
+    evidence_strength: partial
+    tags:
+      - analytics
+      - vendor_management
+      - market_research
+    date_range: "2001-08 to 2003-11"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Explicitly stated in resume. Good for roles requiring syndicated data expertise or
+      Circana/Nielsen vendor management experience.
+
+  - id: ACH-018
+    achievement: >
+      Assisted General Manager and Accenture in implementing a complete sales organization
+      restructuring at Bayer Consumer Care Canada.
+    impact: >
+      Redesigned and re-staffed the Customer Marketing department; redefined the sales
+      planning process by incorporating key customer strategies.
+    evidence_strength: partial
+    tags:
+      - leadership
+      - organizational_design
+      - operations
+    date_range: "1999-07 to 2001-08"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Restructuring scope stated; headcount or financial impact of re-staffing not quantified.
+      Good for change management or organizational design signals.
+
+  - id: ACH-019
+    achievement: >
+      Developed and directed the Bayer Category Leadership website — strategy, design,
+      and implementation — as National Category Development Manager.
+    impact: >
+      Delivered a dedicated digital platform for Bayer's category leadership program.
+    evidence_strength: partial
+    tags:
+      - platform
+      - category_management
+      - operations
+    date_range: "2001-08 to 2003-11"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Full ownership of strategy through implementation stated. Digital platform for
+      category work — useful for roles blending analytics and digital tools.
+
+  - id: ACH-020
+    achievement: >
+      Trained over 20 new hires and managed the college recruiting program at the University
+      of Florida as Regional Sales Trainer at Playtex Products.
+    impact: >
+      Built early-career pipeline for the Southern Region sales force.
+    evidence_strength: strong
+    tags:
+      - leadership
+      - team_building
+      - training
+    date_range: "1987-05 to 1988-07"
+    organization: "Playtex Products"
+    verified: true
+    notes: >
+      Exact headcount (20+) stated. UF recruiting program named. Useful as a supporting
+      signal for leadership or talent development emphasis.
+
+  - id: ACH-021
+    achievement: >
+      Developed and managed a quarterly consumer panel study at TELUS Agriculture &
+      Consumer Goods tracking Brand Awareness, Favorability, and Conversion in the
+      marketplace. Incorporated social listening data across brick-and-mortar and online
+      retail channels to surface shifts in consumer sentiment and behavior.
+    impact: >
+      Provided clients with ongoing brand health tracking and real-time consumer sentiment
+      intelligence; specific client outcomes (share shift, decision changes) not quantified.
+    evidence_strength: strong
+    tags:
+      - market_research
+      - analytics
+      - brand_tracking
+      - social_listening
+      - consumer_insights
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-001 (Georgia-Pacific application, 2026-05-18). Not on base resume.
+      Directly confirms: equity tracking, social listening, consumer sentiment, consumer
+      behavior — four ATS keywords for insights roles. Discovery prompt for future runs:
+      "What were the specific client outcomes driven by the quarterly panel findings?"
+
+  - id: ACH-022
+    achievement: >
+      Supported item copy testing and packaging research for the consumer brand portfolio
+      at Bayer Consumer Care, translating findings into brand positioning and go-to-market
+      recommendations.
+    impact: >
+      Contributed to brand-level research supporting major OTC brands (Bayer, Aleve,
+      One-A-Day, Alka-Seltzer); specific campaign or launch outcomes not quantified.
+    evidence_strength: strong
+    tags:
+      - market_research
+      - copy_testing
+      - packaging
+      - brand_positioning
+      - consumer_insights
+    date_range: "2001-08 to 2003-11"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Surfaced in RUN-001 (Georgia-Pacific application, 2026-05-18). Not on base resume.
+      Directly confirms: copy development, packaging, brand positioning — three previously
+      blocked ATS keywords. Discovery prompt for future runs: "Can you name a specific
+      product launch or campaign where your copy or packaging research influenced the
+      final go-to-market decision?"
+
+  - id: ACH-023
+    achievement: >
+      Supplied retained CPG clients with a trade promotion optimization (TPO) platform and
+      analytical framework at TELUS Agriculture & Consumer Goods to measure product demand,
+      promotional lift, and ROI; advised clients on trade spend allocation to direct funding
+      toward highest-return activities across North America, EU, and UK markets.
+    impact: >
+      Enabled CPG clients to measure promotional effectiveness and redirect trade spend to
+      higher-ROI activities; specific client revenue or share outcomes not quantified.
+    evidence_strength: strong
+    tags:
+      - trade_promotion_optimization
+      - analytics
+      - promotional_lift
+      - ROI
+      - trade_spend
+      - go_to_market
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-002 (Newell Brands application, 2026-05-22). Not on base resume.
+      Donald confirmed in discovery Prompt 1 that TELUS supplied a TPO platform to clients
+      to measure product demand, promotional lift, and ROI; Prompt 2 confirmed trade spend
+      advisory to redirect funding to highest-return activities. Vendor/supplier-side TPO
+      experience — distinct from owning a TPM system but directly relevant to TPO methodology
+      and post-event analytics roles. Discovery prompt for future runs: "Can you name a
+      specific client outcome — share shift, spending reallocation, or ROI improvement —
+      driven by the TPO platform recommendations?"
+
+  - id: ACH-024
+    achievement: >
+      Built a national demand plan by retail customer for the One-A-Day Herbal new product
+      launch at Bayer Consumer Care, projecting initial pipeline fill requirements by account.
+      Conducted weekly consumption-vs.-supply reviews once the product was in market to track
+      in-market pull-through.
+    impact: >
+      Achieved forecast accuracy within 2% of actual pipeline demand — an exceptionally
+      precise result for a new product launch.
+    evidence_strength: strong
+    tags:
+      - demand_planning
+      - forecasting
+      - new_product_launch
+      - commercial_planning
+      - go_to_market
+    date_range: "1997-07 to 1999-06"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Surfaced in RUN-002 (Newell Brands application, 2026-05-22). Not on base resume.
+      Donald confirmed in discovery Prompt 3. The 2% forecast accuracy figure is specific
+      and strong — verify exact figure before use in high-scrutiny applications. Attributed
+      to the One-A-Day Herbal launch (National Customer Marketing Manager tenure). Directly
+      answers "forecasting and planning" requirements in commercial analytics and RGM roles.
+      Discovery prompt for future runs: "Were there other product launches at Bayer where
+      you built demand plans or conducted post-launch pull-through analysis?"

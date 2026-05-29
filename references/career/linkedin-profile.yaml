@@ -3,48 +3,122 @@
 #
 # Update this file whenever you materially update your LinkedIn profile.
 # This file is consumed by career-agent but never modified by it.
-#
-# Replace every [PLACEHOLDER] value before running /career-apply.
 
 profile:
-  headline: "[PLACEHOLDER — your LinkedIn headline, verbatim]"
-  location: "[City, State, Country]"
-  connection_count: "[optional — e.g. '500+']"
+  headline: "LEADER / STRATEGIST / INNOVATOR / MENTOR"
+  location: "Snellville, GA, United States"
+  connection_count: ""
 
 about: >
-  [PLACEHOLDER — paste your LinkedIn 'About' section verbatim.
-  The career agent uses this to cross-check tailored resumes for consistency
-  and to flag deviations a recruiter might ask about in screening.]
+  Innovative senior Sales & Marketing Leader is energized by challenging fast-paced environments.
+  Possesses broad experience in the Consumer Packaged Goods, Consumer Healthcare & Fresh Foods
+  industries. Experienced with B2C & B2B segments in both domestic & international markets.
+  Proven success in building and developing exceptional sales, marketing, customer marketing &
+  insights teams.
 
-# Experience entries — keep parallel to base-resume.yaml. Where the LinkedIn
-# wording differs from the resume, that's fine; the agent will flag deviations.
+# Experience entries mirror base-resume.yaml — no known deviations at time of seeding.
+# Update if LinkedIn wording differs materially from resume.
 experience:
-  - title: "[JOB TITLE on LinkedIn]"
-    company: "[COMPANY]"
-    start_date: "[Month Year]"
-    end_date: "[Month Year, or 'Present']"
+  - title: "Senior Consultant"
+    company: "TELUS Agriculture & Consumer Goods"
+    start_date: "2017"
+    end_date: "2026"
     summary: >
-      [LinkedIn description verbatim, or short paraphrase if the LinkedIn entry
-      is long.]
+      Managed multiple retained consumer goods clients across Health and Beauty Care, Household
+      Products, Food, Nutritional, and Consumer Electronics in North American, EU, and UK markets.
+      Provided simplified analytics and actionable insights; built deep client relationships that
+      drove repeat renewals and new business.
 
-  - title: "[NEXT TITLE]"
-    company: "[COMPANY]"
-    start_date: "[Month Year]"
-    end_date: "[Month Year]"
+  - title: "North American Consumer Insight Leader"
+    company: "CSM Bakery Solutions"
+    start_date: "October 2015"
+    end_date: "July 2016"
     summary: >
-      [LinkedIn description.]
+      Designed and developed a professionalized insight management portal; managed North American
+      primary and syndicated research projects and supplier relationships.
 
-# Featured posts, articles, or projects you'd want a recruiter to see.
-# Remove this section if not applicable.
-featured:
-  - type: post
-    title: "[POST TITLE]"
-    url: "[URL]"
-    summary: "[1-sentence description]"
+  - title: "Global Director of Insight Development"
+    company: "CSM Bakery Solutions"
+    start_date: "June 2014"
+    end_date: "September 2015"
+    summary: >
+      Directed a global multinational market research team across North America and EU. Managed
+      multimillion-dollar global research budget. Globally centralized research activity to
+      decrease costs and increase utilization.
 
-# Recommendations received (optional — paste a few that show range).
-recommendations:
-  - from: "[NAME, TITLE, COMPANY]"
-    relationship: "[reported to you / worked with you / etc.]"
-    text: >
-      [Recommendation text verbatim.]
+  - title: "Director of Marketing, Consumer Insight & Strategic Development"
+    company: "CSM Bakery Solutions"
+    start_date: "November 2009"
+    end_date: "May 2014"
+    summary: >
+      Partnered with executive leadership and top-tier consultants (Bain, BCG, McKinsey) on
+      market modeling, organizational design, and strategic development. Named to CSM Divestiture
+      Team. Created CLT methodology saving $600K/year.
+
+  - title: "Director of Marketing, In-Store Bakery"
+    company: "CSM Bakery Solutions"
+    start_date: "June 2005"
+    end_date: "October 2009"
+    summary: >
+      CEO-appointed lead of Global Marketing Team for Bakery Supplies (NA/EU/Purac/Sugar).
+      Managed three major B2B brands with $500M+ combined annual sales.
+
+  - title: "Director of Marketing"
+    company: "CSM Bakery Solutions"
+    start_date: "November 2003"
+    end_date: "May 2005"
+    summary: >
+      Built industry-leading marketing and customer marketing organization. Established Category
+      Management in the Fresh Bakery space in the US Grocery channel.
+
+  - title: "National Category Development Manager, Global & US HQ"
+    company: "Bayer Consumer Care"
+    start_date: "August 2001"
+    end_date: "November 2003"
+    summary: >
+      Developed National Category Leadership strategy for Nutritional and Upper Respiratory
+      categories. Won Bayer Care Award for syndicated contract leadership generating $2M+/year
+      in savings.
+
+  - title: "Group Head Customer Marketing, Canada"
+    company: "Bayer Consumer Care"
+    start_date: "July 1999"
+    end_date: "August 2001"
+    summary: >
+      Expatriate assignment to Canadian HQ. Directed Customer Marketing department. Surpassed
+      sales budget in 2000 (+10% vs. 1999) while increasing OPE +344%.
+
+  - title: "National Customer Marketing Manager"
+    company: "Bayer Consumer Care"
+    start_date: "July 1997"
+    end_date: "June 1999"
+    summary: >
+      Managed $17M trade budget supporting $131M in 1998 sales (+128% vs. 1997). Key member of
+      One-A-Day Herbal launch team — 98% trade acceptance, exceeded sales targets by 36%.
+
+  - title: "National Account Manager"
+    company: "Playtex Products"
+    start_date: "July 1995"
+    end_date: "June 1997"
+    summary: >
+      Led HQ sales calls for major drug/grocery accounts driving $23M in volume (+8.4%). Exceeded
+      quota 105% in 1996 vs. division's 95%.
+
+  - title: "National Sales Merchandising Manager"
+    company: "Playtex Products"
+    start_date: "January 1993"
+    end_date: "July 1995"
+    summary: >
+      Developed strategic sales plans for Jhirmack and Tek brands; generated $2.7M in incremental
+      volume through account-specific marketing programs.
+
+  - title: "District Sales Manager"
+    company: "Playtex Products"
+    start_date: "March 1990"
+    end_date: "January 1993"
+    summary: >
+      Advanced Houston district ranking from 31st to 1st in the nation within 2 years.
+
+featured: []
+
+recommendations: []

@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-06-04"
+  last_updated: "2026-06-05"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   note: >
     35+ year CPG career spanning Playtex, Bayer, CSM Bakery Solutions, and TELUS.
@@ -277,6 +277,47 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-004
+    date: "2026-06-05"
+    company: "Barry Callebaut"
+    role: "Director of Global and Consumer Insights"
+    outcome: "applied"
+    match_score_initial: 81
+    match_score_final: 90
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong, Tier 1"
+    resume_delta: "24%"
+    new_achievements_surfaced:
+      - ACH-028
+      - ACH-029
+      - ACH-030
+    new_categories_added: []
+    lessons:
+      - >
+        Insight-driven storytelling for C-suite and board audiences is a career-long
+        pattern confirmed at all three major employers (TELUS, CSM, Bayer). It was absent
+        from the base resume because it was treated as routine. For any senior CMI or
+        insights leadership role, this must be named explicitly as a capability.
+      - >
+        Innovation pipeline CMI partnership (Stage-Gate checkpoints) is confirmed at both
+        CSM and Bayer. The Stage-Gate certification on the resume now has a lived context.
+        Always surface this for any role touching product innovation or NPD teams.
+      - >
+        Voice of the Customer (VoC) research at CSM is a B2B customer intelligence
+        capability directly relevant to other B2B companies (Barry Callebaut, ingredient
+        suppliers, B2B food manufacturers). Always probe for VoC when applying to B2B roles.
+      - >
+        Market trend monitoring via syndicated and proprietary studies on a recurring
+        leadership cadence is confirmed at TELUS and CSM. This maps to any role requiring
+        "monitor market trends, consumer behaviors, and competitor activities."
+      - >
+        The CSM tenure (13 years, $3B global food company, global CMI function, EU + NA)
+        is the single strongest credential for food/FMCG CMI director roles. Always lead
+        with CSM scope and budget for this role family.
+      - >
+        Location should always be confirmed before investing in tailoring. Barry Callebaut
+        JD gave no location; Chicago HQ confirmed via research. Candidate is Atlanta-based.
+
   - run_id: RUN-003
     date: "2026-06-04"
     company: "CAB Enterprises / Electrolit"

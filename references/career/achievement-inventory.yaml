@@ -9,8 +9,8 @@ meta:
   owner: "Donald T. Hernick"
   version: 1.0
   schema_version: "3.1"
-  last_updated: "2026-06-04"
-  total_entries: 27
+  last_updated: "2026-06-05"
+  total_entries: 30
   note: >
     Seeded from 26 04 07 CV Hernick.Don.2pages.docx on 2026-05-18. Covers career from
     Playtex (1986) through TELUS (2026). Strongest entries are at Bayer and Playtex
@@ -590,3 +590,81 @@ inventory:
       assortment/shelf) was not documented in the base resume. Pricing architecture included
       price gap analysis vs. competitors and key price threshold identification. Category
       line reviews confirmed at Walmart, Target, and national Food and Drug accounts.
+
+  - id: ACH-028
+    achievement: >
+      Presented insight-driven narratives and storytelling frameworks to C-suite, board-level,
+      and senior management audiences at TELUS Agriculture & Consumer Goods, CSM Bakery
+      Solutions, and Bayer Consumer Care. These narratives drove strategic decisions at each
+      organization.
+    impact: >
+      Influenced strategic decisions at Director/C-suite level across three employers spanning
+      consulting, global food manufacturing, and consumer healthcare.
+    evidence_strength: strong
+    tags:
+      - storytelling
+      - insight_narratives
+      - senior_stakeholder_influence
+      - strategic_decision_making
+      - CMI
+    date_range: "1997-08 to 2026-01"
+    organization: "Multiple (TELUS, CSM, Bayer)"
+    verified: true
+    notes: >
+      Surfaced in RUN-004 (Barry Callebaut application, 2026-06-05). Confirmed in discovery
+      Prompt 1. Career-long pattern of insight-driven executive storytelling. Directly maps
+      to JD language "storytelling" and "insight-driven narratives" — both of which appeared
+      twice in the Barry Callebaut JD. High-value credential for any senior CMI or insights
+      leadership role.
+
+  - id: ACH-029
+    achievement: >
+      Served as the insights partner to product innovation and NPD teams at CSM Bakery
+      Solutions and Bayer Consumer Care, delivering consumer research at multiple Stage-Gate
+      checkpoints to inform product development decisions.
+    impact: >
+      Informed product development pipeline decisions at a $3B global food company (CSM) and
+      a major OTC consumer healthcare manufacturer (Bayer); specific product launch outcomes
+      not quantified.
+    evidence_strength: strong
+    tags:
+      - innovation_pipeline
+      - NPD
+      - stage_gate
+      - CMI
+      - consumer_research
+    date_range: "1997-08 to 2016-07"
+    organization: "CSM Bakery Solutions and Bayer Consumer Care"
+    verified: true
+    notes: >
+      Surfaced in RUN-004 (Barry Callebaut application, 2026-06-05). Confirmed in discovery
+      Prompt 2. Stage-Gate certification (already on resume) now has a direct experiential
+      context. Both employers confirmed. Directly maps to JD requirement: "Partner closely
+      with Marketing, Sales, and Innovation teams." Discovery prompt for future runs:
+      "Can you name a specific product that was launched or modified as a result of consumer
+      research you commissioned at a Stage-Gate checkpoint?"
+
+  - id: ACH-030
+    achievement: >
+      Directed development, fielding, and insights generation for Voice of the Customer (VoC)
+      studies at CSM Bakery Solutions, evaluating supplier performance and customer satisfaction
+      from the perspective of CSM's B2B customer base.
+    impact: >
+      Provided structured B2B customer intelligence to CSM leadership; specific operational
+      changes driven by VoC findings not quantified.
+    evidence_strength: strong
+    tags:
+      - VoC
+      - B2B_research
+      - customer_satisfaction
+      - primary_research
+      - CMI
+    date_range: "2003-11 to 2016-07"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      Surfaced in RUN-004 (Barry Callebaut application, 2026-06-05). Confirmed in discovery
+      Prompt 3. CSM was B2B — VoC research was the primary consumer/customer research
+      vehicle in that context. Highly relevant for Barry Callebaut (also a B2B company).
+      Discovery prompt for future runs: "Did VoC findings lead to any specific product,
+      service, or process changes at CSM?"

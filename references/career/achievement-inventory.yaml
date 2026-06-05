@@ -9,8 +9,8 @@ meta:
   owner: "Donald T. Hernick"
   version: 1.0
   schema_version: "3.1"
-  last_updated: "2026-05-22"
-  total_entries: 24
+  last_updated: "2026-06-04"
+  total_entries: 27
   note: >
     Seeded from 26 04 07 CV Hernick.Don.2pages.docx on 2026-05-18. Covers career from
     Playtex (1986) through TELUS (2026). Strongest entries are at Bayer and Playtex
@@ -510,3 +510,83 @@ inventory:
       answers "forecasting and planning" requirements in commercial analytics and RGM roles.
       Discovery prompt for future runs: "Were there other product launches at Bayer where
       you built demand plans or conducted post-launch pull-through analysis?"
+
+  - id: ACH-025
+    achievement: >
+      Led category management engagements for retained CPG clients at TELUS Agriculture
+      & Consumer Goods across large-format retail accounts including Walmart, Target, Kroger,
+      Costco, Albertsons, and Amazon; delivered category reviews, assortment optimization,
+      shelf layout recommendations, and competitive analysis.
+    impact: >
+      Enabled CPG clients to win shelf space, optimize assortment, and grow category position
+      in large-format retail; specific client revenue outcomes not quantified.
+    evidence_strength: strong
+    tags:
+      - category_management
+      - large_format_retail
+      - assortment_optimization
+      - shelf_management
+      - category_reviews
+      - competitive_analysis
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-003 (Electrolit application, 2026-06-04). Not on base resume or prior
+      TELUS bullets. Confirmed in discovery Prompt 1. Directly addresses large-format retail
+      category management requirements. Named accounts (Walmart, Target, Kroger, Costco,
+      Albertsons, Amazon) are strong credibility signals. Discovery prompt for future runs:
+      "Can you name a specific client win — shelf placement gained, assortment change adopted,
+      or category review outcome — from any of these large-format accounts?"
+
+  - id: ACH-026
+    achievement: >
+      Identified white-space opportunities and distribution gaps across Playtex, Bayer Consumer
+      Care, CSM Bakery Solutions, and TELUS to enable new item placement and category growth.
+    impact: >
+      Enabled incremental distribution and new item opportunities across a 35-year career span;
+      specific volume or revenue outcomes vary by employer and are not consolidated.
+    evidence_strength: strong
+    tags:
+      - white_space
+      - distribution
+      - category_management
+      - new_item
+    date_range: "1986-06 to 2026-01"
+    organization: "Multiple (Playtex, Bayer, CSM, TELUS)"
+    verified: true
+    notes: >
+      Surfaced in RUN-003 (Electrolit application, 2026-06-04). Confirmed in discovery
+      Prompt 6. Career-long pattern — strongest signal is at TELUS and Bayer where category
+      management work was most structured. Discovery prompt for future runs: "Can you name
+      a specific white-space or distribution gap you identified that resulted in a measurable
+      new distribution win or new item launch?"
+
+  - id: ACH-027
+    achievement: >
+      Developed the National Category Leadership strategy at Bayer Consumer Care encompassing
+      full 4P category management: pricing architecture and price gap analysis vs. competitors,
+      assortment recommendations, promotional effectiveness, and shelf management; presented
+      category line reviews to Walmart, Target, and national Food and Drug retailers.
+    impact: >
+      Delivered category leadership strategy across Nutritional and Upper Respiratory categories
+      for a major OTC consumer healthcare manufacturer; won Bayer Care Award for syndicated
+      contract leadership generating $2M+/year in savings.
+    evidence_strength: strong
+    tags:
+      - category_management
+      - pricing_architecture
+      - assortment_optimization
+      - shelf_management
+      - category_reviews
+      - large_format_retail
+      - promotional_effectiveness
+    date_range: "2001-08 to 2003-11"
+    organization: "Bayer Consumer Care"
+    verified: true
+    notes: >
+      Surfaced in RUN-003 (Electrolit application, 2026-06-04). Confirmed in discovery
+      Prompts 3, 4, and 5. The full 4P category management scope (pricing/promotion/
+      assortment/shelf) was not documented in the base resume. Pricing architecture included
+      price gap analysis vs. competitors and key price threshold identification. Category
+      line reviews confirmed at Walmart, Target, and national Food and Drug accounts.

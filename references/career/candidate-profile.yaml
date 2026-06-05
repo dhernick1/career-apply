@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-05-22"
+  last_updated: "2026-06-04"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   note: >
     35+ year CPG career spanning Playtex, Bayer, CSM Bakery Solutions, and TELUS.
@@ -106,6 +106,60 @@ high_yield_categories:
       or RGM experience, this is highly relevant and should always be probed.
     inventory_entries_surfaced:
       - ACH-023
+
+  - id: HY-005
+    category: "Large-format retail category management (shelf, assortment, category reviews)"
+    confirmed_employers:
+      - "TELUS Agriculture & Consumer Goods"
+      - "Bayer Consumer Care"
+      - "CSM Bakery Solutions"
+    probe_question: >
+      At this employer, did your category management or insights work include deliverables
+      for large-format retail accounts (Walmart, Target, Kroger, Costco, Albertsons)?
+      Specifically: category reviews, assortment optimization, shelf layout recommendations,
+      planogram development, or joint business planning presentations?
+    why_undersold: >
+      Don delivered category reviews, assortment optimization, and shelf layout recommendations
+      for Walmart, Target, Kroger, Costco, Albertsons, and Amazon throughout his TELUS tenure,
+      and built full 4P category management at Bayer. None of this appeared on the base resume
+      because it was framed as "analytics consulting" and "category leadership strategy"
+      rather than named as large-format retail category management execution.
+    inventory_entries_surfaced:
+      - ACH-025
+      - ACH-027
+
+  - id: HY-006
+    category: "Pricing architecture and price gap analysis"
+    confirmed_employers:
+      - "Bayer Consumer Care"
+    probe_question: >
+      At this employer, did your category or commercial work include pricing strategy —
+      specifically price gap analysis vs. competitors, price threshold identification,
+      or pricing architecture recommendations presented to retail buyers or internal leadership?
+    why_undersold: >
+      Don built pricing architecture at Bayer through price gap analysis vs. competitors and
+      price threshold identification. This was embedded in category leadership work and never
+      named as pricing strategy on the resume.
+    inventory_entries_surfaced:
+      - ACH-027
+
+  - id: HY-007
+    category: "White-space and distribution gap identification"
+    confirmed_employers:
+      - "Playtex Products"
+      - "Bayer Consumer Care"
+      - "CSM Bakery Solutions"
+      - "TELUS Agriculture & Consumer Goods"
+    probe_question: >
+      At this employer, did any of your category or commercial work involve identifying
+      distribution gaps, underpenetrated segments, or white-space opportunities that led
+      to new item placement or category expansion?
+    why_undersold: >
+      White-space identification is a career-long pattern for Don — confirmed at all four
+      major employers. It never appeared on the resume because it was treated as a routine
+      analytical output rather than a named capability.
+    inventory_entries_surfaced:
+      - ACH-026
 
 # Example shape (uncomment and adapt after your first run):
 #  - id: HY-001
@@ -223,6 +277,52 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-003
+    date: "2026-06-04"
+    company: "CAB Enterprises / Electrolit"
+    role: "Category Insights Manager, Large Format"
+    outcome: "applied"
+    match_score_initial: 77
+    match_score_final: 87
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong, Tier 1"
+    resume_delta: "24%"
+    new_achievements_surfaced:
+      - ACH-025
+      - ACH-026
+      - ACH-027
+    new_categories_added:
+      - HY-005
+      - HY-006
+      - HY-007
+    lessons:
+      - >
+        TELUS large-format retail category management work (Walmart/Target/Kroger/Costco/
+        Albertsons/Amazon — category reviews, assortment optimization, shelf layouts) was
+        entirely absent from the base resume. This is the highest-value hidden capability
+        in the TELUS tenure. Must be added to base resume permanently.
+      - >
+        Bayer National Category Development Manager role contained full 4P category management
+        (pricing/promotion/assortment/shelf) including formal category line reviews at major
+        retailers. This was compressed to one generic strategy line on the base resume. The
+        full scope must be permanently added.
+      - >
+        White-space and distribution gap identification is a career-long pattern confirmed at
+        all four major employers. It should appear in the skills section and summary of any
+        category management application.
+      - >
+        Pricing architecture (price gap analysis, threshold identification, pricing strategy)
+        is a distinct and valuable capability confirmed at Bayer. Add to skills section for
+        all category management and commercial analytics roles.
+      - >
+        Houston personal connection (prior resident, willing to relocate) is a strong cover
+        letter hook for roles in that market. Always lead with it when applying to Houston.
+      - >
+        The Consumer Healthcare background (Bayer OTC: Aleve, One-A-Day, Alka-Seltzer) is
+        a differentiation hook for health/wellness/functional beverage categories. Electrolit's
+        pharmaceutical-grade positioning is directly adjacent. Use this angle when applying
+        to any health-adjacent CPG role.
+
   - run_id: RUN-002
     date: "2026-05-22"
     company: "Newell Brands"

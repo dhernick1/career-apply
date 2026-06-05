@@ -4,7 +4,7 @@
 **Date:** 2026-06-05
 **Channel:** Direct application
 **Req ID:** Unknown
-**Location:** Not stated in JD — Barry Callebaut North American HQ is Chicago, IL. Flag for personal consideration (candidate is Atlanta-based).
+**Location:** Banbury, Oxfordshire, England (UK). Candidate confirmed: open to international relocation and holds UK work authorization. No visa sponsorship required. Strong GO on location.
 **Actual employer:** Barry Callebaut Group (world's largest chocolate and cocoa manufacturer, B2B model)
 
 ---
@@ -114,4 +114,5 @@ JD confidence 0.55 (vague JD). Despite vagueness, Donald's 13-year CMI leadershi
 
 1. "The 'Top Chocolate Confectionery Trends 2026' report is impressive external work — is the Director role primarily serving internal commercial teams, or does it also feed Barry Callebaut's customer-facing intelligence capabilities?"
 2. "How does the Global Consumer Insights function interface with the Innovation team and the new Singapore Innovation Center?"
-3. "Is this role based in Chicago or is there flexibility for a remote/hybrid arrangement?"
+3. "Is there flexibility for a hybrid or remote arrangement, or is full-time presence in Banbury expected?"
+4. "Would Barry Callebaut sponsor a visa for a US-based candidate relocating to the UK?"

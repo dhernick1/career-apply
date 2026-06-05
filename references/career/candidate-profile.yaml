@@ -25,6 +25,14 @@ meta:
   version: 1.0
   last_updated: "2026-06-05"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
+  work_authorization:
+    US: true
+    UK: true
+    UK_notes: >
+      Confirmed 2026-06-05 (RUN-004, Barry Callebaut). Holds UK work authorization —
+      no visa sponsorship required for UK roles. Ready to relocate internationally.
+      Surface this proactively in cover letters for any UK or EU-based role as a
+      differentiator vs. candidates requiring sponsorship.
   note: >
     35+ year CPG career spanning Playtex, Bayer, CSM Bakery Solutions, and TELUS.
     Strongest quantified evidence at Bayer (revenue, OPE, award) and Playtex (rankings,
@@ -315,8 +323,10 @@ run_history:
         is the single strongest credential for food/FMCG CMI director roles. Always lead
         with CSM scope and budget for this role family.
       - >
-        Location should always be confirmed before investing in tailoring. Barry Callebaut
-        JD gave no location; Chicago HQ confirmed via research. Candidate is Atlanta-based.
+        Location confirmed post-run: Banbury, Oxfordshire, England (UK) — not Chicago.
+        Candidate confirmed: open to international relocation and holds UK work authorization.
+        No visa sponsorship required. UK work authorization is a standing credential —
+        always surface for EU and UK roles as a differentiator vs. US-only candidates.
 
   - run_id: RUN-003
     date: "2026-06-04"

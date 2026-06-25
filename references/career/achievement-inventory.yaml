@@ -9,8 +9,8 @@ meta:
   owner: "Donald T. Hernick"
   version: 1.0
   schema_version: "3.1"
-  last_updated: "2026-06-05"
-  total_entries: 30
+  last_updated: "2026-06-25"
+  total_entries: 48
   note: >
     Seeded from 26 04 07 CV Hernick.Don.2pages.docx on 2026-05-18. Covers career from
     Playtex (1986) through TELUS (2026). Strongest entries are at Bayer and Playtex
@@ -668,3 +668,468 @@ inventory:
       vehicle in that context. Highly relevant for Barry Callebaut (also a B2B company).
       Discovery prompt for future runs: "Did VoC findings lead to any specific product,
       service, or process changes at CSM?"
+
+  - id: ACH-031
+    achievement: >
+      Commissioned and co-developed consumer segmentation studies at Bayer Consumer Care
+      and TELUS Agriculture & Consumer Goods, defining priority consumer target segments,
+      need states, behavioral profiles, and motivations to guide brand positioning and
+      innovation strategy.
+    impact: >
+      Provided structured consumer target frameworks to brand and innovation teams at both
+      employers; specific revenue or share outcomes tied to segmentation not quantified.
+    evidence_strength: strong
+    tags:
+      - consumer_segmentation
+      - target_definition
+      - need_states
+      - consumer_insights
+      - brand_positioning
+      - innovation
+    date_range: "1997-08 to 2026-01"
+    organization: "Bayer Consumer Care and TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-005 (Dole Packaged Foods application, 2026-06-16). Confirmed in
+      discovery response. Segmentation appears 4x in the Dole JD as a core responsibility.
+      Not on base resume. Directly confirms one of the highest-priority keyword gaps for
+      consumer insights roles. Discovery prompt for future runs: "Can you describe the
+      segmentation methodology used — needs-based, attitudinal, behavioral, or occasion-based?
+      Were segments used in a specific product launch or brand repositioning decision?"
+
+  - id: ACH-032
+    achievement: >
+      Developed and commissioned purchase decision trees and consumer decision journey maps
+      at Bayer Consumer Care and TELUS Agriculture & Consumer Goods, identifying key purchase
+      drivers, barriers, and decision points across retail channels to inform go-to-market
+      strategy and brand positioning.
+    impact: >
+      Enabled brand and commercial teams to map the retail consumer decision journey;
+      specific outcomes (shelf placement wins, conversion improvement) not quantified.
+    evidence_strength: strong
+    tags:
+      - consumer_decision_journey
+      - purchase_decision_trees
+      - consumer_behavior
+      - retail
+      - go_to_market
+      - consumer_insights
+    date_range: "1997-08 to 2026-01"
+    organization: "Bayer Consumer Care and TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-005 (Dole Packaged Foods application, 2026-06-16). Confirmed in
+      discovery response. Directly maps to Dole JD responsibility: "Consumer Decision
+      Journey Mapping — Develop and maintain consumer decision trees and journey maps
+      across retail and e-commerce channels." Not on base resume. High-value keyword for
+      insights and strategy roles. Discovery prompt for future runs: "Did any of the
+      decision trees directly influence a shelf placement decision, packaging format change,
+      or go-to-market sequence at either employer?"
+
+  - id: ACH-033
+    achievement: >
+      Built the value and quality narrative for CSM Bakery Solutions' private-label product
+      portfolio, positioning private label against national and commercial bakery brands to
+      win incremental product placement and shelf space with retail customers.
+    impact: >
+      Won incremental product placement against national/commercial brands; specific volume
+      or share gains not consolidated.
+    evidence_strength: strong
+    tags:
+      - private_label
+      - value_narrative
+      - selling
+      - category_management
+      - placement_wins
+    date_range: "2003-11 to 2016-07"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      Surfaced in RUN-006 (McKesson application, 2026-06-17). Confirmed in discovery Prompt 1.
+      CSM's entire business was private label — Don lived the private-label commercial model
+      for 13 years. This is the central credential for any role selling or growing a private
+      brand against national brands (e.g., McKesson Foster & Thrive). Discovery prompt for
+      future runs: "Can you name a specific customer where the private-label value narrative
+      won placement away from a national brand?"
+
+  - id: ACH-034
+    achievement: >
+      Advised large private-label and store-brand businesses (Piping Rock, Future Beauty Brands)
+      at TELUS Agriculture & Consumer Goods on assortment, packaging, pricing, and shelf
+      placement across brick-and-mortar and online channels.
+    impact: >
+      Helped private-label clients navigate the marketplace and compete against national brands
+      across omnichannel retail; specific client outcomes not quantified.
+    evidence_strength: strong
+    tags:
+      - private_label
+      - assortment_optimization
+      - packaging
+      - pricing
+      - shelf_management
+      - omnichannel
+      - ecommerce
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-006 (McKesson application, 2026-06-17). Confirmed in discovery Prompts 2
+      and 5. Named private-label clients (Piping Rock — nutritional supplements; Future Beauty
+      Brands). Demonstrates private-label advisory across the full marketing mix and across both
+      physical and online channels. Pairs with ACH-033 to establish dual branded + private-label
+      fluency. Highly relevant for private-brand commercialization and omnichannel roles.
+
+  - id: ACH-035
+    achievement: >
+      Competed for and secured customer business through contract-bidding and competitive bid
+      processes at CSM Bakery Solutions (retailer bakery-components agreements) and TELUS
+      Agriculture & Consumer Goods (regular competitive bidding of products and services).
+    impact: >
+      Won and defended customer agreements through competitive bidding; specific contract values
+      not consolidated.
+    evidence_strength: strong
+    tags:
+      - contract_bidding
+      - competitive_bid
+      - rfp
+      - pricing_strategy
+      - negotiation
+    date_range: "2003-11 to 2026-01"
+    organization: "CSM Bakery Solutions and TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-006 (McKesson application, 2026-06-17). Confirmed in discovery Prompt 3.
+      Not GPO-specific, but establishes transferable competitive-bid / contract-pursuit and
+      bid-pricing experience. Use as the honest bridge to GPO/RFP requirements — frame as
+      competitive bidding experience, not GPO-specific mastery. Discovery prompt for future
+      runs: "Have you ever responded to a formal RFP/RFI or bid into a buying group or GPO?"
+
+  - id: ACH-036
+    achievement: >
+      Drove product distribution through pharmacy wholesalers and distributors across the drug
+      channel at Bayer Consumer Care (OTC brands) and via Piping Rock (nutritional supplements)
+      at TELUS Agriculture & Consumer Goods.
+    impact: >
+      Established and grew distribution through the pharmacy wholesaler/distributor channel —
+      the same channel structure healthcare distributors (e.g., McKesson) operate in.
+    evidence_strength: strong
+    tags:
+      - pharmacy_distribution
+      - wholesaler
+      - drug_channel
+      - OTC
+      - distribution
+    date_range: "1997-08 to 2026-01"
+    organization: "Bayer Consumer Care and TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-006 (McKesson application, 2026-06-17). Confirmed in discovery Prompt 4.
+      Establishes familiarity with the pharmacy wholesaler/distributor channel. Relevant for
+      healthcare-distribution roles, though McKesson-specific GPO/formulary mechanics remain a
+      learning curve. Do not overclaim distributor-side contracting expertise.
+
+  - id: ACH-037
+    achievement: >
+      Sourced, onboarded, and grew new client business at TELUS Agriculture & Consumer Goods
+      across Dyson Electronics, Purpose Built Brands, Lakeview Farms, and Global Beauty;
+      expanded account revenue by extending the services adopted within each account.
+    impact: >
+      Won and expanded multiple named new accounts; specific revenue figures not quantified.
+    evidence_strength: strong
+    tags:
+      - new_business_development
+      - account_expansion
+      - winning_new_business
+      - selling
+      - account_management
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-006 (McKesson application, 2026-06-17). Confirmed in discovery Prompt 6.
+      CRITICAL recency credential: demonstrates new-business development and account expansion
+      through 2026, directly countering the "selling recency" concern that arises because Don's
+      frontline quota-carrying roles (Playtex, Bayer) ended in 2003. Named accounts (Dyson,
+      Purpose Built Brands, Lakeview Farms, Global Beauty). Always surface for any commercial /
+      sales / business-development role to prove current selling activity.
+
+  - id: ACH-044
+    achievement: >
+      Conducted shopper-specific research — path-to-purchase, shopper segmentation, trip
+      missions, and in-store/shelf decision behavior — at TELUS Agriculture & Consumer Goods,
+      Bayer Consumer Care, and CSM Bakery Solutions, distinct from consumer/household research.
+    impact: >
+      Provided shopper-level understanding to inform assortment, shelf, and conversion decisions;
+      specific outcomes vary by employer and are not consolidated.
+    evidence_strength: strong
+    tags:
+      - shopper_insights
+      - path_to_purchase
+      - shopper_segmentation
+      - shelf_behavior
+      - consumer_insights
+    date_range: "1997-08 to 2026-01"
+    organization: "Multiple (TELUS, Bayer, CSM)"
+    verified: true
+    notes: >
+      Surfaced in RUN-008 (Kraft Heinz Shopper Insights application, 2026-06-25). Confirmed in
+      discovery Prompt 1 (all three employers). Distinguishes Don's consumer/category insights
+      background as also covering the SHOPPER sub-discipline. Key for shopper-insights roles.
+
+  - id: ACH-045
+    achievement: >
+      Delivered insight and category support for national and regional grocery accounts across
+      his career: directly managed H-E-B and Publix at Playtex (owning all sales and insight
+      data delivery); led CSM's largest fresh-bakery category (cake) with consumer insights at
+      corporate and divisional levels; and provided consumer insight at TELUS for client use at
+      Kroger, H-E-B, Albertsons, Ahold, and Publix.
+    impact: >
+      Supported assortment, category, and shopper decisions at the largest US grocery retailers;
+      specific sales outcomes vary by engagement.
+    evidence_strength: strong
+    tags:
+      - grocery_retail
+      - strategic_accounts
+      - category_management
+      - shopper_insights
+      - Kroger
+      - Publix
+      - HEB
+      - Albertsons
+      - Ahold
+    date_range: "1995-07 to 2026-01"
+    organization: "Multiple (Playtex, CSM, TELUS)"
+    verified: true
+    notes: >
+      Surfaced in RUN-008 (Kraft Heinz, 2026-06-25). Confirmed in discovery Prompt 3. Names every
+      grocery account in the Kraft Heinz JD (Kroger, Albertsons, Publix, Ahold Delhaize, H-E-B).
+      Playtex H-E-B/Publix direct account management is a strong, specific grocery credential.
+      Highest-value evidence for any grocery-channel insights or category role.
+
+  - id: ACH-046
+    achievement: >
+      Built a proprietary quarterly consumer panel at TELUS Agriculture & Consumer Goods measuring
+      brand awareness, favorability, conversion, and purchase frequency, with e-commerce data
+      broken out for each of the ten largest online operators.
+    impact: >
+      Gave clients ongoing brand-health and behavioral tracking spanning brick-and-mortar and
+      e-commerce; specific client decisions influenced not consolidated.
+    evidence_strength: strong
+    tags:
+      - consumer_panel
+      - brand_tracking
+      - ecommerce
+      - omnichannel
+      - conversion
+      - shopper_insights
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-008 (Kraft Heinz, 2026-06-25). Confirmed in discovery Prompt 4. Extends
+      ACH-021 with the e-commerce-by-retailer dimension — directly supports "omnichannel" and
+      "digital/e-commerce" requirements. NOTE: this is proprietary panel data, NOT retailer
+      loyalty/FSP data (84.51/dunnhumby) — Don confirmed NO direct loyalty-data experience
+      (discovery Prompt 2). Do not claim loyalty-platform experience; position panel as the
+      analogous behavioral-data strength and loyalty platforms as fast-ramp.
+
+  - id: ACH-047
+    achievement: >
+      Presented insight and category data directly to retail buyers and participated in joint
+      business planning at Playtex Products, Bayer Consumer Care, and CSM Bakery Solutions
+      (direct); supported buyer-facing insight on an indirect basis at TELUS.
+    impact: >
+      Influenced retailer assortment and category decisions through customer-facing insight and
+      joint planning; specific wins not consolidated.
+    evidence_strength: strong
+    tags:
+      - customer_facing
+      - joint_business_planning
+      - buyer_presentations
+      - category_management
+      - shopper_insights
+    date_range: "1995-07 to 2026-01"
+    organization: "Multiple (Playtex, Bayer, CSM, TELUS)"
+    verified: true
+    notes: >
+      Surfaced in RUN-008 (Kraft Heinz, 2026-06-25). Confirmed in discovery Prompt 5. Direct
+      buyer-facing insight + JBP at Playtex/Bayer/CSM; indirect at TELUS. Supports "high-stakes
+      customer engagements" and "trusted advisor to retail partners" requirements.
+
+  - id: ACH-048
+    achievement: >
+      Recruited, developed, and mentored junior and mid-level team members across his insights
+      and marketing teams, deliberately building their analytical and storytelling capabilities.
+    impact: >
+      Built bench strength and elevated team storytelling capability; specific promotion/retention
+      metrics not consolidated.
+    evidence_strength: strong
+    tags:
+      - mentoring
+      - talent_development
+      - capability_building
+      - storytelling
+      - team_leadership
+    date_range: "1997-08 to 2026-01"
+    organization: "Multiple (Playtex, Bayer, CSM)"
+    verified: true
+    notes: >
+      Surfaced in RUN-008 (Kraft Heinz, 2026-06-25). Confirmed in discovery Prompt 6. Complements
+      ACH-043 (6-person global team) with explicit mentoring/capability-building emphasis at both
+      junior and mid-management levels. Directly supports "mentor and develop junior insights
+      talent / capability building" requirements.
+
+  - id: ACH-038
+    achievement: >
+      Built volumetric and cannibalization forecasts for new products and line extensions across
+      three employers: a Bayer national launch pipeline forecast accurate to 98%; co-licensed
+      product introduction forecasts with cannibalization estimates at CSM; and volumetric and
+      cannibalization forecasts for multiple TELUS clients' new products and line extensions.
+    impact: >
+      Enabled go/no-go and pipeline-fill decisions with quantified cannibalization risk; Bayer
+      forecast achieved 98% accuracy.
+    evidence_strength: strong
+    tags:
+      - volumetric_forecasting
+      - cannibalization
+      - new_product_launch
+      - consumer_insights
+      - forecasting
+    date_range: "1997-08 to 2026-01"
+    organization: "Multiple (Bayer, CSM, TELUS)"
+    verified: true
+    notes: >
+      Surfaced in RUN-007 (High Liner Foods application, 2026-06-19). Confirmed in discovery
+      Prompt 1. Directly maps to JD Consumer Insights requirement: "volumetric assessment and
+      cannibalization." Bayer 98% figure is consistent with ACH-024 (One-A-Day Herbals demand
+      plan within 2%). Career-long pattern across three employers. Discovery prompt for future
+      runs: "What methodology drove the cannibalization estimate — source-of-volume study,
+      panel-based, or model-based?"
+
+  - id: ACH-039
+    achievement: >
+      Certified through TPG / IFMA Full Plate Foodservice Category Management at CSM Bakery
+      Solutions; applied the framework to incorporate market and patron dynamics, menu and
+      assortment optimization, pricing, trade-spend efficiency, supply-chain efficiency,
+      merchandising activation, strategy, and joint planning into category decisions.
+    impact: >
+      Brought a structured foodservice operator/patron-journey methodology to category and
+      insights work spanning both retail and foodservice channels.
+    evidence_strength: strong
+    tags:
+      - foodservice
+      - operator_journey
+      - category_management
+      - certification
+      - menu_optimization
+      - joint_planning
+    date_range: "2003-11 to 2016-07"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      Surfaced in RUN-007 (High Liner Foods application, 2026-06-19). Confirmed in discovery
+      Prompt 2. The base resume lists "TPG trained" generically; this is the specific TPG/IFMA
+      Full Plate Foodservice Category Management certification. Maps directly to JD's "operator
+      journey" and "Foodservice Sales" language. Rare credential most pure-insights candidates
+      lack. High-value for any role with a foodservice channel. Pairs with ACH-016 (Full Plate
+      Best Practice authorship).
+
+  - id: ACH-040
+    achievement: >
+      Built predictive assortment-gain models at TELUS Agriculture & Consumer Goods to quantify
+      the most effective pricing levels and projected volume gains for new and emerging items,
+      informing test-and-learn decisions for clients.
+    impact: >
+      Gave clients a quantified basis for pricing and assortment decisions on new/emerging items;
+      specific client outcomes not quantified.
+    evidence_strength: strong
+    tags:
+      - predictive_modeling
+      - test_and_learn
+      - assortment_optimization
+      - pricing
+      - designed_experiments
+      - analytics
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-007 (High Liner Foods application, 2026-06-19). Confirmed in discovery
+      Prompt 3. Maps to JD: "design experiments that will help quantify the impact of various
+      growth strategies." Demonstrates designed-experiment / test-and-learn capability via
+      predictive modeling. Discovery prompt for future runs: "Were these true controlled
+      experiments (test vs. control) or predictive models? Both framings may apply."
+
+  - id: ACH-041
+    achievement: >
+      Led a multi-month, multiyear pricing-strategy roadmap engagement at TELUS Agriculture &
+      Consumer Goods for a consumer-durable product facing tariff headwinds, helping shape the
+      client's pricing roadmap.
+    impact: >
+      Shaped a client's multiyear pricing roadmap under tariff-driven cost pressure; specific
+      financial outcome not quantified.
+    evidence_strength: strong
+    tags:
+      - RGM
+      - multiyear_roadmap
+      - pricing_strategy
+      - tariffs
+      - revenue_growth_management
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-007 (High Liner Foods application, 2026-06-19). Confirmed in discovery
+      Prompt 4. Recent (TELUS, ongoing tenure). Maps to JD: "building multiyear RGM roadmaps."
+      Notable hook value: mirrors High Liner's own stated tariff/cost-inflation challenge.
+      Always surface for RGM roles and for any company managing pricing under cost pressure.
+
+  - id: ACH-042
+    achievement: >
+      Directed pack-size and price-point architecture work across employers: category-level
+      pricing strategy and specific price-point decisions at Bayer; multiple directed pricing
+      studies across core product categories at CSM; and client evaluation of price trends
+      across a range of sizes and pack configurations at TELUS to support pack decisions.
+    impact: >
+      Informed pricing and pack-architecture decisions across consumer healthcare, food, and
+      consulting contexts; specific revenue impact not consolidated.
+    evidence_strength: strong
+    tags:
+      - pack_architecture
+      - sizing
+      - price_point
+      - pricing_strategy
+      - RGM
+    date_range: "1997-08 to 2026-01"
+    organization: "Multiple (Bayer, CSM, TELUS)"
+    verified: true
+    notes: >
+      Surfaced in RUN-007 (High Liner Foods application, 2026-06-19). Confirmed in discovery
+      Prompt 5. Maps to JD: "pack architecture & sizing" and "price architecture." Extends
+      ACH-027 (Bayer pricing architecture) with explicit pack-size/price-per-unit dimension
+      and adds CSM and TELUS evidence.
+
+  - id: ACH-043
+    achievement: >
+      Managed a six-person global consumer & market insights team at CSM Bakery Solutions:
+      four U.S.-based members responsible for North America and two U.K./EU-based members
+      responsible for the European Union and U.K. markets.
+    impact: >
+      Directed a multi-region insights team supporting a $3B global food company; quantifies
+      people-leadership scope previously undocumented on the resume.
+    evidence_strength: strong
+    tags:
+      - team_leadership
+      - people_management
+      - global
+      - insights
+      - CMI
+    date_range: "2014-06 to 2016-07"
+    organization: "CSM Bakery Solutions"
+    verified: true
+    notes: >
+      Surfaced in RUN-007 (High Liner Foods application, 2026-06-19). Confirmed in discovery
+      Prompt 6. Quantifies direct-report headcount (6) and geographic split (4 NA, 2 EU/UK) for
+      the CSM global insight function. Directly supports JD requirement to "lead and develop a
+      high-performance RGM, Insights and Category Management team." Use the specific headcount
+      for any people-leadership role.

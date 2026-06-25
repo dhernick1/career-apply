@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-06-05"
+  last_updated: "2026-06-25"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -169,6 +169,68 @@ high_yield_categories:
     inventory_entries_surfaced:
       - ACH-026
 
+  - id: HY-008
+    category: "Private-label / store-brand commercialization (branded + private-label dual fluency)"
+    confirmed_employers:
+      - "CSM Bakery Solutions"
+      - "TELUS Agriculture & Consumer Goods"
+      - "Bayer Consumer Care"
+    probe_question: >
+      At this employer, did you sell, position, or advise on private-label / store-brand
+      products against national brands? Did you build the value/quality narrative for why a
+      customer should choose private label, or advise on private-label assortment, packaging,
+      pricing, or shelf placement?
+    why_undersold: >
+      Don's private-label experience is deep but was never named on the base resume. CSM was
+      an entirely private-label business (13 years); at TELUS he advised large private-label
+      clients (Piping Rock, Future Beauty Brands); and his branded OTC work at Bayer/Playtex
+      gives him the complementary national-brand lens. This branded + private-label dual
+      fluency is rare and highly valuable for any private-brand growth role (e.g., McKesson
+      Foster & Thrive, retailer own-brand teams).
+    inventory_entries_surfaced:
+      - ACH-033
+      - ACH-034
+
+  - id: HY-009
+    category: "Recent new-business development and account expansion (counters selling-recency risk)"
+    confirmed_employers:
+      - "TELUS Agriculture & Consumer Goods"
+    probe_question: >
+      At this employer, did you source, win, or expand named new accounts? Can you name the
+      specific clients/accounts you brought in or grew, and how you expanded revenue within them?
+    why_undersold: >
+      The base resume frames TELUS as analytics consulting, hiding the fact that Don actively
+      sourced and grew named new accounts (Dyson, Purpose Built Brands, Lakeview Farms, Global
+      Beauty) through 2026. For any commercial/sales role, this is the critical evidence that
+      Don's selling is current — not stuck in his Playtex/Bayer era (which ended 2003). Always
+      surface for sales, BD, and account-management roles.
+    inventory_entries_surfaced:
+      - ACH-037
+
+  - id: HY-010
+    category: "RGM depth — multiyear roadmaps, pack/price architecture, predictive pricing models, volumetric/cannibalization"
+    confirmed_employers:
+      - "TELUS Agriculture & Consumer Goods"
+      - "CSM Bakery Solutions"
+      - "Bayer Consumer Care"
+    probe_question: >
+      At this employer, did your pricing/RGM work go beyond one-off analyses? Specifically:
+      multiyear pricing or pack-architecture roadmaps; predictive assortment-gain or price-
+      elasticity models; designed experiments / test-and-learn; or volumetric and cannibalization
+      forecasts for new items and line extensions?
+    why_undersold: >
+      Don's RGM work at TELUS was framed as generic "analytics consulting" on the base resume,
+      hiding specific RGM artifacts: a multi-month multiyear pricing roadmap (consumer durable,
+      tariffs), predictive assortment-gain models for test-and-learn, and volumetric/
+      cannibalization forecasting across Bayer, CSM, and TELUS. These are the exact deliverables
+      senior RGM and insights-leadership JDs ask for. Always probe for the specific RGM artifact,
+      not just "pricing experience."
+    inventory_entries_surfaced:
+      - ACH-038
+      - ACH-040
+      - ACH-041
+      - ACH-042
+
 # Example shape (uncomment and adapt after your first run):
 #  - id: HY-001
 #    category: "[short category name — e.g. 'Product collateral ownership']"
@@ -218,6 +280,27 @@ domain_adjacency_map:
       and GTM optimization roles.
     confirmed_in_runs:
       - RUN-002
+
+  - source_domain: "Competitive contract bidding (CSM retailer bids, TELUS service bids)"
+    adjacent_domain: "GPO contracting / RFP-RFI bid strategy"
+    evidence: >
+      At CSM the bakery-components business ran through retailer contract-bidding; at TELUS Don
+      bid products and services competitively on a regular basis. This is transferable
+      competitive-bid and bid-pricing experience that bridges toward GPO contracting and RFP/RFI
+      requirements — though it is NOT GPO-specific. Frame honestly as competitive bidding, not
+      GPO mastery. Confirmed RUN-006.
+    confirmed_in_runs:
+      - RUN-006
+
+  - source_domain: "OTC and supplements distribution (Bayer, Piping Rock)"
+    adjacent_domain: "Healthcare distribution / pharmacy wholesaler channel"
+    evidence: >
+      Bayer OTC distribution and Piping Rock supplements both ran through pharmacy wholesalers
+      and distributors — the same channel structure McKesson operates in. Establishes channel
+      familiarity for healthcare-distribution roles, though distributor-side GPO/formulary
+      mechanics remain a learning curve. Confirmed RUN-006.
+    confirmed_in_runs:
+      - RUN-006
 
 # Example shape:
 #  - source_domain: "[domain you've worked in]"
@@ -285,6 +368,158 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-008
+    date: "2026-06-25"
+    company: "Kraft Heinz"
+    role: "Lead, Shopper Insights – Strategic Accounts, Grocery"
+    outcome: "applied (custom CV + six-attribute cover letter); relocation to Cincinnati confirmed"
+    match_score_initial: 85
+    match_score_final: 88
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong, Tier 1"
+    resume_delta: "26%"
+    new_achievements_surfaced:
+      - ACH-044
+      - ACH-045
+      - ACH-046
+      - ACH-047
+      - ACH-048
+    new_categories_added: []
+    lessons:
+      - >
+        Shopper insights is an adjacent sub-discipline to Don's consumer/category insights core,
+        and he has real shopper-specific work (path-to-purchase, segmentation, trip missions,
+        shelf behavior) at all three employers. For shopper-insights roles, name "shopper"
+        explicitly and lead with the Kantar Retail Shopper Insight Panel + large-format work.
+      - >
+        Grocery-account credential is strong and specific: Don directly managed H-E-B and Publix
+        at Playtex, led CSM's largest fresh-bakery category (cake) with insights, and supported
+        Kroger/H-E-B/Albertsons/Ahold/Publix at TELUS. This names EVERY account in the Kraft
+        Heinz JD. Always surface the Playtex H-E-B/Publix direct account management for grocery
+        roles — it is the most concrete grocery proof point.
+      - >
+        HONEST GAP: no direct retailer loyalty/FSP data experience (84.51/dunnhumby). Do NOT
+        claim it. Lead instead with the proprietary TELUS quarterly consumer panel (frequency,
+        conversion, awareness, plus e-commerce by retailer) as the analogous behavioral-data
+        strength, and frame loyalty-platform fluency as a fast ramp. Kept out of the cover letter
+        as a stated strength.
+      - >
+        The TELUS quarterly panel includes e-commerce data broken out by each of the top-10 ecom
+        operators — use this for any "omnichannel" or "digital/e-commerce" requirement.
+      - >
+        Kraft Heinz context (mid-2026): announced a split (Sept 2025) into a sauces/spreads co.
+        and a North American Grocery co., then PAUSED the split (Feb 2026) under a new CEO with a
+        $600M investment push in marketing/sales/R&D. The opening hook ties this growth-investment
+        moment to the role. Glassdoor 3.5/5, 64% recommend, but recurring toxic-leadership/burnout
+        theme — weigh culture carefully at offer stage.
+      - >
+        Cincinnati location is driven by the anchor strategic account (Kroger, HQ Cincinnati).
+        Relocation confirmed viable for Don.
+
+  - run_id: RUN-007
+    date: "2026-06-19"
+    company: "High Liner Foods"
+    role: "Director, Insights & Revenue Growth Management (Req. DIREC003652)"
+    outcome: "applied (5/19/2026); follow-up cover letter prepared — warm referral in motion"
+    match_score_initial: 88
+    match_score_final: 92
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong, Tier 1 (Priority)"
+    resume_delta: "N/A — already applied; deliverable was bullet-format cover letter only"
+    new_achievements_surfaced:
+      - ACH-038
+      - ACH-039
+      - ACH-040
+      - ACH-041
+      - ACH-042
+      - ACH-043
+    new_categories_added:
+      - HY-010
+    lessons:
+      - >
+        Highest-fit role of the search to date (92%). This role fuses Don's two deepest
+        threads: consumer/category insights AND revenue growth management. TELUS was literally
+        the "RGM Analytics" division. For any combined insights + RGM leadership role, lead
+        with the TELUS RGM Analytics framing plus the CSM global insights leadership.
+      - >
+        WARM-REFERRAL STRATEGY: the hiring VP asked HR to pull Don's application directly.
+        When a referral is in motion, do NOT fire a cover letter cold into the ATS — it can
+        muddy a clean internal pull and read as anxious. Build the cover letter as a hold-and-
+        place reinforcement asset: best delivered by the referrer to the VP, or when HR/the VP
+        initiates contact. A bullet-format requirement-to-evidence match sheet is ideal for a
+        referrer to forward because it is skimmable.
+      - >
+        Foodservice is a genuine differentiator. Don holds the TPG/IFMA Full Plate Foodservice
+        Category Management certification (more specific than the resume's generic "TPG trained")
+        and led both retail and foodservice category work at CSM. Most pure-insights candidates
+        lack the foodservice "operator journey" credential. Always surface for roles with a
+        foodservice or away-from-home channel.
+      - >
+        RGM artifacts were hidden under generic "analytics consulting" framing on the base
+        resume. Discovery surfaced a multiyear pricing roadmap (consumer durable, tariffs),
+        predictive assortment-gain models for test-and-learn, volumetric/cannibalization
+        forecasting, and pack/price architecture. Added as HY-010. Always probe for the
+        specific RGM artifact, not just "pricing experience."
+      - >
+        Hook value: Don's recent TELUS pricing-roadmap engagement was for a product facing
+        tariff headwinds — the exact challenge High Liner cited in Q1 2026 earnings. Mirroring
+        the target company's stated challenge in the opening hook is high-leverage.
+      - >
+        High Liner Glassdoor 3.6/5, 67% recommend; small review base. Notes turnover/layoffs
+        and intense workload. Company is growing strongly (Q1 2026 revenue +24.77%, integrating
+        Mrs. Paul's/Van de Kamp's from Conagra). Lower concern than Newell.
+
+  - run_id: RUN-006
+    date: "2026-06-17"
+    company: "McKesson Corporation"
+    role: "Lead, Commercial Expansion – OTC & Consumer Health (Foster & Thrive private brand)"
+    outcome: "applied"
+    match_score_initial: 80
+    match_score_final: 87
+    ats_result: "PASS (post-tailoring; GPO/ClarusONE keywords intentionally omitted — not truthfully addable)"
+    go_no_go: "GO — Strong, Tier 1"
+    resume_delta: "30%"
+    new_achievements_surfaced:
+      - ACH-033
+      - ACH-034
+      - ACH-035
+      - ACH-036
+      - ACH-037
+    new_categories_added:
+      - HY-008
+      - HY-009
+    lessons:
+      - >
+        This was a SALES/commercial role, not an insights role — a re-angle of the
+        insights-positioned base resume back toward Don's commercial/account-management roots
+        (Playtex, Bayer). For sales roles, lead with selling, key account management, new
+        business, and pricing — not research/insights. Resume delta ran ~30% because of the
+        full re-angle.
+      - >
+        Private-label is a major hidden strength. CSM was entirely private label (13 years);
+        TELUS advised private-label clients (Piping Rock, Future Beauty Brands). Combined with
+        branded OTC work (Bayer, Playtex), Don has rare branded + private-label dual fluency.
+        Added as HY-008. Surface for any private-brand or retailer own-brand role.
+      - >
+        Selling recency is the recurring risk for commercial roles: Don's frontline
+        quota-carrying roles ended 2003. The counter is the TELUS new-business development
+        (Dyson, Purpose Built Brands, Lakeview Farms, Global Beauty) running through 2026.
+        Added as HY-009. Always surface to prove current selling activity.
+      - >
+        Competitive contract bidding (CSM retailer bids, TELUS service bids) is the honest
+        bridge to GPO/RFP requirements — but it is NOT GPO-specific. Pharmacy wholesaler/
+        distributor channel familiarity (Bayer, Piping Rock) bridges toward healthcare
+        distribution. Do not overclaim GPO/ClarusONE/formulary mechanics; frame as fast-ramp.
+      - >
+        The Perl docx generator must escape dollar signs ($) inside double-quoted strings or
+        Perl interprets "$23M" as variable $23. Use single-quoted strings or \$ for any text
+        containing dollar figures. Caught and fixed in this run — verify dollar figures in
+        output before delivering.
+      - >
+        McKesson Glassdoor 3.7/5, 70% recommend, but recurring "frequent layoffs" theme.
+        Company is financially healthy (Fortune 10, +6% revenue). Lower risk than Newell but
+        worth noting at offer stage.
+
   - run_id: RUN-004
     date: "2026-06-05"
     company: "Barry Callebaut"

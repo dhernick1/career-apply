@@ -5,16 +5,59 @@
 # This file is consumed by career-agent but never modified by it.
 
 profile:
-  headline: "LEADER / STRATEGIST / INNOVATOR / MENTOR"
+  # Updated 2026-06-25: re-angled from the generic "LEADER / STRATEGIST / INNOVATOR / MENTOR"
+  # headline and Sales & Marketing-only About to bridge insights + RGM + commercial + private
+  # label, so LinkedIn is consistent with both insights-tailored and commercial-tailored resumes.
+  headline: "Consumer, Shopper & Market Insights | Revenue Growth Management | Category & Commercial Leadership — CPG, Consumer Health & Food | Branded + Private Label | Retail + Foodservice"
   location: "Snellville, GA, United States"
   connection_count: ""
 
-about: >
-  Innovative senior Sales & Marketing Leader is energized by challenging fast-paced environments.
-  Possesses broad experience in the Consumer Packaged Goods, Consumer Healthcare & Fresh Foods
-  industries. Experienced with B2C & B2B segments in both domestic & international markets.
-  Proven success in building and developing exceptional sales, marketing, customer marketing &
-  insights teams.
+# Primary (shorter, scannable) About — current version to post.
+about: |
+  I turn consumer and market insight into profitable growth.
+
+  For 35 years across CPG, consumer healthcare, and food, I have led where insight meets
+  commercial action: consumer, shopper, and market insights, revenue growth management,
+  category management, and the customer marketing and sales work that turns analysis into
+  results. I built and led a global insights function for a $3 billion food company, and I
+  have sold and grown new accounts as recently as this year.
+
+  I have worked both sides of the table: national brands at Bayer and an all-private-label
+  business for 13 years at CSM, across B2C and B2B, retail and foodservice, in domestic and
+  international markets. I like the hard, ambiguous problems, and I bring a fact-based,
+  collaborative approach to every one.
+
+  Areas of expertise: Consumer / Shopper / Market Insights · Revenue Growth Management ·
+  Category Management · Pricing & Promotion Strategy · New Business Development · Customer &
+  Trade Marketing · Private-Label & Branded Leadership · Syndicated Data (Nielsen, Circana/IRI)
+  · Storytelling · Team Leadership · AI Fluency
+
+# Alternate (longer) About — fuller narrative if a more detailed profile is preferred.
+about_long: |
+  I turn consumer and market insight into profitable growth.
+
+  Over 35 years in consumer packaged goods, consumer healthcare, and food, I have led where
+  insight meets commercial action: consumer, shopper, and market insights; revenue growth
+  management; category management; and the customer and trade marketing and sales work that
+  turns analysis into results. I have built and led high-performing insights, marketing,
+  customer marketing, and sales teams, including a global insights function for a $3 billion
+  food company.
+
+  I have worked both sides of the table. I built national brands at Bayer, including Aleve,
+  One-A-Day, and Alka-Seltzer, and I ran an all-private-label business for 13 years at CSM, and
+  I advised private-label clients at TELUS. I have sold and grown accounts as recently as this
+  year, sourcing and building new client business, and I have delivered insight and category
+  support across the largest grocery and drug retailers, from Kroger and Albertsons to H-E-B
+  and Publix.
+
+  My work spans B2C and B2B, branded and private label, retail and foodservice, in domestic and
+  international markets. I am energized by ambiguous, high-stakes problems, and the people I work
+  with would tell you I bring a fact-based, creative, and collaborative approach to every one.
+
+  Areas of expertise: Consumer / Shopper / Market Insights · Revenue Growth Management (RGM) ·
+  Category Management · Pricing & Promotion Strategy · New Business Development · Customer &
+  Trade Marketing · Private-Label & Branded Portfolio Leadership · Syndicated Data (Nielsen,
+  Circana/IRI) · Insight-Driven Storytelling · Team Leadership & Mentoring · AI Fluency
 
 # Experience entries mirror base-resume.yaml — no known deviations at time of seeding.
 # Update if LinkedIn wording differs materially from resume.

@@ -13,9 +13,9 @@
 meta:
   owner: "Donald T. Hernick"
   minimum_samples_required: 3
-  current_sample_count: 6
+  current_sample_count: 7
   version: 1.0
-  last_updated: "2026-05-18"
+  last_updated: "2026-06-17"
   notes: >
     Voice is direct and confident. Opens with context (how role was found) then moves
     immediately to value. Uses a requirements-to-qualifications alignment table as a
@@ -128,3 +128,18 @@ samples:
       Note: this was a template document (signed "Bjorn Sample") -- pattern is usable but
       not directly attributed. Em dash usage in the stakeholder list; replace with commas
       or parentheses when generating new content.
+
+  - id: sample-007
+    channel: cover-letter
+    source: "McKesson cover letter — RUN-006, 2026-06-17 (opening hook)"
+    date: "2026-06-17"
+    text: >
+      I have built national OTC brands, and I have run an all-private-label business. I know
+      both sides of the shelf.
+    voice_notes: >
+      Dual-credential contrast compressed into two short sentences, landing on a five-word
+      declarative ("I know both sides of the shelf"). A variant of the "not just X, Y" pattern
+      but stated as parallel positives ("I have built X, and I have run Y") then resolved with
+      a punchy metaphor. Use when the candidate's differentiator is holding two opposing
+      experiences at once (branded vs. private label, regional vs. global, agency vs. client).
+      Pairs well with the company-state-assertion opener from sample-006.

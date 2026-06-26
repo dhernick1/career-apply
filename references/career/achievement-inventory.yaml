@@ -9,8 +9,8 @@ meta:
   owner: "Donald T. Hernick"
   version: 1.0
   schema_version: "3.1"
-  last_updated: "2026-06-25"
-  total_entries: 48
+  last_updated: "2026-06-26"
+  total_entries: 51
   note: >
     Seeded from 26 04 07 CV Hernick.Don.2pages.docx on 2026-05-18. Covers career from
     Playtex (1986) through TELUS (2026). Strongest entries are at Bayer and Playtex
@@ -1133,3 +1133,76 @@ inventory:
       the CSM global insight function. Directly supports JD requirement to "lead and develop a
       high-performance RGM, Insights and Category Management team." Use the specific headcount
       for any people-leadership role.
+
+  - id: ACH-049
+    achievement: >
+      Trialed AI-driven research tools and adopted automated coding at TELUS Agriculture &
+      Consumer Goods to accelerate synthesis and improve insight speed and quality.
+    impact: >
+      Improved research throughput/quality through AI-assisted methods; specific efficiency
+      figures not quantified.
+    evidence_strength: strong
+    tags:
+      - AI
+      - AI_enabled_research
+      - automated_coding
+      - insights_modernization
+      - research_operations
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-009 (Bimbo Bakeries Director Consumer Insights, 2026-06-26). Confirmed in
+      discovery Prompt 1. Concrete AI-insights adoption (automated coding) plus tool trials.
+      Use for roles requiring AI modernization of the insights function. Honest framing: this is
+      tool trial + one adopted method, NOT a claimed enterprise-scale AI transformation. NOTE
+      per [[no-ai-terms-in-cover-letters]]: AI normally stays out of Don's cover letters, but it
+      belongs in cover letters for AI-centric roles (e.g., Bimbo).
+
+  - id: ACH-050
+    achievement: >
+      Evaluated supplier AI governance and its implications for the business at TELUS,
+      assessing validation, accuracy, privacy, and responsible-use considerations.
+    impact: >
+      Informed responsible adoption of AI-enabled supplier capabilities; specific decisions not
+      consolidated.
+    evidence_strength: strong
+    tags:
+      - AI
+      - AI_governance
+      - responsible_AI
+      - vendor_management
+      - insights_modernization
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-009 (Bimbo, 2026-06-26). Confirmed in discovery Prompt 3. Directly supports
+      JD's "responsible AI usage / AI stewardship / validation, accuracy checks, privacy, human
+      oversight" requirements. Pairs with ACH-049 and ACH-051 to form a credible (not overstated)
+      AI-insights portfolio.
+
+  - id: ACH-051
+    achievement: >
+      Since departing TELUS in January 2026, deliberately deepened applied AI capability through
+      formal training and hands-on work, including active membership in the AI Collective (Atlanta
+      chapter), and is currently using AI to evaluate business opportunities.
+    impact: >
+      Built current, practical AI fluency for consumer research; demonstrates a building
+      philosophy about AI for the field with openness to adapt.
+    evidence_strength: strong
+    tags:
+      - AI
+      - AI_upskilling
+      - professional_development
+      - AI_Collective
+      - continuous_learning
+    date_range: "2026-01 to present"
+    organization: "Independent / Professional Development"
+    verified: true
+    notes: >
+      Surfaced in RUN-009 (Bimbo, 2026-06-26). Confirmed in discovery Prompts 2 and 4. The AI
+      Collective (Atlanta Chapter) membership is a concrete, namable credential that substantiates
+      "AI Fluency" beyond a bare skill claim. Strongest current-AI evidence; lead with it for any
+      AI-modernization insights role. Frames Don as a seasoned insights leader actively bringing
+      AI in, not learning insights from scratch.

@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-06-25"
+  last_updated: "2026-06-26"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -231,6 +231,28 @@ high_yield_categories:
       - ACH-041
       - ACH-042
 
+  - id: HY-011
+    category: "AI-enabled insights modernization & governance (and active AI upskilling)"
+    confirmed_employers:
+      - "TELUS Agriculture & Consumer Goods"
+      - "Independent / Professional Development"
+    probe_question: >
+      At this employer (or currently), did you trial or adopt AI-driven research tools, redesign
+      a research workflow to use AI, evaluate AI supplier governance, or otherwise modernize
+      insights with AI? Are you actively building AI capability (training, communities, hands-on)?
+    why_undersold: >
+      Don's AI experience is recent and easy to under-state because his 35-year record predates
+      it. He trialed AI research tools and adopted automated coding at TELUS, evaluated supplier
+      AI governance, and since Jan 2026 has deliberately upskilled (AI Collective Atlanta, formal
+      training, hands-on). For AI-modernization insights roles this is decisive evidence and must
+      be surfaced. Frame credibly (portfolio of trials/adoption/governance + active upskilling),
+      not as enterprise-scale AI transformation. NOTE: AI belongs in cover letters ONLY for
+      AI-centric roles (see [[no-ai-terms-in-cover-letters]] feedback).
+    inventory_entries_surfaced:
+      - ACH-049
+      - ACH-050
+      - ACH-051
+
 # Example shape (uncomment and adapt after your first run):
 #  - id: HY-001
 #    category: "[short category name — e.g. 'Product collateral ownership']"
@@ -368,6 +390,52 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-009
+    date: "2026-06-26"
+    company: "Bimbo Bakeries USA"
+    role: "Director, Consumer Insights (Irving, TX)"
+    outcome: "applied (custom CV + AI-forward six-attribute cover letter); relocation to Texas confirmed"
+    match_score_initial: 80
+    match_score_final: 85
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong (low end), Tier 1/2"
+    resume_delta: "n/a (insights base re-angled to bakery + AI modernization)"
+    new_achievements_surfaced:
+      - ACH-049
+      - ACH-050
+      - ACH-051
+    new_categories_added:
+      - HY-011
+    lessons:
+      - >
+        The title "Director of Consumer Insights" undersold the role: its core mandate is the
+        AI TRANSFORMATION of the insights function (modernize with AI, AI-enabled workflows, AI
+        governance, 3+ AI suppliers required). Always read past an insights title to the actual
+        mandate. Don's bakery + insights leadership is exceptional, but the AI-transformation
+        core is where the match was genuinely tested.
+      - >
+        Bakery domain is Don's single strongest domain card: CSM Bakery Solutions ($3B, 13 yrs
+        global insights) is a near-perfect parallel to Bimbo. Lead with it for any bakery or
+        adjacent-food insights role.
+      - >
+        Don's AI evidence is real but not deep: trialed AI research tools + adopted automated
+        coding (TELUS), evaluated supplier AI governance, and is actively upskilling (AI Collective
+        Atlanta, formal training + hands-on since Jan 2026). Frame as a CREDIBLE portfolio with
+        "human judgment central," NOT a claimed enterprise AI transformation. The "3+ AI suppliers"
+        bar is borderline — be ready to substantiate in interview.
+      - >
+        AI-IN-COVER-LETTERS EXCEPTION: Don's standing rule is no AI in cover letters, but for
+        AI-centric roles (like this one) he approved an AI-forward letter on 2026-06-26. For roles
+        built around AI, include AI and frame it credibly; otherwise keep it out. "AI Fluency"
+        always stays on the resume.
+      - >
+        Relocation to Texas confirmed and welcomed (Don has lived in TX before — Houston, per the
+        Playtex/Electrolit history). Reusable hook for any TX-based role.
+      - >
+        The JD favors a seasoned insights leader who is AI-aware ("combine human expertise with AI
+        enhanced workflows," "keep human judgment central") over an AI specialist lacking insights
+        depth. This reframe turns Don's profile from a stretch into a credible Strong.
+
   - run_id: RUN-008
     date: "2026-06-25"
     company: "Kraft Heinz"

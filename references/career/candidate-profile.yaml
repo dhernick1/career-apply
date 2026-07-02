@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-06-26"
+  last_updated: "2026-07-02"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -390,6 +390,47 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-010
+    date: "2026-07-02"
+    company: "Walmart"
+    role: "Director, Insights Consulting – Market Intelligence (Bentonville, AR)"
+    outcome: "applied (custom CV + six-attribute cover letter); relocation to Bentonville confirmed"
+    match_score_initial: 87
+    match_score_final: 88
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong, Tier 1"
+    resume_delta: "~24% (re-angled to market/competitive intelligence + insights consulting)"
+    new_achievements_surfaced:
+      - ACH-052
+    new_categories_added: []
+    lessons:
+      - >
+        "Insights Consulting" in a title is a direct lock to Don's TELUS decade — nine years as
+        a retained Senior Consultant IS the job family. For any internal-consulting insights
+        role, lead with the consulting framing before functional leadership.
+      - >
+        The Walmart JD's "sweep us off your feet" list matched Don's record nearly line-for-line:
+        syndicated POS + consumer panel (exact), whitespace (his exact word, ACH-026), recurring
+        competitive/market intelligence to senior leadership, storytelling, and enterprise
+        data-literacy training (Bayer sales-org research training). Bayer training experience is
+        an underused asset — always surface for "education/data literacy/enablement" duties.
+      - >
+        Tableau + Power BI confirmed (ACH-052, partial depth). Closes the "visualization tools"
+        line that recurs in insights JDs. Probe depth (builder vs. deliverer) in a future run.
+      - >
+        Honest gap for retailer-side roles remains: "wallet share" is retailer-lens share of
+        customer spend across banners — adjacent to Don's supplier-side share work. Bridge:
+        panel-data fluency + supplier-side Walmart account knowledge. Do not claim retailer-side
+        wallet-share ownership.
+      - >
+        Relocation to Bentonville, AR confirmed 2026-07-02. Don has now confirmed relocation
+        flexibility for Cincinnati, Irving TX, Bentonville AR, and the UK — treat national +
+        UK relocation as a standing credential.
+      - >
+        Walmart pay band for this role: $110K–$220K + bonus + stock. Walmart files insights
+        roles under the "Business Analysis and Insights" job family — search that phrase for
+        adjacent openings.
+
   - run_id: RUN-009
     date: "2026-06-26"
     company: "Bimbo Bakeries USA"

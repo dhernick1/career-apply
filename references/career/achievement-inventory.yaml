@@ -9,8 +9,8 @@ meta:
   owner: "Donald T. Hernick"
   version: 1.0
   schema_version: "3.1"
-  last_updated: "2026-06-26"
-  total_entries: 51
+  last_updated: "2026-07-02"
+  total_entries: 52
   note: >
     Seeded from 26 04 07 CV Hernick.Don.2pages.docx on 2026-05-18. Covers career from
     Playtex (1986) through TELUS (2026). Strongest entries are at Bayer and Playtex
@@ -1206,3 +1206,29 @@ inventory:
       "AI Fluency" beyond a bare skill claim. Strongest current-AI evidence; lead with it for any
       AI-modernization insights role. Frames Don as a seasoned insights leader actively bringing
       AI in, not learning insights from scratch.
+
+  - id: ACH-052
+    achievement: >
+      Delivered decision-ready insight reporting through Tableau and Microsoft Power BI at
+      TELUS Agriculture & Consumer Goods, using visualization tools to translate syndicated
+      and proprietary data into client-facing intelligence.
+    impact: >
+      Made recurring market and consumer intelligence consumable for senior stakeholders;
+      specific dashboards/outputs not itemized.
+    evidence_strength: partial
+    tags:
+      - visualization
+      - Tableau
+      - Power_BI
+      - reporting
+      - analytics
+    date_range: "2017-01 to 2026-01"
+    organization: "TELUS Agriculture & Consumer Goods"
+    verified: true
+    notes: >
+      Surfaced in RUN-010 (Walmart Director Insights Consulting - Market Intelligence,
+      2026-07-02). Don confirmed "experience with Tableau and Microsoft Power BI." Depth not
+      probed (builder vs. consumer of dashboards) — evidence_strength set to partial; frame as
+      delivery fluency, not BI engineering. Closes the "visualization tools" line common in
+      insights JDs. Discovery prompt for future runs: "Did you build dashboards yourself in
+      Tableau/Power BI, or specify and deliver through them? Any named recurring dashboard?"

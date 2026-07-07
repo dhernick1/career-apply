@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-02"
+  last_updated: "2026-07-07"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -390,6 +390,44 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-011
+    date: "2026-07-07"
+    company: "Haleon"
+    role: "US Consumer, Business Insights & Analytics Lead – VMS/Centrum (Warren, NJ, hybrid 3 days)"
+    outcome: "materials delivered (custom CV + six-attribute cover letter); NJ relocation flagged for Don to confirm before submission"
+    match_score_initial: 90
+    match_score_final: 90
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO — Strong, Tier 1"
+    resume_delta: "~25% (re-angled to VMS/consumer-health insights; Bayer section expanded to two dated roles)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        HEAD-TO-HEAD COMPETITOR ANGLE: Don competed directly against Centrum for six years at
+        Bayer (One-A-Day brand strategies, Herbals launch, National Category Leadership for the
+        Nutritional/VMS category). "I know the VMS category from the inside" is the strongest
+        possible opening for Haleon and any VMS/supplement company. Reusable pattern: when Don's
+        brand history includes the target company's direct competitor, lead with it — category
+        combat experience beats category familiarity.
+      - >
+        Piping Rock (TELUS client, nutritional supplements) doubles as VMS-category evidence —
+        pairs with the Bayer One-A-Day years to show category depth at two career stages.
+      - >
+        NJ geography hook: Don worked at Bayer in Morristown, NJ (1997–2003), ~15 miles from
+        Haleon's Warren, NJ office. "New Jersey is familiar ground" softens the relocation
+        question for any Northern-NJ consumer-health employer (Haleon, Kenvue, BD, etc.).
+        Relocation to NJ NOT yet explicitly confirmed by Don — flag before submission.
+      - >
+        No new achievements surfaced — this run drew entirely on existing inventory (ACH-004,
+        ACH-005, ACH-021/046, ACH-023, ACH-027, ACH-028, ACH-029, ACH-040), a sign the
+        inventory has matured for insights-role coverage.
+      - >
+        Haleon salary band: $148,648–$204,391 + 18% bonus. Role is an IC-lead "strategic
+        business partner" seat; advanced degree preferred (Don holds BS — minimum met).
+        First-party/DTC data ecosystems remain the recurring soft spot for digital-forward
+        insights JDs; bridge via panel + social listening + ecom integration, do not overclaim.
+
   - run_id: RUN-010
     date: "2026-07-02"
     company: "Walmart"

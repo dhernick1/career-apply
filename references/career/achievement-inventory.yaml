@@ -9,8 +9,8 @@ meta:
   owner: "Donald T. Hernick"
   version: 1.0
   schema_version: "3.1"
-  last_updated: "2026-07-02"
-  total_entries: 52
+  last_updated: "2026-07-07"
+  total_entries: 53
   note: >
     Seeded from 26 04 07 CV Hernick.Don.2pages.docx on 2026-05-18. Covers career from
     Playtex (1986) through TELUS (2026). Strongest entries are at Bayer and Playtex
@@ -1232,3 +1232,36 @@ inventory:
       delivery fluency, not BI engineering. Closes the "visualization tools" line common in
       insights JDs. Discovery prompt for future runs: "Did you build dashboards yourself in
       Tableau/Power BI, or specify and deliver through them? Any named recurring dashboard?"
+
+  - id: ACH-053
+    achievement: >
+      Competed in the Vitamins, Minerals & Supplements (VMS) category for 13 years across both
+      competitive flanks: six years at Bayer Consumer Care on the branded side (One-A-Day brand
+      strategies, Herbals launch, Nutritional category leadership) and seven years at TELUS
+      advising Piping Rock, a broadline private-label vitamin business, on assortment, packaging,
+      pricing, and channel strategy — in both eras competing directly against Centrum.
+    impact: >
+      Deep, two-sided VMS category expertise (branded vs. private label) spanning brand strategy,
+      category leadership, and private-label commercialization; specific share outcomes not
+      consolidated.
+    evidence_strength: strong
+    tags:
+      - VMS
+      - vitamins
+      - private_label
+      - branded
+      - category_expertise
+      - competitive_intelligence
+      - consumer_healthcare
+    date_range: "1997-07 to 2026-01"
+    organization: "Bayer Consumer Care and TELUS Agriculture & Consumer Goods (Piping Rock)"
+    verified: true
+    notes: >
+      Surfaced in RUN-011 amendment (Haleon VMS/Centrum, 2026-07-07). Don volunteered post-run:
+      "I also competed against them [Centrum] for seven years with private label vitamins on
+      behalf of my broadline vitamin client Piping Rock." Combines with ACH-004/005 (One-A-Day)
+      and ACH-034 (Piping Rock advisory) into a single dual-flank VMS credential. THE lead card
+      for any VMS, supplement, or consumer-health insights/commercial role — category combat
+      from both sides of the shelf beats category familiarity. Discovery prompt for future runs:
+      "Any measurable share or placement wins against Centrum (or other VMS leaders) in either
+      era?"

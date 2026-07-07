@@ -394,7 +394,7 @@ run_history:
     date: "2026-07-07"
     company: "Haleon"
     role: "US Consumer, Business Insights & Analytics Lead – VMS/Centrum (Warren, NJ, hybrid 3 days)"
-    outcome: "materials delivered (custom CV + six-attribute cover letter); NJ relocation flagged for Don to confirm before submission"
+    outcome: "applied (custom CV + six-attribute cover letter); NJ relocation confirmed 2026-07-07"
     match_score_initial: 90
     match_score_final: 90
     ats_result: "PASS (post-tailoring)"
@@ -417,7 +417,9 @@ run_history:
         NJ geography hook: Don worked at Bayer in Morristown, NJ (1997–2003), ~15 miles from
         Haleon's Warren, NJ office. "New Jersey is familiar ground" softens the relocation
         question for any Northern-NJ consumer-health employer (Haleon, Kenvue, BD, etc.).
-        Relocation to NJ NOT yet explicitly confirmed by Don — flag before submission.
+        NJ relocation CONFIRMED by Don 2026-07-07. His confirmed relocation set now spans
+        Houston, Cincinnati, Irving TX, Bentonville AR, New Jersey, and the UK — treat broad
+        relocation flexibility as a standing credential for any US or UK role.
       - >
         No new achievements surfaced — this run drew entirely on existing inventory (ACH-004,
         ACH-005, ACH-021/046, ACH-023, ACH-027, ACH-028, ACH-029, ACH-040), a sign the

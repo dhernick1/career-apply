@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-07"
+  last_updated: "2026-07-08"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -390,6 +390,47 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-012
+    date: "2026-07-08"
+    company: "Sage Group"
+    role: "Director of Customer Insight & Experience for North America (Atlanta, GA, hybrid 3 days)"
+    outcome: "package prepared (tailored resume changes approved + cover letter); submission pending"
+    match_score_initial: 81
+    match_score_final: 81
+    ats_result: "PASS (post-tailoring; CABs / product-market fit / B2B-software-domain / MRS-CIM intentionally omitted)"
+    go_no_go: "GO — Viable-to-Strong, Tier 1"
+    resume_delta: "~23% (re-angled to customer insight & experience + B2B technology framing)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        FIRST B2B SOFTWARE/TECH-INDUSTRY TARGET of the search. The honest bridge to a
+        "B2B software or technology environment" screen is TELUS-as-technology-company
+        (vendor-side, analytics platforms + data services sold to business clients) plus
+        CSM's 13 B2B years — NOT any claim of software-buyer research. Reusable framing
+        for future tech-company insights roles: "nine years inside a technology company
+        as retained insight business partner to B2B clients."
+      - >
+        Customer EXPERIENCE (CX) roles are a distinct sub-family: satisfaction/advocacy/
+        retention measurement, NPS machinery, Customer Advisory Boards. Don's bridge is
+        CSM VoC (ACH-030) + TELUS renewals; he has NO CAB, NPS-program, or product-market-fit
+        evidence (all probed and confirmed 'none' this run). Omit those keywords; frame CX
+        as activation of existing machinery, not greenfield build.
+      - >
+        Atlanta advantage is decisive for Atlanta-metro hybrid roles: Sage is mid-build-out
+        at Ponce City Market (NA HQ opened 2025, expanding through fall 2026, NA growing +14%).
+        The sample-006 close ("Atlanta is home. No relocation, no delay.") re-used nearly
+        verbatim. Watch Sage's careers page — the Atlanta expansion implies more insights/
+        marketing seats coming.
+      - >
+        Six-prompt discovery yielded zero new achievements for the second consecutive run —
+        the inventory is now mature for insights-family roles. Future runs on familiar ground
+        can trim discovery to gap-specific prompts only.
+      - >
+        Hub-and-region matrix framing (CSM: 4 US + 2 UK/EU, run from the hub side) is a
+        strong structural credential for any regional-leader-of-a-global-function role.
+        "I know what a regional leader owes a central hub, and what the hub owes the region."
+
   - run_id: RUN-011
     date: "2026-07-07"
     company: "Haleon"

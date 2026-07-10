@@ -394,12 +394,12 @@ run_history:
     date: "2026-07-10"
     company: "Alcon"
     role: "Sr. Manager, Market Research & Insights (Fort Worth, TX)"
-    outcome: "cover letter delivered with honest-gap framing; tailored resume offered, pending Don"
+    outcome: "applied (custom CV + honest-gap cover letter); Don confirmed proceeding at Sr. Manager level"
     match_score_initial: 76
     match_score_final: 76
-    ats_result: "n/a (letter-only run; resume not yet tailored)"
-    go_no_go: "GO (conditional) — Viable, Tier 2; level and comp fit for Don to weigh"
-    resume_delta: "n/a"
+    ats_result: "PASS (post-tailoring; attribution/MMM and eye-care keywords intentionally absent — not truthfully addable)"
+    go_no_go: "GO — Viable, Tier 2"
+    resume_delta: "~28% (re-angled to hands-on research craft: provider leadership, forecasting, segmentation; enterprise-strategy altitude de-emphasized for Sr. Manager level)"
     new_achievements_surfaced: []
     new_categories_added: []
     lessons:

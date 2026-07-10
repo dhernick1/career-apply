@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-08"
+  last_updated: "2026-07-10"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -390,6 +390,43 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-013
+    date: "2026-07-10"
+    company: "Alcon"
+    role: "Sr. Manager, Market Research & Insights (Fort Worth, TX)"
+    outcome: "cover letter delivered with honest-gap framing; tailored resume offered, pending Don"
+    match_score_initial: 76
+    match_score_final: 76
+    ats_result: "n/a (letter-only run; resume not yet tailored)"
+    go_no_go: "GO (conditional) — Viable, Tier 2; level and comp fit for Don to weigh"
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        HONESTY-FORWARD LETTER PATTERN: Don explicitly instructed "do not lie and be honest."
+        The letter states the domain gap outright ("I have not worked in eye care") and the
+        modeling gap ("I do not build the models myself, and I will not pretend otherwise"),
+        then converts both into positioning: outside-category perspective (which the JD itself
+        requests) and judgment-over-tooling. Use this pattern when a JD names hard skills Don
+        lacks — candor plus reframe reads stronger than silence.
+      - >
+        Honest gaps for this role family: attribution modeling, marketing-mix optimization,
+        multivariate statistical modeling — Don DIRECTS modelers and consumes outputs, he does
+        not build. Dashboard ARCHITECTURE / self-service analytics at scale also partial
+        (Tableau/Power BI delivery fluency only). Never claim these as hands-on.
+      - >
+        Eye care/medical-adjacent domain: zero direct experience; nearest bridge is Bayer OTC
+        consumer health in the same FDM channels. Alcon JD wanted outside-category perspective,
+        which softened the gap this time.
+      - >
+        LEVEL FLAG: Sr. Manager seat vs. Don s Director history — overqualification and comp
+        questions likely. Flagged to Don to weigh before submission; his call, not a blocker.
+      - >
+        Syndicated-provider leadership (Circana team direction + $2M/yr contract award,
+        ACH-003/ACH-017) is a bullseye whenever a JD says "lead contact for syndicated
+        information providers" — surface it first for research-operations-flavored roles.
+
   - run_id: RUN-012
     date: "2026-07-08"
     company: "Sage Group"

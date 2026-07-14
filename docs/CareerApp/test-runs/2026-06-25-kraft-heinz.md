@@ -85,13 +85,14 @@ Cover letter format: six-attribute bullet structure (per candidate standard requ
 
 ---
 
-## Follow-Up Schedule
+## Outcome — CLOSED
 
-| Date | Action |
-|------|--------|
-| 2026-07-02 (+7 days) | Check application status |
-| 2026-07-09 (+14 days) | Follow-up if no response |
-| 2026-07-23 (+28 days) | Close the loop |
+**Rejected 2026-06-30** (form letter, Lisa Watts / Talent Acquisition; "will keep your profile on file"), ~5 days after applying. Fast recruiter screen, not a deep review. Consistent with the one gap flagged pre-submission: no direct retailer loyalty / **84.51° (dunnhumby)** data experience for a Kroger-anchored shopper-insights seat, and "shopper" being adjacent to Don's consumer/category core rather than his named discipline.
+
+### Cross-run pattern (3 rejections in)
+Walmart (RUN-010), Bimbo (RUN-009), and Kraft Heinz (RUN-008) are **all three roles where a real, named gap was flagged BEFORE submission** (wallet-share; AI-transformation depth; loyalty-data). All three were **fast form rejections (5–18 days) via cold ATS portals with no referral.** Signal: (1) the pipeline's honest scoring is predictive — flagged gaps are where screens land; (2) the **channel** is the bigger lever — the cold-ATS route to big-corp Director/Lead roles is yielding recruiter-screen rejections regardless of tailoring quality, while the warm-referral (High Liner) and direct-to-CEO (Opinions.ie) applications remain the most alive. **Strategy shift: prioritize warm referrals and direct hiring-manager/founder outreach over cold portal submissions.**
+
+~~Follow-up schedule~~ (superseded by rejection).
 
 ---
 

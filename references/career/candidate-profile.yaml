@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-14"
+  last_updated: "2026-07-15"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -394,6 +394,44 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-015
+    date: "2026-07-15"
+    company: "Nutrabolt"
+    role: "VP, Revenue Growth Management (Austin, TX)"
+    outcome: "NO-GO — Don declined to apply 2026-07-15: too much of a stretch. No materials produced."
+    match_score_initial: 72
+    match_score_final: 72
+    ats_result: "n/a — not applied"
+    go_no_go: "GO recommended (Viable, Tier 2) with honesty-forward framing; Don overrode to NO-GO. His call, and a sound one."
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        P&L OWNERSHIP IS DON'S RECURRING CEILING for VP-level commercial roles. He has deep
+        BUDGET ownership ($17M trade budget, $500M+ brand portfolio, multimillion-dollar research
+        budgets) and drives margin decisions, but has NOT owned an enterprise P&L. When a JD says
+        "owns enterprise profitability / P&L delivery / SKU-level economics" as a core duty (not
+        a nice-to-have), score it as a genuine gap and flag it before drafting. Never paper over it.
+      - >
+        LEVEL JUMP: Don's history is Director / Global Director. A first-time VP seat that is
+        ELT-adjacent and P&L-owning is a real stretch, not a framing problem. Contrast with the
+        Alcon run (RUN-013), where the risk was the opposite (overqualification for Sr. Manager).
+        Don's sweet spot is Director / Senior Director / Lead — target that band.
+      - >
+        TPM/TPO NUANCE (recurs): Don SUPPLIED a TPO platform to CPG clients at TELUS and advised
+        on trade-spend reallocation. He has NOT owned/deployed a TPM stack (XTEL, etc.). This same
+        gap contributed to the Newell outcome (RUN-002, 75%). For JDs naming a specific TPM system
+        as a leadership requirement, treat as a partial match at best.
+      - >
+        Positive signal retained: Nutrabolt scored 100/100 in the FMCG target database and the RGM
+        + pricing-architecture + trade-ROI combination IS genuinely strong. The blocker was the
+        SEAT (VP, P&L-owning), not the company or the category. A Director/Sr Director RGM or
+        pricing role at Nutrabolt or a peer would be a strong target — revisit if one posts.
+      - >
+        Don is exercising good self-selection discipline. Honoring a NO-GO without argument is
+        correct; his read on level fit is well-calibrated and saves effort for 85-90% matches.
+
   - run_id: RUN-014
     date: "2026-07-14"
     company: "Opinions.ie"

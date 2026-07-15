@@ -412,6 +412,44 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-016
+    date: "2026-07-15"
+    company: "AG1 (Athletic Greens)"
+    role: "Director, Customer & Consumer Insights (Remote, US)"
+    outcome: "applied (custom CV + six-attribute cover letter with honest UX/UI framing)"
+    match_score_initial: 86
+    match_score_final: 86
+    ats_result: "PASS (post-tailoring; UX/UI research keywords intentionally NOT claimed)"
+    go_no_go: "GO — Strong, Tier 1. Clears Don's 85% bar. Director level = his band. Remote = no relocation."
+    resume_delta: "~26% (re-angled to insights-FUNCTION-BUILDING + brand tracking + nutrition category)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        FUNCTION-BUILDER FRAMING IS DON'S STRONGEST OPENING when a JD's top requirement is
+        "proven experience building and evolving insights functions" (AG1's first bullet).
+        The CSM build (global insights function from scratch, $3B company, operating model,
+        6-person NA+EU/UK team, centralization, research standards, digital portal) is a
+        purpose-built answer. Lead with it verbatim against that requirement.
+      - >
+        BRAND TRACKING OWNERSHIP is a recurring bullseye that is easy to under-surface: the
+        TELUS proprietary quarterly panel (awareness, favorability, conversion, frequency +
+        social listening + ecom by retailer) directly answers "own and evolve the brand
+        tracking program." Surface for any brand/growth insights role.
+      - >
+        HONEST GAP - UX/UI RESEARCH: roughly a third of the AG1 role (oversee UX/UI research,
+        usability, design partnership with Product/Design/Engineering). Don's digital work is
+        brand tracking, social listening, and e-commerce panel data - NOT usability or digital
+        product research. Framed honestly in the letter: a capability he would lead, resource,
+        and integrate, not personally practice. Do not claim UX research on any resume.
+      - >
+        DTC/subscription-native context is adjacent, not native (Don is retail/B2B/foodservice
+        CPG). AG1's values screen is explicit and hard-edged ("High Performance", values
+        enforced in hiring) - a real culture-fit variable to weigh, not a skills gap.
+      - >
+        Score 86 = clears the new 85% bar with the UX gap already priced in. Confirms the bar
+        is working as an effort filter rather than a rubber stamp.
+
   - run_id: RUN-015
     date: "2026-07-15"
     company: "Nutrabolt"

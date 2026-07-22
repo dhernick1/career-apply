@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-15"
+  last_updated: "2026-07-22"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -412,6 +412,47 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-017
+    date: "2026-07-22"
+    company: "Southwest Airlines"
+    role: "Senior Manager, Customer Insights (Dallas, TX - on-site HQ)"
+    outcome: "applied (custom CV + six-attribute cover letter with honest modeling framing); Don overrode the 85% bar knowingly; Dallas on-site relocation confirmed"
+    match_score_initial: 83
+    match_score_final: 83
+    ats_result: "PASS (post-tailoring; conjoint/discrete-choice model-BUILDING not claimed - Don directs & interprets, does not build)"
+    go_no_go: "Below the 85% bar (83). Recommended borderline NO-GO; Don overrode to GO with eyes open on the modeling gap and Dallas on-site."
+    resume_delta: "~30% (re-angled to core-methodology customer insights: multi-method research, scalable practices, AI modernization)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        FIRST DELIBERATE OVERRIDE of the 85% bar. Don chose to apply at 83 because the fit on
+        insights leadership + function-building + AI-modernization was strong and the comp
+        ($169-187K) solid. Overrides are fine when Don makes the call with the gap named; the
+        bar informs, it does not veto.
+      - >
+        MODELING GAP RECURS (Alcon RUN-013, now Southwest): conjoint, discrete choice, predictive
+        modeling. Don DIRECTS specialist analysts/vendors and INTERPRETS the output; he does not
+        build the models. Southwest listed it in REQUIRED experience, which is what dropped the
+        score to 83. Standard honest framing used in the letter. Never claim model-building.
+      - >
+        AI-MODERNIZATION ANGLE is now a genuine asset, not a gap: this JD explicitly wants LLMs/
+        automation to improve research speed and synthesis while keeping human judgment central.
+        Don's story (automated coding, tool trials, supplier AI governance, AI Collective) fits.
+        AI included in the cover letter per the AI-centric exception.
+      - >
+        CREDENTIAL UPGRADE (2026-07-22): Don is now a CO-FOUNDING MEMBER of the AI Collective's
+        new Gwinnett Chapter (was "member, Atlanta chapter"). Stronger, namable, shows community
+        leadership. Updated in ACH-051; use "AI Collective - Co-Founding Member, Gwinnett Chapter"
+        on all future materials.
+      - >
+        Airline/travel domain = zero (Don is CPG/consumer health/food). JD is category-agnostic
+        on paper; a Sr. Manager screen may still favor travel-native candidates. Dallas is a
+        HARD on-site HQ requirement (5 days), not hybrid - relocation confirmed.
+      - >
+        Level note: titled Senior Manager (below Don's Director band, like Alcon) but pay and
+        scope read Director-level. Lower overqualification risk than a true Sr. Manager seat.
+
   - run_id: RUN-016
     date: "2026-07-15"
     company: "AG1 (Athletic Greens)"

@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-22"
+  last_updated: "2026-07-24"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -412,6 +412,42 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-018
+    date: "2026-07-24"
+    company: "GWI (GlobalWebIndex)"
+    role: "Senior Insight Manager - Flex - Maternity Cover (London, UK)"
+    outcome: "NO-GO - agreed with Don, no materials produced. Below the 85% bar (84) and a clear overqualification mismatch."
+    match_score_initial: 84
+    match_score_final: 84
+    ats_result: "n/a - not applied"
+    go_no_go: "NO-GO. Capability fit strong; blocked by seniority mismatch + role format."
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        FRAMING CORRECTION: Don asked about this as a 'fractional' role; it is NOT. GWI's 'Flex'
+        = their flexible-working perk (flexitime/hybrid), and the role is a FULL-TIME, FIXED-TERM
+        MATERNITY COVER (~9-12 months). Always check whether 'flex/fractional' in a JD means
+        part-time/portfolio work or just flexible hours before evaluating - they are very different.
+      - >
+        STRONGEST OVERQUALIFICATION SIGNAL to date. 'Senior Insight Manager leading a team of
+        analysts' is a mid-management IC-plus seat; Don is a 35-year Global Director who built a
+        function and advised McKinsey. Worse mismatch than Alcon (RUN-013, Sr. Manager, 76). A
+        UK agency filling maternity cover screens hard for expensive/overqualified/flight-risk.
+      - >
+        Capability fit was genuinely strong (data storytelling, analyst team leadership, RFPs/
+        client presentations, senior client relationships, agency-side delivery) and the Irish
+        passport is a decisive UK-work-rights edge. The block was LEVEL + FORMAT, not skills.
+      - >
+        GWI-specific note: GWI is a syndicated DIGITAL AUDIENCE data platform (own global consumer
+        survey). The role turns GWI's proprietary dataset into client stories - adjacent to Don's
+        syndicated/panel background but platform-specific. If a Director/Head-of-Insight role opens
+        at GWI (permanent, right level), it could be a strong warm target given passport + fit.
+      - >
+        Reinforces the target band: Director / Senior Director / Lead / Head of Insight. Manager-
+        level agency seats are a level too low; VP/P&L seats a level too high.
+
   - run_id: RUN-017
     date: "2026-07-22"
     company: "Southwest Airlines"

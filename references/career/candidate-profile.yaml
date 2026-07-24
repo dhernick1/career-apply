@@ -412,6 +412,48 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-019
+    date: "2026-07-24"
+    company: "Crocs, Inc."
+    role: "Director, Consumer & Brand Insights (Boston, MA - Crocs + HEYDUDE)"
+    outcome: "applied (custom CV + six-attribute cover letter with honest footwear-adjacency framing); Boston relocation (4 days on-site) confirmed"
+    match_score_initial: 87
+    match_score_final: 87
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO - Strong, Tier 1. Clears the 85% bar. Director level = Don's band. BUILD-THE-FUNCTION mandate = his strongest lane (the AG1 pattern)."
+    resume_delta: "~28% (re-angled to build-a-world-class-insights-function + brand equity + AI as a strength)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        THE BUILD-THE-FUNCTION LANE is now the confirmed strategy after the High Liner rejection
+        (RUN-007). Crocs' JD literally opens with "establish and evolve a world-class consumer
+        insights function" - identical to AG1 (RUN-016). For these, Don's CSM function-build and
+        35 years read as an ASSET, not overqualification. Lead every such letter with "I have
+        built this function before." This is the answer to the overqualification screen.
+      - >
+        CLEANEST-FIT INSIGHTS JD OF THE SEARCH on paper: no P&L-ownership demand (unlike Nutrabolt),
+        no heavy UX pillar (unlike AG1), no model-BUILDING requirement (unlike Alcon/Southwest -
+        Crocs asks only for "analytics" and "synthesize data sources," which Don does). That is
+        why it scored 87 with only a domain soft spot.
+      - >
+        FOOTWEAR/APPAREL DOMAIN = zero, BUT the JD explicitly accepts "consumer products, retail,
+        or adjacent industries" - the softest domain gate seen. Handled honestly in the letter
+        ("I have not worked in footwear or apparel... what I bring is the rarer thing your first
+        requirement names: someone who has built a world-class insights function before").
+      - >
+        AI credential now works FOR Don here: JD names "AI-enabled research capabilities/platforms."
+        Tableau + Power BI + automated coding + supplier AI governance + Co-Founding Member of the
+        AI Collective Gwinnett Chapter. AI kept out of the cover-letter framing as a buzzword but
+        the AI-enabled research bullet is included because the JD asks for it.
+      - >
+        CHANNEL REMINDER (post-High-Liner): another established public company via ATS - the same
+        channel behind all 4 rejections. Materials are strong; if quiet, that is the channel. A
+        direct intro to anyone at Crocs/HEYDUDE would matter more than the application itself.
+      - >
+        Boston, MA, "Collaborator persona" = 4 days/week on-site (not remote). Relocation confirmed.
+        Comp $165-175K + incentive.
+
   - run_id: RUN-018
     date: "2026-07-24"
     company: "GWI (GlobalWebIndex)"

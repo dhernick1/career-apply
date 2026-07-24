@@ -859,7 +859,7 @@ run_history:
     date: "2026-06-19"
     company: "High Liner Foods"
     role: "Director, Insights & Revenue Growth Management (Req. DIREC003652)"
-    outcome: "applied (5/19/2026); follow-up cover letter prepared — warm referral in motion"
+    outcome: "REJECTED 2026-07-24 (form letter, 'moving forward with other candidates'). SIGNIFICANT: this was the highest-scoring application (92%) AND had a warm referral in motion (hiring VP had personally asked HR to pull the file). Rejection despite both quality and channel is the most important data point of the search - see lessons below."
     match_score_initial: 88
     match_score_final: 92
     ats_result: "PASS (post-tailoring)"
@@ -876,7 +876,28 @@ run_history:
       - HY-010
     lessons:
       - >
-        Highest-fit role of the search to date (92%). This role fuses Don's two deepest
+        OUTCOME: REJECTED 2026-07-24 (form letter). THE MOST IMPORTANT DATA POINT OF THE SEARCH:
+        this was the highest-scoring application (92%) AND had a warm referral in motion (hiring
+        VP personally pulled the file). It still ended in a form rejection. Implication: neither
+        the highest fit NOR a warm referral was sufficient. The likely blockers are STRUCTURAL,
+        not fixable by better materials - most probably (a) an internal or incumbent-favored
+        candidate, (b) title/level or "currently doing this exact job" recency screens, or
+        (c) age-adjacent bias against a 35-year veteran applying to a Director seat. Do NOT
+        over-tune materials in response; the lever is elsewhere.
+      - >
+        PATTERN ACROSS ALL 4 REJECTIONS (Kraft Heinz 88, Bimbo 85, Walmart 88, High Liner 92):
+        every one scored at or above the 85% bar; every one was a large/established employer;
+        High Liner even had a warm referral. Fit is NOT Don's problem. The recurring friction is
+        that a very senior 35-year Director/Global-Director profile applying to Director/Lead
+        seats at established companies trips overqualification, cost, and flight-risk screens
+        before a human weighs the story. STRATEGIC PIVOT to prioritize: (1) roles where seniority
+        is an asset not a liability - smaller/scaling companies building an insights function for
+        the first time (the AG1 profile), Head-of-Insight seats, fractional/advisory/portfolio
+        work; (2) warm intros that reach the DECISION MAKER directly (a referrer forwarding to
+        the VP, or direct-to-founder like Opinions.ie), not a referral that still routes through
+        the same ATS/recruiter screen that rejected High Liner.
+      - >
+        Highest-fit role of the search to date (92%). This role fused Don's two deepest
         threads: consumer/category insights AND revenue growth management. TELUS was literally
         the "RGM Analytics" division. For any combined insights + RGM leadership role, lead
         with the TELUS RGM Analytics framing plus the CSM global insights leadership.

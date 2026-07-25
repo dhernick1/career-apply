@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-24"
+  last_updated: "2026-07-25"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -412,6 +412,39 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-020
+    date: "2026-07-25"
+    company: "Clorox"
+    role: "Senior Manager, Revenue Growth Management (Alpharetta, GA - hybrid)"
+    outcome: "NO-GO - agreed with Don. Below the 85% bar (~70) with three stacked filters."
+    match_score_initial: 70
+    match_score_final: 70
+    ats_result: "n/a - not applied"
+    go_no_go: "NO-GO. RGM content fits, but the required analytics are model-BUILDING (econometrics, elasticity, simulation), the level is below band, and Clorox already rejected Don earlier (dormant rejection)."
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        THREE STACKED FILTERS - the clearest triple-fail so far. (1) MODELING as the SPINE:
+        JD requires 'build optimized trade plans' via 'econometric models, demand curves, and
+        simulation tools' and lists econometrics/elasticity/scenario-simulation as required
+        skills. This is a hands-on quantitative MODELER seat, not commission-and-interpret - a
+        deeper version of Don's standing modeling gap (Alcon RUN-013, Southwest RUN-017,
+        Nutrabolt RUN-015) and central here, not peripheral. No honest framing turns it into a
+        strength. (2) LEVEL below band (Senior Manager vs Director/Sr Director/Lead). (3) DORMANT
+        REJECTION: Clorox already rejected Don earlier this search - re-applying to the same
+        company at a lower level in his weakest technical area is a poor bet.
+      - >
+        RGM CONTENT genuinely fits Don (PPA, trade ROI, assortment/mix, cannibalization,
+        syndicated data, storytelling) - the block is the DEPTH of quantitative model-building
+        required and the seat/level, not the RGM domain. Distinguish 'RGM strategy/leadership'
+        roles (good fit) from 'RGM analyst/modeler' roles (poor fit) when triaging RGM postings.
+      - >
+        Reinforces: for any RGM JD, check EARLY whether the analytics are BUILD (econometric/
+        elasticity/simulation model construction = Don gap) vs DIRECT/INTERPRET (Don strength),
+        and whether TPM-system ownership is required (Don supplied a TPO platform, never owned one).
+
   - run_id: RUN-019
     date: "2026-07-24"
     company: "Crocs, Inc."

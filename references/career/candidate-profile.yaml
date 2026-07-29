@@ -412,6 +412,46 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-021
+    date: "2026-07-25"
+    company: "The Coca-Cola Company"
+    role: "Director, Category Leadership - Giant Eagle & Military channel (Atlanta, GA - hybrid 3 days)"
+    outcome: "applied (custom CV + six-attribute cover letter; beverage-domain gap named honestly)"
+    match_score_initial: 88
+    match_score_final: 88
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO - Strong, Tier 1. Clears the 85% bar. Director band. ATLANTA = HOME, no relocation."
+    resume_delta: "~30% (re-angled to category-leadership through-line + customer advisory + syndicated data)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        CATEGORY LEADERSHIP is a career-long through-line that competes with insights as Don's
+        lead framing: Playtex Infant Feeding Category Captain (1996) -> Bayer National Category
+        Leadership -> established Category Management at CSM -> TELUS large-format category work.
+        For category-captain / category-advisor JDs, lead with this arc, not the insights arc.
+      - >
+        ATLANTA-HOME = NO RELOCATION is a genuine differentiator for Atlanta employers (Coca-Cola,
+        Georgia-Pacific RUN-001). Use the "home, no relocation, no delay" hook - it de-risks Don
+        for the hiring manager and is a real edge over relocating candidates.
+      - >
+        The JD required "proficiency in AT LEAST ONE of category/space management OR shopper
+        insights" - Don has BOTH, a low bar he clears twice. When a JD uses "at least one of",
+        surface every one Don has as a strength stack.
+      - >
+        HONEST GAP: beverage category specifically (Don is food/OTC/HBC/household/bakery). JD
+        required only CPG + retail-customer experience, not beverage - so it is a soft spot, not
+        a blocker. Framed honestly: category leadership is a category-agnostic craft. (Note: the
+        role also names specific accounts - Giant Eagle, Military channel/commissaries - that Don
+        has not served; his Kroger/Publix/H-E-B/Walmart category work transfers.)
+      - >
+        SCOPE NOTE: this is a single-customer category-ADVISOR Director seat (narrower/more
+        tactical than Don's function-building peak), but Director-band, $169-200K + 30% bonus,
+        Atlanta. Legitimate in-band role, not a GWI-style overqualification trap. Don confirmed GO.
+      - >
+        Channel caution (post-High-Liner): large company via ATS = the rejection channel. Warm
+        intro to Coca-Cola Category Leadership org would matter more than the application.
+
   - run_id: RUN-020
     date: "2026-07-25"
     company: "Clorox"

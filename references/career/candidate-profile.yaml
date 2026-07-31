@@ -412,6 +412,44 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-022
+    date: "2026-07-31"
+    company: "ButcherBox"
+    role: "Associate Director, Strategic Insights & Analytics (Watertown, MA - hybrid 2 days)"
+    outcome: "NO-GO (not applied) - Don accepted the recommendation"
+    match_score_initial: 70
+    match_score_final: 76
+    ats_result: "n/a - not applied"
+    go_no_go: "NO-GO. Below the 85% bar. Title reads 'insights' but the JD is a Finance / Business-Analytics player-coach IC seat, not consumer/market insights."
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        TITLE-vs-BODY TRAP: 'Strategic Insights & Analytics' in the title, but Department = Finance -
+        Business Analytics and Reports To = Sr Director of Finance & Business Analytics. The 'insights'
+        are leading indicators / early-warning / business-performance analytics, NOT consumer/brand/
+        category research. Always read Department + Reports-To + Level before scoring an insights title.
+      - >
+        HANDS-ON IC gap resurfaced (same spine as Southwest RUN-022... i.e. Southwest, Clorox, Alcon):
+        JD is an explicit 'player-coach / individual contributor producing sharp insights INDEPENDENTLY'
+        with 'deep technical fluency.' Don DIRECTS and INTERPRETS analytics; he does not build daily.
+        Don corrected that he has SQL & Power BI FAMILIARITY - which satisfies the JD's 'Preferred:
+        familiarity' tooling line (+~6 pts, 70 -> 76), but familiarity is lighter than the 'deep
+        technical fluency' the qualifications separately demand. Do not conflate the two.
+      - >
+        P&L literacy named again (standing gap - Don has budget, not P&L). Finance-housed analytics
+        roles will keep surfacing this; treat Finance-org 'insights' seats with caution.
+      - >
+        LEVEL: 'Associate Director' reporting to a Sr Director = below Don's Director/Sr Director
+        target band. AD titles (common in pharma/finance) are frequently a down-level - verify scope.
+      - >
+        Watertown, MA (Boston metro) - relocation, no Atlanta-home edge. B-Corp DTC food subscription;
+        food domain adjacent but the role type, not the domain, was the disqualifier.
+      - >
+        SQL FAMILIARITY now asserted by Don (in addition to Power BI already on resume). Capture for
+        future tooling lines. NOTE: ButcherBox JD states it does NOT use AI in hiring - AI framing off.
+
   - run_id: RUN-021
     date: "2026-07-25"
     company: "The Coca-Cola Company"

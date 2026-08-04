@@ -416,7 +416,9 @@ run_history:
     date: "2026-08-04"
     company: "The Campbell's Company"
     role: "Associate Director, Consumer Insights - Salty Snacks (Campbell Snacks, Growth Office)"
-    outcome: "applied (custom CV + six-attribute cover letter). Location unconfirmed (WHQ Camden NJ vs Salty/Charlotte NC); resume shows Atlanta + 'open to relocating.'"
+    outcome: "applied (custom CV + six-attribute cover letter, addressed to hiring manager Tina Tonielli). Location CONFIRMED: Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103. Cover letter commits to relocating to Camden (Don has accepted NJ before, Haleon RUN-011)."
+    hiring_manager: "Tina Tonielli"
+    work_location: "Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103"
     match_score_initial: 89
     match_score_final: 89
     ats_result: "PASS (post-tailoring)"
@@ -445,10 +447,14 @@ run_history:
         category specifically (food/bev requirement IS met via bakery/nutrition - salty is only 'would
         be great'); behavioral-science frameworks a nice-to-have, adjacent not core.
       - >
-        LOCATION UNCONFIRMED: JD names no city; references WHQ (Camden NJ) + on-site daycare, but Salty
-        Snacks (Snyder's-Lance) is Charlotte NC. Don dismissed the location question - resume kept Atlanta
-        with 'open to relocating.' Confirm actual work location before/if it advances. Don has accepted
-        NJ before (Haleon RUN-011) and Boston (Crocs) and Dallas (Southwest), so relocation is on the table.
+        LOCATION CONFIRMED (Don, 2026-08-04): role is at Campbell's WHQ, 1 Campbell Place, Camden, NJ
+        08103 - NOT Charlotte. Cover letter commits to relocating to Camden. Don has accepted NJ before
+        (Haleon RUN-011), plus Boston (Crocs) and Dallas (Southwest), so relocation is firmly on the table.
+      - >
+        HIRING MANAGER KNOWN: Tina Tonielli (provided by Don). Cover letter is addressed to her by name
+        (salutation 'Dear Tina Tonielli,' - full name, no gendered honorific). This is the warm-intro
+        target: a direct approach to Tina beats the cold ATS given the rejection pattern. If Don wants,
+        research Tina's LinkedIn / a mutual connection for an intro path.
 
   - run_id: RUN-022
     date: "2026-07-31"

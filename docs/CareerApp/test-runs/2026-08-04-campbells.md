@@ -3,7 +3,8 @@
 
 **Date:** 2026-08-04
 **Channel:** Direct application (ATS)
-**Location:** Not stated in JD — references WHQ (Camden, NJ) + on-site daycare; Salty Snacks (Snyder's-Lance) is Charlotte, NC. **Confirm before it advances.** Resume shows Atlanta + "open to relocating."
+**Location:** **CONFIRMED — Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103.** Cover letter commits to relocating to Camden (Don has accepted NJ before — Haleon).
+**Hiring Manager:** **Tina Tonielli** — cover letter addressed to her by name.
 **Salary (JD):** $142,300 – $195,700 + benefits from day one
 
 ---
@@ -88,5 +89,5 @@ Files: `26 08 04 Don Hernick Resume Campbells.docx`, `26 08 04 Don Hernick Cover
 
 - **Strongest pure-craft insights fit of the search** — genuine consumer insights, food home domain.
 - **Down-level / overqualification is the real risk**, not fit — materials defuse it directly; a cold ATS submission still carries the rejection-pattern risk.
-- **Warm-intro target:** the **Senior Director, Insights – Campbell Snacks** is the hiring manager. A direct intro would matter more than the ATS. HM research still open if Don wants it.
-- **Confirm work location** (Camden NJ vs Charlotte NC) before it advances; Don is open to relocating.
+- **Warm-intro target: Tina Tonielli** (hiring manager). The cover letter is addressed to her, but a *direct* approach — LinkedIn or a mutual connection forwarding to her — would matter more than the ATS given the rejection pattern. Intro-path research still open if Don wants it.
+- **Location confirmed:** Camden, NJ (WHQ). Cover letter commits to the relocation.

@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-07-25"
+  last_updated: "2026-08-04"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -412,11 +412,49 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-023
+    date: "2026-08-04"
+    company: "The Campbell's Company"
+    role: "Associate Director, Consumer Insights - Salty Snacks (Campbell Snacks, Growth Office)"
+    outcome: "applied (custom CV + six-attribute cover letter). Location unconfirmed (WHQ Camden NJ vs Salty/Charlotte NC); resume shows Atlanta + 'open to relocating.'"
+    match_score_initial: 89
+    match_score_final: 89
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO - Strong on craft. Clears the 85% bar. BEST pure-craft insights fit of the search: real consumer insights, food CPG home domain."
+    resume_delta: "~30% (re-angled to consumer-insights craft: brand/innovation/comms/packaging/shopper + storytelling + food depth)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        BEST-CRAFT-FIT of the search on paper: genuine consumer insights (not an analytics/finance
+        title trap like ButcherBox), in FOOD CPG - Don's home domain. The JD's illuminate/inspire/
+        integrate framework maps almost 1:1 to Don's story (multi-source synthesis, voice of the
+        consumer, storytelling, innovation/brand/comms/packaging/shopper, trend foresight, team lead).
+      - >
+        LEVEL TENSION (the recurring risk): 'Associate Director' reporting to a Sr Director of Insights
+        is one notch BELOW Don's Director/Global-Director band, and comp ($142.3-195.7K) is lower than
+        KO/ButcherBox. This is the classic overqualification-screen bait that produced all 4 rejections
+        (Kraft Heinz/Bimbo/Walmart/High Liner - see RUN-007). Materials were written to DEFUSE the
+        down-level read head-on ('not looking down at this role; looking straight at the work I do best').
+      - >
+        CHANNEL CAUTION restated: large established CPG + cold ATS + senior candidate applying down =
+        the exact rejection pattern. Advised Don a WARM INTRO to the Senior Director, Insights - Campbell
+        Snacks (the hiring manager) matters more than the ATS submission. HM research still open if Don wants it.
+      - >
+        HONEST GAPS (all minor, handled in letter): no MBA (preferred not required); no salty-snacks
+        category specifically (food/bev requirement IS met via bakery/nutrition - salty is only 'would
+        be great'); behavioral-science frameworks a nice-to-have, adjacent not core.
+      - >
+        LOCATION UNCONFIRMED: JD names no city; references WHQ (Camden NJ) + on-site daycare, but Salty
+        Snacks (Snyder's-Lance) is Charlotte NC. Don dismissed the location question - resume kept Atlanta
+        with 'open to relocating.' Confirm actual work location before/if it advances. Don has accepted
+        NJ before (Haleon RUN-011) and Boston (Crocs) and Dallas (Southwest), so relocation is on the table.
+
   - run_id: RUN-022
     date: "2026-07-31"
     company: "ButcherBox"
     role: "Associate Director, Strategic Insights & Analytics (Watertown, MA - hybrid 2 days)"
-    outcome: "NO-GO (not applied) - Don accepted the recommendation"
+    outcome: "NO-GO recommended (76%); Don initially accepted, then OVERRODE and had tailored resume + cover letter built and applied. Deliberate override (2nd of the search, after Southwest RUN-017)."
     match_score_initial: 70
     match_score_final: 76
     ats_result: "n/a - not applied"

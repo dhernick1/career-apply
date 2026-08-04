@@ -417,7 +417,7 @@ run_history:
     company: "The Campbell's Company"
     role: "Associate Director, Consumer Insights - Salty Snacks (Campbell Snacks, Growth Office)"
     outcome: "applied (custom CV + six-attribute cover letter, addressed to hiring manager Tina Tonielli). Location CONFIRMED: Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103. Cover letter commits to relocating to Camden (Don has accepted NJ before, Haleon RUN-011)."
-    hiring_manager: "Tina Tonielli"
+    hiring_manager: "Tina Tonielli - Sr Director Insights & Analytics, Snacks, The Campbell's Company (since Apr 2026). CONFIRMED via LinkedIn job post. Consumer-health insights veteran: Haleon US/NA Insights lead (30+ team, $100M+ impact, Gen AI Summit 400+), GSK, Pfizer Consumer Healthcare, J&J. Co-founder of Good Company Partners (networking venture). ~5 mos in = actively BUILDING the Snacks insights function. Warm angles: (1) shared consumer-health insights world (Don's Bayer Consumer Care <-> her GSK/Haleon), (2) Don has BUILT insights functions (CSM) - reframes seniority as asset not overqualification, (3) Gen AI in insights (she champions it; Don = AI Collective co-founder), (4) both community-builders. LinkedIn connection note + follow-up drafted 2026-08-04."
     work_location: "Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103"
     match_score_initial: 89
     match_score_final: 89
@@ -451,10 +451,17 @@ run_history:
         08103 - NOT Charlotte. Cover letter commits to relocating to Camden. Don has accepted NJ before
         (Haleon RUN-011), plus Boston (Crocs) and Dallas (Southwest), so relocation is firmly on the table.
       - >
-        HIRING MANAGER KNOWN: Tina Tonielli (provided by Don). Cover letter is addressed to her by name
-        (salutation 'Dear Tina Tonielli,' - full name, no gendered honorific). This is the warm-intro
-        target: a direct approach to Tina beats the cold ATS given the rejection pattern. If Don wants,
-        research Tina's LinkedIn / a mutual connection for an intro path.
+        HIRING MANAGER CONFIRMED (LinkedIn, 2026-08-04): Tina Tonielli, Sr Director Insights & Analytics,
+        Snacks - joined Campbell's Apr 2026 from Haleon/GSK (consumer-health insights, ran a 30+ team and
+        a Gen AI Insights Summit for 400+). Cover letter addressed to her by name ('Dear Tina Tonielli,').
+        She is ~5 months in and BUILDING the Snacks insights function - which flips Don's seniority from
+        overqualification liability to 'I have built this function before' asset (the AG1/Crocs lane).
+        WARM-INTRO PLAY: LinkedIn connection note (269 chars) + follow-up message drafted 2026-08-04,
+        leading on shared consumer-health-insights lineage (Bayer <-> GSK/Haleon), the build-the-function
+        angle, Gen AI kinship, and community-building (her Good Company Partners <-> Don's AI Collective).
+        Direct approach to Tina beats the cold ATS given the 4-rejection pattern. Don to check mutual
+        connections before sending. NOTE: AI is fair game in the PERSONAL outreach to Tina (she champions
+        Gen AI in insights) even though it stays OUT of the formal cover letter per the standing rule.
 
   - run_id: RUN-022
     date: "2026-07-31"

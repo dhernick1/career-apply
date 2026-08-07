@@ -806,7 +806,7 @@ run_history:
     date: "2026-07-10"
     company: "Alcon"
     role: "Sr. Manager, Market Research & Insights (Fort Worth, TX)"
-    outcome: "applied (custom CV + honest-gap cover letter); Don confirmed proceeding at Sr. Manager level"
+    outcome: "REJECTED 2026-08-07 (form letter, 'other candidates whose skills more closely align'). Applied 07/10/2026 as R-2026-47439; ~4-week cycle. Least surprising rejection of the search: sub-band (Sr Manager, below Don's Director band) + a real model-BUILDING gap + net-new eye-care domain + cold ATS at a large established medical company. Consistent with the pattern; not a data point that should change strategy."
     match_score_initial: 76
     match_score_final: 76
     ats_result: "PASS (post-tailoring; attribution/MMM and eye-care keywords intentionally absent — not truthfully addable)"
@@ -831,6 +831,16 @@ run_history:
         Eye care/medical-adjacent domain: zero direct experience; nearest bridge is Bayer OTC
         consumer health in the same FDM channels. Alcon JD wanted outside-category perspective,
         which softened the gap this time.
+      - >
+        OUTCOME (2026-08-07): REJECTED via form letter. This one confirms the LEVEL FLAG below was
+        the real risk: it triple-stacked every known failure mode - sub-band (Sr Manager below Don's
+        Director band), a genuine model-BUILDING skills gap the JD required, a net-new eye-care domain,
+        and a cold ATS at a large established employer. Unlike High Liner (RUN-007: highest fit + warm
+        referral, still rejected - the painful/instructive one), Alcon was a known stretch-DOWN with an
+        honest gap, so the rejection carries little new signal. Reinforces the standing strategy: stop
+        applying down-level to Sr Manager seats at big established employers via cold ATS; pursue the
+        build-the-function / seniority-as-asset lane through a warm intro to the decision-maker
+        (the Campbell's / Tina Tonielli play). 5th rejection; pattern now very well established.
       - >
         LEVEL FLAG: Sr. Manager seat vs. Don s Director history — overqualification and comp
         questions likely. Flagged to Don to weigh before submission; his call, not a blocker.

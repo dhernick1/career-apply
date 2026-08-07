@@ -412,6 +412,46 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-024
+    date: "2026-08-07"
+    company: "Simon-Kucher"
+    role: "Senior Director - Consumer Sector - Consumer Goods Strategy / RGM advisory (Atlanta, US)"
+    outcome: "NO-GO (not applied) - Don accepted the recommendation"
+    match_score_initial: 65
+    match_score_final: 65
+    ats_result: "n/a - not applied"
+    go_no_go: "NO-GO. Below the 85% bar. RGM/commercial-excellence CONTENT is a bullseye, but the role is a management-consulting SELLER-DOER / practice-builder seat, and that half is Don's real gap."
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        CONTENT-vs-ROLE-TYPE TRAP (cousin of the ButcherBox title-vs-body trap RUN-022): the subject
+        matter (RGM, pricing, commercial excellence, CG sector) is a bullseye for Don, but the ROLE is
+        a top-tier strategy-consulting rainmaker/practice-builder. The 'Your Profile' section is
+        dominated by BUSINESS DEVELOPMENT and the bonus is 'tied to individual revenue contribution':
+        source & SELL engagements, build proposals, run pre-sales pitches, bring an existing sellable
+        network of senior CG execs, build/lead a consulting practice with P&L/utilization/AR ownership,
+        ideally 10+ yrs top-tier management consulting. When scoring consultancy roles, weight the
+        SELL/build-a-practice demand heavily - it is the job, not the content.
+      - >
+        THE GAP: Don's career is overwhelmingly CORPORATE CPG (Bayer, CSM, Playtex) plus ONE delivery/
+        advisory consulting stint (TELUS/TABS Senior Consultant). He has NOT been a book-carrying
+        consulting seller who built a practice and carried a revenue number. Content is table stakes at
+        SK; the differentiator they pay $240-275K base for is BD/network/practice-building - honestly a
+        gap, not a spin opportunity. Asked Don directly if he has a sellable senior-CG-exec network;
+        he chose NO-GO.
+      - >
+        POSITIVES worth remembering (why it was tempting, not an auto-pass): RGM content bullseye,
+        ATLANTA (no relocation - Don's home-market edge, cf. Coca-Cola/Georgia-Pacific), senior comp.
+        If a future consultancy/advisory role leans more on DELIVERY + content and less on origination/
+        selling, revisit - that flips the weighting back toward Don.
+      - >
+        Pattern note: this is the 3rd 'great content, wrong role-type' near-miss (ButcherBox finance-
+        analytics RUN-022; GWI fake-fractional RUN-018; now SK consulting-sales). Don's true lane stays
+        IN-HOUSE consumer-insights / category / RGM leadership at consumer companies - not analytics-in-
+        finance, not fractional-that-isnt, not consulting-origination. Keep steering there.
+
   - run_id: RUN-023
     date: "2026-08-04"
     company: "The Campbell's Company"

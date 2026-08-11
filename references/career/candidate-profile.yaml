@@ -412,6 +412,37 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-025
+    date: "2026-08-11"
+    company: "Nutrabolt"
+    role: "VP, Revenue Growth Management (Austin, TX) - C4 / XTEND / Cellucor (energy drinks + sports nutrition)"
+    outcome: "NO-GO (not applied) - Don agreed with the recommendation"
+    match_score_initial: 60
+    match_score_final: 60
+    ats_result: "n/a - not applied"
+    go_no_go: "NO-GO. Well below the 85% bar. RGM is Don's 2nd spine, but this VP seat triple-stacks his two biggest gaps (enterprise P&L ownership + XTEL TPM/TPO ownership) at VP level in a beverage/DSD domain he hasn't worked."
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        THIS IS THE 'VP P&L SEAT' the RGM target list explicitly said to AVOID at Nutrabolt ('target
+        the Director band, not the VP P&L seat'). Also the exact P&L-heavy / TPM-technical version of
+        RGM carved out when 'RGM at a medium-small CPG' was scored ~80-83%. Confirms the earlier
+        Nutrabolt VP pass (RUN-015, 72, VP/P&L stretch); this one is a tighter mismatch, not looser.
+      - >
+        TWO STANDING GAPS, NAMED EXPLICITLY, AT VP LEVEL: (1) enterprise P&L / profitability ownership
+        (Don has owned trade BUDGETS, not an enterprise P&L) is the role's center of gravity - 'owns
+        enterprise profitability,' SKU-level economics, margin integrity, partners with Commercial
+        Finance; (2) 'Lead TPM/TPO systems (XTEL preferred)' names Don's TPM-stack gap by the exact
+        product - he has SUPPLIED/used TPO, never OWNED XTEL. Plus a level stretch (VP/ELT) and a
+        domain gap (beverage / active nutrition / DSD + distributor network - zero beverage, no DSD).
+      - >
+        DISTINCTION worth noting: unlike the 5 rejections (channel/overqualification screens on good
+        fits), this is a GENUINE capabilities mismatch at the top of the role - not a materials or
+        channel problem. Right Nutrabolt-shaped bet remains a DIRECTOR RGM or Insights+RGM role, not
+        the enterprise VP P&L seat. Offered to watch Nutrabolt for a Director-level opening instead.
+
   - run_id: RUN-024
     date: "2026-08-07"
     company: "Simon-Kucher"

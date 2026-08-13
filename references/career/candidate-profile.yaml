@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-08-04"
+  last_updated: "2026-08-13"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -412,6 +412,46 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-026
+    date: "2026-08-13"
+    company: "Pharmavite (Nature Made)"
+    role: "Director, Consumer Insights (West Hills, CA) - reports to VP Analytics, Insights & Brand Activation; leads team of 6"
+    outcome: "applied (custom CV + six-attribute cover letter addressed to HM Tommaso Visentini)"
+    match_score_initial: 90
+    match_score_final: 90
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO - Strong, Tier 1. One of the cleanest fits of the entire search: genuine consumer insights, VMS/supplements HOME domain, Director band (right level), 6-person team (exact CSM match)."
+    hiring_manager: "Tommaso Visentini - Divisional VP, Analytics, Insights & Brand Activation, Pharmavite (the exact title the JD reports to). 15+ yrs insights, consumer-behavior-to-media/advertising bent. Cover letter addressed to him. WARM-INTRO TARGET (fellow insights leader). Other insights names seen: James S (DVP Consumer & Shopper Insights - may be dated/parallel), Christopher Tade (Sr Mgr Consumer Insights); Alicia Beerman (SVP Marketing & Consumer Experience)."
+    work_location: "West Hills, CA (LA area) - relocation. Comp uses CA range. Don open to relocating (NJ/Boston/Dallas precedent); CA not explicitly confirmed - flagged in cover letter as 'open to relocating to the West Hills area.'"
+    salary_range_jd: "CA base $187,000-$311,000 (national $169-281K) + bonus. Midpoint ~$249K CA; 'not typical above midpoint.' Advised Don to target $265K single-number / $255-285K range (upper-middle, justified by 35 yrs)."
+    resume_delta: "~30% (re-angled to consumer-insights craft + VMS domain: One-A-Day brand/copy/packaging, Piping Rock VMS advisory surfaced, brand tracking, innovation, learning plans, 6-person team leadership)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        BEST-FIT PROFILE OF THE SEARCH on domain + level alignment (ties/edges Campbell's RUN-023 at 90
+        vs 89). WHY: (1) VMS/supplements is Don's HOME category, not adjacent - he built One-A-Day brand
+        strategy at Bayer (ACH-004/005) and advised Piping Rock's broadline vitamin business 13 yrs
+        (ACH-053, dual-flank VMS). (2) Director band = right level (not AD down-level like Campbell's/
+        Alcon, not VP stretch like Nutrabolt). (3) 'Leads a team of six' is a near-exact match to the
+        CSM insights function he built. (4) Full insights agenda (foundational/brand-equity/innovation/
+        foresight/shopper/GTM/exec-synthesis/people-coaching) restates his resume.
+      - >
+        HONEST GAP (minor, handled in close): high-volume ADVERTISING COPY-TESTING specifically. Don has
+        brand health tracking (TELUS proprietary tracker) + Bayer copy/packaging/concept research, so he
+        is adjacent-strong, not absent. Framed candidly: 'commissioned and applied that work,' judgment
+        over volume. No other material gap - no UX (AG1), no model-building (Southwest/Alcon), no P&L/
+        XTEL (Nutrabolt), no down-level trap.
+      - >
+        CHANNEL: ~$1B Otsuka-owned (established employer, cold ATS = the rejection-pattern channel), BUT
+        a Director role in Don's band, so the overqualification screen is far less acute than the AD/big-
+        CPG rejections. Warm-intro play to Tommaso Visentini is the leverage. HM research done same-day.
+      - >
+        AI DECISION: JD names 'AI-enabled tools' as one capability among many. Role is insights-centric,
+        NOT AI-centric, so per standing rule AI stayed OUT of the cover letter; AI Fluency + 'AI-enabled
+        research tools' remain on the resume. If Don wants, a light AI mention is defensible here since
+        the JD names it - but held to the rule by default.
+
   - run_id: RUN-025
     date: "2026-08-11"
     company: "Nutrabolt"

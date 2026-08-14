@@ -412,6 +412,46 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-027
+    date: "2026-08-14"
+    company: "Newell Brands"
+    role: "Senior Director, Consumer Insights (Outdoor, Recreational & Commercial) - Atlanta/Sandy Springs GA"
+    outcome: "applied (custom CV + six-attribute cover letter). AI-centric role - AI featured IN the cover letter per the standing exception."
+    match_score_initial: 85
+    match_score_final: 85
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO - at the 85% bar. Strong on insights-leadership craft + global-standardization/platform-build (CSM bullseye) + Sr Director level + ATLANTA no-relocation. Swing factor = heavy HANDS-ON AI/ML requirement (Don's partial gap)."
+    resume_delta: "~30% (re-angled to global research standardization + scalable AI-enabled insights platform + brand health/innovation/packaging; Atlanta no-relo surfaced; AI Fluency/AI Collective featured)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    prior_newell_history: "Don previously interviewed at Newell for a DIFFERENT, down-level role: Senior Manager, Trade Promotion Optimization (NOT his sweet spot). Recruiter reached out -> screening -> 2nd interview with HM Ryan Longan. Don told Ryan it 'wasn't a great job but I might consider it' (lukewarm). Ryan selected another candidate weeks later. Ryan Longan is NOT a personal contact and is likely NOT the HM for THIS Consumer Insights role (different discipline). So this is essentially a FRESH application for a better-fit role; thin residual asset = in-system + prior recruiter contact. RISK: whoever remembers Don may recall the lukewarm signal - THIS application must radiate genuine sweet-spot enthusiasm to reset that impression."
+    lessons:
+      - >
+        AI-CENTRIC ROLE = the standing 'no AI in cover letters' EXCEPTION applies. This JD is ~half
+        AI-modernization (predictive analytics, NLP, generative AI, ML, AI-simulated/synthetic-audience
+        testing, anomaly detection, responsible AI). AI Fluency + AI Collective co-founding are finally a
+        DIRECT requirement match, so AI is featured in the letter (8 mentions). First run to fully deploy
+        the AI credential offensively rather than keep it resume-only.
+      - >
+        HONEST GAP (central, not peripheral): the JD wants HANDS-ON AI/ML applied to research. Don is an
+        AI champion/adopter/DIRECTOR, not a hands-on AI-research practitioner (overlaps his standing
+        model-building gap). Framed candidly in the close: 'my hands are on the leadership of AI - vision,
+        standards, adoption, and the specialists who build the models - more than on personally coding
+        them.' The 'Alcon play': name it, reframe to leadership/modernization.
+      - >
+        STRONG-FIT HALF: 'standardize foundational research globally + build a scalable insights platform'
+        is a near-exact restatement of Don's CSM function-build (centralized global research, standards,
+        portal, budget). Plus Sr Director = right band, ATLANTA = no-relocation edge (like Coca-Cola/GP),
+        and 'both client-side and agency-side' is a clean match (Bayer/CSM client + TELUS/TABS agency).
+      - >
+        DOMAIN GAP (minor): Outdoor/Recreational/durables + Commercial B2B is net-new (Don is food/OTC/
+        HBC/household/PC). 'Durable categories preferred,' not required; craft transfers. Grad degree
+        'preferred' - Don has BS only. Both minor.
+      - >
+        HM for this Consumer Insights role NOT yet identified (Ryan Longan was the TPO HM, different team).
+        Offered to research the actual insights-org HM for a warm touch, and to re-contact the prior Newell
+        recruiter to signal genuine interest in this sweet-spot role.
+
   - run_id: RUN-026
     date: "2026-08-13"
     company: "Pharmavite (Nature Made)"

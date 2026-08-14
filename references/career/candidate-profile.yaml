@@ -574,7 +574,7 @@ run_history:
     date: "2026-08-04"
     company: "The Campbell's Company"
     role: "Associate Director, Consumer Insights - Salty Snacks (Campbell Snacks, Growth Office)"
-    outcome: "applied (custom CV + six-attribute cover letter, addressed to hiring manager Tina Tonielli). Location CONFIRMED: Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103. Cover letter commits to relocating to Camden (Don has accepted NJ before, Haleon RUN-011)."
+    outcome: "REJECTED 2026-08-08 (form letter from Talent Acquisition, 'other candidates whose background more closely align'). Applied + Don emailed CV/cover letter DIRECT to HM Tina Tonielli (cold direct email, tina_tonielli@campbells.com - NOT a vouched intro). The direct-to-HM email did NOT convert; TA form-rejected on the ATS track. 6th rejection. KEY NUANCE: this was an AD DOWN-LEVEL (below Don's Director/Sr Director band) at a large established CPG - the exact level/overqualification screen flagged as THE risk on this run. Location was CONFIRMED: Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103. Cover letter commits to relocating to Camden (Don has accepted NJ before, Haleon RUN-011)."
     hiring_manager: "Tina Tonielli - Sr Director Insights & Analytics, Snacks, The Campbell's Company (since Apr 2026). CONFIRMED via LinkedIn job post. Consumer-health insights veteran: Haleon US/NA Insights lead (30+ team, $100M+ impact, Gen AI Summit 400+), GSK, Pfizer Consumer Healthcare, J&J. Co-founder of Good Company Partners (networking venture). ~5 mos in = actively BUILDING the Snacks insights function. Warm angles: (1) shared consumer-health insights world (Don's Bayer Consumer Care <-> her GSK/Haleon), (2) Don has BUILT insights functions (CSM) - reframes seniority as asset not overqualification, (3) Gen AI in insights (she champions it; Don = AI Collective co-founder), (4) both community-builders. LinkedIn connection note + follow-up drafted 2026-08-04. CONFIRMED EMAIL (Don, 2026-08-07): tina_tonielli@campbells.com. NOTE: Campbell's live email domain is @campbells.com (post-rebrand from campbellsoup.com); format is first_last. Don applied via ATS (no cover-letter field), so emailing CV + cover letter (PDF) directly to Tina - the warm-intro play. PDFs generated 2026-08-07."
     work_location: "Campbell's WHQ, 1 Campbell Place, Camden, NJ 08103"
     match_score_initial: 89
@@ -620,6 +620,18 @@ run_history:
         Direct approach to Tina beats the cold ATS given the 4-rejection pattern. Don to check mutual
         connections before sending. NOTE: AI is fair game in the PERSONAL outreach to Tina (she champions
         Gen AI in insights) even though it stays OUT of the formal cover letter per the standing rule.
+      - >
+        OUTCOME (REJECTED 2026-08-08) - REFINED CHANNEL LESSON: Don emailed Tina directly (good), but it
+        was a COLD direct email with no mutual-connection vouch, and it did NOT convert - TA form-rejected
+        on the ATS track. This sharpens the warm-intro hierarchy: VOUCHED intro (a 1st-degree contact
+        vouches, then you email - the Pharmavite/Tommaso play) > COLD direct email to the HM (Campbell's/
+        Tina) > cold ATS. Campbell's was the MIDDLE tier. ALSO: the AD DOWN-LEVEL was the flagged risk and
+        it bit - a strong-fit (89) AD seat at a large established CPG still trips the level/overqualification
+        screen (cf. High Liner RUN-007, all the big-CPG rejections). REINFORCES: prioritize roles at Don's
+        actual band (Director/Sr Director) where seniority is an asset, reached via a VOUCHED intro, not a
+        cold email or cold ATS. Tina remains a valuable network node (ex-Haleon consumer-health insights
+        leader) - Don should send a gracious stay-in-touch note to convert the rejection into a durable
+        connection for future roles.
 
   - run_id: RUN-022
     date: "2026-07-31"

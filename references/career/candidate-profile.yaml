@@ -23,7 +23,7 @@
 meta:
   owner: "Donald T. Hernick"
   version: 1.0
-  last_updated: "2026-08-13"
+  last_updated: "2026-08-18"
   seeded_from: "Resume seeded 2026-05-18 from 26 04 07 CV Hernick.Don.2pages.docx. First application run pending."
   work_authorization:
     US: true
@@ -412,6 +412,41 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-028
+    date: "2026-08-18"
+    company: "Procter & Gamble"
+    role: "Walmart US Category Management Director (Fayetteville / Northwest Arkansas - relocation required)"
+    outcome: "materials built (category-captain CV + six-attribute cover letter, addressed to HM 'Robin'). Don applies online first to become an official candidate, THEN his SUPER-WARM contact walks the resume to the HM (ATS presence + vouched intro = the converting channel)."
+    match_score_initial: 86
+    match_score_final: 86
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO - Strong. Dead-center in Don's CATEGORY-CAPTAIN spine (his 2nd-strongest lead framing, same as Coca-Cola RUN-021). Director band, good P&G-category domain adjacency, and the BEST channel he has had."
+    hiring_manager: "Robin (first name only; she/her per Don), P&G, based in Fayetteville AR. Cover letter addressed 'Dear Robin,' (warm-referral context = first-name is right; no last name available). Reached via Don's super-warm contact who will hand the resume to Robin after Don applies online."
+    salary_range_jd: "$172,000 - $220,000 + bonus + benefits. US work auth required (Don clear; no sponsorship offered)."
+    resume_delta: "~30% (re-angled to category-captain / customer-advisor spine: Playtex Infant Feeding Captain -> Bayer National Category Leadership -> CSM established Category Management -> TELUS Walmart/Target category advisory; assortment/shelf/modular + physical & digital shelf surfaced)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        BEST-CHANNEL role of the search: a SUPER-WARM contact who will hand the resume to the HM (Robin)
+        after Don applies online. This is the top-tier VOUCHED-INTRO channel + ATS presence combined -
+        exactly the profile that converts (right level + real vouch), the lesson hammered home by 7
+        rejections (channel/level, not fit). Treat this as a PRIORITY alongside Pharmavite.
+      - >
+        CATEGORY-CAPTAIN SPINE (not the insights spine) is the right framing here, same as Coca-Cola
+        RUN-021. The JD is classic category advisory to the retailer: lead Category Advisor / trusted
+        resource to the Walmart Senior Merchant, category strategy, assortment/shelf, Walmart modular
+        process, storytelling from data, team leadership. Don's Playtex Infant Feeding Category Captaincy
+        is DIRECTLY relevant, and his Bayer (OTC/personal health), Woolite (home care), and Playtex
+        (personal care/baby) work gives genuine adjacency to P&G's actual categories. Domain is a PLUS.
+      - >
+        HONEST GAPS (handled in the letter): (1) Walmart-specific tools ProSpace + Scintilla - Don has
+        Nielsen/PowerBI/Excel, would ramp on the Walmart platforms; (2) depth/recency of EMBEDDED Walmart-
+        Senior-Merchant ownership (his Walmart work is 'presented-to / advised' more than owned day-to-day
+        from an NWA seat) - a fair interview probe; (3) NWA RELOCATION required (Don relo-open; letter
+        states 'prepared to relocate to Northwest Arkansas'); (4) P&G's build-from-within culture rarely
+        hires external Directors onto the crown-jewel Walmart team - THE warm vouch is the counter to this.
+
   - run_id: RUN-027
     date: "2026-08-14"
     company: "Newell Brands"

@@ -412,6 +412,41 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-030
+    date: "2026-08-25"
+    company: "Dollar Tree"
+    role: "Director of Customer Insights & Analytics (Chesapeake, VA - corporate office; relocation confirmed OK by Don)"
+    outcome: "materials built (custom CV + six-attribute cover letter, 'Dear Hiring Manager' - HM name TBD from Don's colleague). Plan: apply online + colleague submits internal employee referral + intros the HM."
+    match_score_initial: 84
+    match_score_final: 84
+    ats_result: "PASS (post-tailoring)"
+    go_no_go: "GO - at/near the 85% bar. Genuine customer-insights leadership at Director band. RETAILER-side (Don is vendor-side; adjacent via category work). Upgraded by a WARM internal contact."
+    hiring_manager: "TBD. Don's WARM CHANNEL: a close colleague who is CURRENTLY the Digital Marketing & Ecommerce Director at Dollar Tree - a direct downstream PARTNER of this insights role (JD: 'partner closely with Marketing'), so an ideal, credible internal advocate. Plan = colleague submits internal employee referral + identifies/introduces the actual insights-org hiring manager. Once HM name arrives, personalize the cover letter greeting."
+    work_location: "Chesapeake, VA (corporate). Relocation CONFIRMED acceptable by Don 2026-08-25."
+    salary_range_jd: "$160,000-$195,000 + 25% bonus + equity."
+    resume_delta: "~30% (re-angled to customer-insights leadership + syndicated-data/supplier-contract management + retailer/merchandising-facing framing)"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        STANDOUT MATCH: 'Lead all external data/analytics supplier relationships (Nielsen, Numerator,
+        Circana, 1010, Epsilon, Big Chalk); manage contracts, maximize value' is a near-perfect fit for
+        Don's Bayer 'Care Award' credential (directed the Circana team + owned the syndicated-data CONTRACT
+        process, saved $2M/yr x3). Led the cover letter with it. Most insights candidates lack a documented
+        supplier-contract-management award - this is a real differentiator for retailer/analytics roles.
+      - >
+        HONEST GAPS (handled in close): (1) RETAILER-SIDE / merchandising context - Don is vendor-side
+        (Bayer/CSM/Playtex) + advisory (TELUS), adjacent via category management and presenting to merchants
+        at Walmart/Target, but not inside a retailer's merch-insights function; (2) MARKETING-MIX MODELING +
+        full-funnel attribution - Don's model-building/digital gap, MITIGATED because the JD runs these 'in
+        partnership with Big Chalk'/suppliers, so he DIRECTS not builds. Framed exactly that way. MBA
+        preferred (has BS).
+      - >
+        CHANNEL: was a cold-ATS big-retailer risk (the 7-rejection pattern), but UPGRADED to a warm bet by
+        Don's close colleague (Digital Marketing & Ecom Director, current). Now a legitimate 3rd strong-
+        channel iron alongside P&G (live 19-yr vouch) and Pharmavite (interviewing). Right level + real fit
+        + warm internal referral = the converting profile.
+
   - run_id: RUN-029
     date: "2026-08-19"
     company: "The Coca-Cola Company"
@@ -561,7 +596,7 @@ run_history:
     date: "2026-08-13"
     company: "Pharmavite (Nature Made)"
     role: "Director, Consumer Insights (West Hills, CA) - reports to VP Analytics, Insights & Brand Activation; leads team of 6"
-    outcome: "applied (custom CV + six-attribute cover letter addressed to HM Tommaso Visentini)"
+    outcome: "ADVANCED TO INTERVIEW - the FIRST interview of the entire search. Applied (custom CV + six-attribute cover letter to HM Tommaso Visentini) + VOUCHED intro. On 2026-08-25, Christian A. Vaca (Director, Talent Acquisition; cvaca@pharmavite.com) invited Don to a 45-MINUTE PHONE SCREENING for the Director, Consumer Insights role. The vouched-intro strategy CONVERTED. (Note: scheduling link was invalid; Don replying with availability.) Screening with TA is the gate to the Tommaso/HM round."
     match_score_initial: 90
     match_score_final: 90
     ats_result: "PASS (post-tailoring)"

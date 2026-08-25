@@ -412,6 +412,38 @@ employer_context:
 # from prior discoveries.
 
 run_history:
+  - run_id: RUN-029
+    date: "2026-08-19"
+    company: "The Coca-Cola Company"
+    role: "Director, Global Strategy, Planning and Business Insights (Atlanta, GA)"
+    outcome: "NO-GO (not applied) - Don accepted the recommendation"
+    match_score_initial: 75
+    match_score_final: 75
+    ats_result: "n/a - not applied"
+    go_no_go: "NO-GO. Below the 85% bar. Title says 'Business Insights' but the role's OPERATING CORE is enterprise strategy + annual business PLANNING cycles + integrated FORECASTING + STRATEGIC FINANCE + advanced financial MODELING - a strategy/FP&A discipline that stacks Don's model-building + finance/P&L gaps."
+    resume_delta: "n/a"
+    new_achievements_surfaced: []
+    new_categories_added: []
+    lessons:
+      - >
+        TITLE-vs-CORE TRAP again (cousin of ButcherBox RUN-022, Simon-Kucher RUN-024): 'Business Insights'
+        in the title, but the JD asks the holder to CO-OWN strategic + annual business planning cycles,
+        BUILD integrated forecasts, run performance-management routines, and do advanced financial modeling;
+        acceptable backgrounds listed as 'Strategy Development, Enterprise Planning, STRATEGIC FINANCE, or
+        Commercial.' That is corporate strategy + FP&A, not Don's insights/category craft.
+      - >
+        SPLIT FIT (~75%): strong on ~half - business-insights synthesis, exec storytelling with data,
+        strategic thinking (CSM strategy dev / Bain-BCG-McKinsey / positioning the sale), cross-functional
+        influence, CPG+global, syndicated research (a listed skill), ATLANTA no-relo, Director band.
+        GAP on the operating core - enterprise planning cycles + integrated financial forecasting +
+        strategic finance + advanced financial modeling (overlaps his direct-don't-build model gap and
+        finance/P&L gap); MBA preferred (has BS). Contrast RUN-021 (Coke Director Category Leadership, 88%
+        GO) which was dead-center in Don's category-captain spine - THIS role is a different animal.
+      - >
+        CHANNEL: another cold Coca-Cola ATS application (big established employer = the 7-rejection pattern),
+        no warm contact surfaced. Advised Don to steer energy to the RIGHT-FIT + RIGHT-CHANNEL live bets
+        (P&G live vouch, Pharmavite vouched intro) rather than a partial-fit cold-channel stretch.
+
   - run_id: RUN-028
     date: "2026-08-19"
     company: "Procter & Gamble"
